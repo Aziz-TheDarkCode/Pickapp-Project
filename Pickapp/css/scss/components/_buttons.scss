@@ -1,0 +1,39 @@
+@import"../abstract/variables";
+@import"../abstract/classes";
+@import"../abstract/functions";
+@import"../abstract/mixins";
+@import"../base/typography";
+
+.btn
+{
+   
+    padding: .9rem;
+    text-align: center;
+    @extend .rounded-border;
+    border: none;
+    width: 7rem;
+    margin-top: 1rem;
+    font-size: map-get($font-size,tiny);
+}
+//Button Color
+.btn-black
+{
+    @include set-background($secondary-color)
+}
+.btn-golden
+{
+    @include set-background($primary-color)
+}
+//Button Size
+.btn-larger
+{
+    width: 396px;
+    font-size: map-get($font-size,regular);
+}
+
+.btn-medium
+{
+    width: 10rem;
+    font-size: map-get($font-size,regular);
+}
+

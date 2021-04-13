@@ -1,0 +1,104 @@
+@import"../abstract/classes";
+@import"../abstract/mixins";
+.card
+{
+    width: 257px;
+    height: 300px;
+  border-radius: 16px;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    font-size: map-get($font-size, regular);
+    margin-left: 2rem;
+ 
+    .icon
+    {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+}
+.card__category
+{       
+    background-image: url("https://im0-tub-com.yandex.net/i?id=856ca5611a3be2d65ff1b181c083126f&n=13");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &--details
+    {
+        position: absolute;
+        bottom: 1rem;
+        z-index: 1;
+        left: 1rem;
+        font-size: map-get($font-size,regular);
+    }
+    &::after
+    {
+        content: "";
+        display: flex;
+        align-items: flex-end;
+        padding: 1.2rem;
+        font-size:map-get($font-size, regular);
+        background:linear-gradient(to top ,$primary-color,transparent);
+        position: absolute;
+        bottom: 0;
+        height: 18rem;
+        width: 15rem;
+    }
+}
+.card__product
+{
+    @include set-background($secondary-color);
+    font-size: map-get($font-size, regular);
+
+    &--img
+    {
+      max-width: 100%;  
+    }
+    &--description
+    {
+        display: flex;
+        flex-direction: column;
+        height: 17vh;
+        justify-content: space-around;
+        position: relative;
+        padding: .8rem;
+        &::after
+            {
+                content: "";
+                background-color: rgba(128, 128, 128, 0.294);
+                position: absolute;
+                bottom :0;
+                width: 14rem;
+                left: .4rem;
+                height: .02rem;
+            }
+    }
+
+    &--title
+    {
+        font-size: map-get($font-size, semi);
+    }
+    &--footer
+    {
+        height: 10vh;
+        padding: .9rem;
+    }
+    .icon
+        {
+            display: flex;
+            width: 90%;
+            align-items: center;
+            justify-content: space-between;
+            p
+                {
+                    background-color: $secondary-color;
+                    padding: .5rem;
+                    width: 2rem;
+                    text-align: center;
+                    font-size: map-get($font-size, tiny );
+                    @extend .rounded-border;
+                }
+        }
+     
+}

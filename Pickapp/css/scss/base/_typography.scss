@@ -1,0 +1,23 @@
+$font-stack:'Poppins', sans-serif;
+$font-size:
+(
+  larger  : 3.5rem,
+  medium : 2.5rem,
+  semi : 1.5rem,
+  regular : 1.2rem,
+  tiny:.8rem
+)
+;
+.text-larger
+{
+  font-size: map-get($font-size, medium );
+  padding: 1rem;
+}
+.text-medium
+{
+  font-size: map-get($font-size, semi );
+}
+.text-semi
+{
+  font-size: map-get($font-size, regular );
+}

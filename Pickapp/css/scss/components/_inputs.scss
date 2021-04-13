@@ -1,0 +1,40 @@
+@import"../abstract/classes";
+@import"../base/typography";
+.text-input
+{
+   
+    border:  solid rgba(128, 128, 128, 0.294)
+     .1rem;
+     width: 396px;
+     padding: .8rem;
+     @extend .rounded-border;
+}
+.text-input-unborded
+{
+    border: none;
+}
+// text-input size
+.text-input-larger
+{
+    width: 23rem;
+    font-size: map-get($font-size,regular);
+}
+.text-input-medium
+{
+    width: 10rem;
+    font-size: map-get($font-size,regular);
+}
+
+.label
+{
+    font-size: map-get($font-size, tiny );
+    display: block;
+    margin-left: .3rem;
+}
+
+// label & input
+.input-component
+{
+    line-height: 1.5rem;
+    padding:.9rem;
+}

@@ -1,0 +1,13 @@
+@function set-text-color($color)
+{
+    @if($color==$secondary-color)
+    {
+        @return $main-color;
+    }@else if($color==$primary-color)
+    {
+        @return $main-color;
+    }@else
+    {
+        @return $secondary-color;
+    }
+}
