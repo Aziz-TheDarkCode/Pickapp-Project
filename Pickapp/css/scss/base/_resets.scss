@@ -61,5 +61,13 @@ ion-icon
             }
 input:focus
 {
-	outline: 0;
+	outline: none;
+}
+input:active
+{
+	outline: none;
+}
+*
+{
+	font-family: $font-stack;
 }

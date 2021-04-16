@@ -2,15 +2,12 @@
 @import"../abstract/mixins";
 .card
 {
-    width: 257px;
-    height: 300px;
-  border-radius: 16px;
-    margin-top: 2rem;
+
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
     font-size: map-get($font-size, regular);
-    margin-left: 2rem;
- 
+
     .icon
     {
         position: absolute;
@@ -20,10 +17,12 @@
 }
 .card__category
 {       
+    height: 280px;
     background-image: url("https://im0-tub-com.yandex.net/i?id=856ca5611a3be2d65ff1b181c083126f&n=13");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: $main-color;
     &--details
     {
         position: absolute;
@@ -38,19 +37,36 @@
         display: flex;
         align-items: flex-end;
         padding: 1.2rem;
-        font-size:map-get($font-size, regular);
-        background:linear-gradient(to top ,$primary-color,transparent);
+        background:linear-gradient(to top ,#1e1e1ebd,transparent);
+        color: $main-color;
         position: absolute;
         bottom: 0;
         height: 18rem;
-        width: 15rem;
+        width: 100vw;
     }
 }
 .card__product
 {
-    @include set-background($secondary-color);
-    font-size: map-get($font-size, regular);
+    height: auto;
+    background-color: $main-color;
+    position: relative;
+    overflow: hidden;
 
+    .layer{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        padding:2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s ease-in;
+    }
+    .layer:hover{
+        opacity:1;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) ,transparent);
+    }
     &--img
     {
       max-width: 100%;  
@@ -59,17 +75,18 @@
     {
         display: flex;
         flex-direction: column;
-        height: 17vh;
         justify-content: space-around;
         position: relative;
-        padding: .8rem;
+        padding: 1rem;
+        line-height: 2rem;
+        font-size: 1rem;
         &::after
             {
                 content: "";
                 background-color: rgba(128, 128, 128, 0.294);
                 position: absolute;
                 bottom :0;
-                width: 14rem;
+                width: 100%;
                 left: .4rem;
                 height: .02rem;
             }
@@ -77,28 +94,39 @@
 
     &--title
     {
-        font-size: map-get($font-size, semi);
+    
     }
     &--footer
     {
-        height: 10vh;
         padding: .9rem;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    
     }
     .icon
         {
             display: flex;
-            width: 90%;
+            width: 85%;
             align-items: center;
+            margin: auto;
             justify-content: space-between;
             p
                 {
-                    background-color: $secondary-color;
+                    @include set-background($secondary-color);
                     padding: .5rem;
-                    width: 2rem;
+                    width: 04rem;
                     text-align: center;
                     font-size: map-get($font-size, tiny );
                     @extend .rounded-border;
                 }
         }
+
+
      
+}
+.greyed-out
+{
+   filter:grayscale(100%) ;
+   
 }

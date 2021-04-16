@@ -6,14 +6,11 @@
 
 .btn
 {
-   
-    padding: .9rem;
+    padding: .7rem;
     text-align: center;
     @extend .rounded-border;
     border: none;
     width: 7rem;
-    margin-top: 1rem;
-    font-size: map-get($font-size,tiny);
 }
 //Button Color
 .btn-black
@@ -24,6 +21,11 @@
 {
     @include set-background($primary-color)
 }
+.btn-gray {
+    background-color: darken($tertiary-color, 03%);
+    color: $secondary-color;
+}
+
 //Button Size
 .btn-larger
 {
@@ -33,7 +35,10 @@
 
 .btn-medium
 {
-    width: 10rem;
-    font-size: map-get($font-size,regular);
+    width: 198px;
 }
-
+.btn-transparent-bg
+{
+    border: 2px solid   white;
+    background-color: transparent;
+}

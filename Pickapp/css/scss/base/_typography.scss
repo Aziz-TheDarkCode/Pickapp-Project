@@ -21,3 +21,19 @@ $font-size:
 {
   font-size: map-get($font-size, regular );
 }
+.green-text
+{
+  color: green;
+}
+.red-text
+{
+  color: red;
+}
+.golden-text
+{
+  color: $primary-color;
+}
+.gray-text
+{
+  color:rgba(128, 128, 128, 0.294);
+}

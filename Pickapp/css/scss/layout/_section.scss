@@ -29,8 +29,6 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         
-          
-        
         .section {
                 padding: 1.2rem;
             &__content--header {
@@ -40,14 +38,11 @@
                 justify-content: space-between;
                 color: $secondary-color;
                 padding: 1rem;
-                .btn {
-                    background-color: darken($tertiary-color, 03%);
-                    color: $secondary-color;
-                    text-align: center;
-                    width: 08rem;
-                    font-size: .9rem;
+                div
+                {
+                    line-height: 2rem;
+                    font-weight: bold;
                 }
-
             }
             &__content--right {
                 background-color: $main-color;
@@ -92,7 +87,7 @@
                 }
             }
             &__content--left {
-                background-color: $tertiary-color;
+                background-color: red;
                 grid-column: span 3;
                 overflow: scroll;
                 height: 100vh;
@@ -109,15 +104,29 @@
         {
             grid-column: span 4;
             height: 100vh;
-
+            overflow: scroll;
+            height: 100vh;
+            &::-webkit-scrollbar
+                {
+                    display: none;
+                }
             .section__content--header
             {
                 background-color:$main-color;
+                padding: 1.6rem;
+                div
+                {
+                   
+                    font-size: smaller;
+                    width: 20rem;
+                }
             }
                 &::-webkit-scrollbar
                 {
                     display: none;
                 }
+
+
 
             .box__section--small{
                 max-width: 80%;
@@ -173,11 +182,22 @@
     }
     &--medium
     {
-        margin-top: 2rem;
+
         background-color:$main-color;
         height: 25rem;
         width: 95%;
         margin: auto;
         border-radius: .9rem;
     }
+}
+.row-five-items
+{
+    grid-template-columns:repeat(5,1fr) ;
+}
+.card-section
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+    gap: 2rem;
 }

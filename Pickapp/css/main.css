@@ -12,6 +12,22 @@
   font-size: 1.2rem;
 }
 
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.golden-text {
+  color: #BFA660;
+}
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294);
+}
+
 @font-face {
   src: url(../../font/sofiapro-light.otf);
   font-family: sofia;
@@ -82,7 +98,15 @@ ion-icon {
 }
 
 input:focus {
-  outline: 0;
+  outline: none;
+}
+
+input:active {
+  outline: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 .text-larger {
@@ -96,6 +120,22 @@ input:focus {
 
 .text-semi {
   font-size: 1.2rem;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.golden-text {
+  color: #BFA660;
+}
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294);
 }
 
 .rounded-border, .btn, .card__product .icon p, .text-input {
@@ -119,13 +159,27 @@ input:focus {
   font-size: 1.2rem;
 }
 
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.golden-text {
+  color: #BFA660;
+}
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294);
+}
+
 .btn {
-  padding: .9rem;
+  padding: .7rem;
   text-align: center;
   border: none;
   width: 7rem;
-  margin-top: 1rem;
-  font-size: 0.8rem;
 }
 
 .btn-black {
@@ -138,14 +192,23 @@ input:focus {
   color: #ffff;
 }
 
+.btn-gray {
+  background-color: #f2f2f4;
+  color: #1e1e1e;
+}
+
 .btn-larger {
   width: 396px;
   font-size: 1.2rem;
 }
 
 .btn-medium {
-  width: 10rem;
-  font-size: 1.2rem;
+  width: 198px;
+}
+
+.btn-transparent-bg {
+  border: 2px solid   white;
+  background-color: transparent;
 }
 
 .rounded-border, .btn, .card__product .icon p, .text-input {
@@ -157,14 +220,10 @@ input:focus {
 }
 
 .card {
-  width: 257px;
-  height: 300px;
   border-radius: 16px;
-  margin-top: 2rem;
   overflow: hidden;
   position: relative;
   font-size: 1.2rem;
-  margin-left: 2rem;
 }
 
 .card .icon {
@@ -174,10 +233,12 @@ input:focus {
 }
 
 .card__category {
+  height: 280px;
   background-image: url("https://im0-tub-com.yandex.net/i?id=856ca5611a3be2d65ff1b181c083126f&n=13");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color: #ffff;
 }
 
 .card__category--details {
@@ -197,19 +258,45 @@ input:focus {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 1.2rem;
-  font-size: 1.2rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#BFA660), to(transparent));
-  background: linear-gradient(to top, #BFA660, transparent);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1e1e1ebd), to(transparent));
+  background: linear-gradient(to top, #1e1e1ebd, transparent);
+  color: #ffff;
   position: absolute;
   bottom: 0;
   height: 18rem;
-  width: 15rem;
+  width: 100vw;
 }
 
 .card__product {
-  background-color: #1e1e1e;
-  color: #ffff;
-  font-size: 1.2rem;
+  height: auto;
+  background-color: #ffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__product .layer {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.card__product .layer:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .card__product--img {
@@ -224,11 +311,12 @@ input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 17vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  padding: .8rem;
+  padding: 1rem;
+  line-height: 2rem;
+  font-size: 1rem;
 }
 
 .card__product--description::after {
@@ -236,28 +324,31 @@ input:focus {
   background-color: rgba(128, 128, 128, 0.294);
   position: absolute;
   bottom: 0;
-  width: 14rem;
+  width: 100%;
   left: .4rem;
   height: .02rem;
 }
 
-.card__product--title {
-  font-size: 1.5rem;
-}
-
 .card__product--footer {
-  height: 10vh;
   padding: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__product .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 85%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -265,10 +356,16 @@ input:focus {
 
 .card__product .icon p {
   background-color: #1e1e1e;
+  color: #ffff;
   padding: .5rem;
-  width: 2rem;
+  width: 04rem;
   text-align: center;
   font-size: 0.8rem;
+}
+
+.greyed-out {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .rounded-border, .btn, .card__product .icon p, .text-input {
@@ -292,10 +389,27 @@ input:focus {
   font-size: 1.2rem;
 }
 
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.golden-text {
+  color: #BFA660;
+}
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294);
+}
+
 .text-input {
   border: solid rgba(128, 128, 128, 0.294) 0.1rem;
   width: 396px;
-  padding: .8rem;
+  padding: .9rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .text-input-unborded {
@@ -303,8 +417,8 @@ input:focus {
 }
 
 .text-input-larger {
-  width: 23rem;
-  font-size: 1.2rem;
+  width: 24rem;
+  font-size: .98rem;
 }
 
 .text-input-medium {
@@ -316,6 +430,14 @@ input:focus {
   font-size: 0.8rem;
   display: block;
   margin-left: .3rem;
+  position: relative;
+}
+
+.label::after {
+  content: "*";
+  color: red;
+  top: 0;
+  right: 0;
 }
 
 .input-component {
@@ -577,12 +699,9 @@ aside .dropdown--links {
   padding: 1rem;
 }
 
-.container section .section__content--header .btn {
-  background-color: #f2f2f4;
-  color: #1e1e1e;
-  text-align: center;
-  width: 08rem;
-  font-size: .9rem;
+.container section .section__content--header div {
+  line-height: 2rem;
+  font-weight: bold;
 }
 
 .container section .section__content--right {
@@ -633,7 +752,7 @@ aside .dropdown--links {
 }
 
 .container section .section__content--left {
-  background-color: #fafafb;
+  background-color: red;
   grid-column: span 3;
   overflow: scroll;
   height: 100vh;
@@ -646,10 +765,22 @@ aside .dropdown--links {
 .container section .no-aside {
   grid-column: span 4;
   height: 100vh;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.container section .no-aside::-webkit-scrollbar {
+  display: none;
 }
 
 .container section .no-aside .section__content--header {
   background-color: #ffff;
+  padding: 1.6rem;
+}
+
+.container section .no-aside .section__content--header div {
+  font-size: smaller;
+  width: 20rem;
 }
 
 .container section .no-aside::-webkit-scrollbar {
@@ -719,11 +850,24 @@ aside .dropdown--links {
 }
 
 .box__section--medium {
-  margin-top: 2rem;
   background-color: #ffff;
   height: 25rem;
   width: 95%;
   margin: auto;
   border-radius: .9rem;
+}
+
+.row-five-items {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.card-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
