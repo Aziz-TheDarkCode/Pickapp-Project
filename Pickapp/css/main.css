@@ -198,7 +198,7 @@ input:active {
 }
 
 .btn-larger {
-  width: 396px;
+  width: 418px;
   font-size: 1.2rem;
 }
 
@@ -475,7 +475,6 @@ header .search-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -521,7 +520,6 @@ header .user-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
   font-size: 0.8rem;
   line-height: 1.2rem;
   width: 20rem;
@@ -629,7 +627,7 @@ aside .dropdown--links {
   text-align: left;
   -webkit-transform: translateX(-90px);
           transform: translateX(-90px);
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 .form--login__section .greeting h1 {
@@ -869,5 +867,22 @@ aside .dropdown--links {
       grid-template-columns: repeat(4, 1fr);
   padding: 1rem;
   gap: 2rem;
+}
+
+.message__section {
+  background-color: red;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.message__section--receveid {
+  background-color: blue;
+}
+
+.message__section--proposals {
+  background-color: yellow;
 }
 /*# sourceMappingURL=main.css.map */

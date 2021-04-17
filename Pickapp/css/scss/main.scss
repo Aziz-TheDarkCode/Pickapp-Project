@@ -9,5 +9,20 @@
 @import"layout/aside";
 @import"layout/form";
 @import"layout/section";
-@import"plugin/bootstrap-grid.min.css"
+@import"plugin/bootstrap-grid.min.css";
 
+.message__section
+{
+    background-color: red;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    &--receveid
+    {
+        background-color:blue;
+    }
+    &--proposals
+    {
+        background-color: yellow;   
+    }
+}
