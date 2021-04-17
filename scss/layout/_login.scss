@@ -1,0 +1,11 @@
+.greeting {
+	// text-align: left;
+	// transform: translateX(-90px);
+	// margin-top: 5rem;
+	h1 {
+		font-size: map-get($font-size, larger);
+	}
+	span {
+		opacity: 0.7;
+	}
+}

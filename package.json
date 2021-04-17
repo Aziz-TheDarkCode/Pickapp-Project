@@ -1,0 +1,26 @@
+{
+  "name": "pick-app",
+  "version": "1.0.0",
+  "description": "This is stock management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziz-TheDarkCode/Pickapp-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aziz-TheDarkCode/Pickapp-Project/issues"
+  },
+  "homepage": "https://github.com/Aziz-TheDarkCode/Pickapp-Project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
