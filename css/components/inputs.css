@@ -28,8 +28,9 @@
 
 .text-input {
   border: solid rgba(128, 128, 128, 0.294) 0.1rem;
-  width: 396px;
-  padding: .9rem;
+  width: 130px;
+  padding: .5rem;
+  background-color: transparent;
   font-family: "Poppins", sans-serif; }
 
 .text-input-unborded {
@@ -37,16 +38,27 @@
 
 .text-input-larger {
   width: 24rem;
-  font-size: .98rem; }
+  font-size: .98rem;
+  padding: .9rem; }
 
 .text-input-medium {
   width: 10rem;
   font-size: 1.2rem; }
 
+textarea {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  height: 550px; }
+
+textarea:focus {
+  outline: none; }
+
 .label {
   font-size: 0.8rem;
   display: block;
   margin-left: .3rem;
+  padding: .5rem;
   position: relative; }
   .label::after {
     content: "*";
@@ -57,3 +69,11 @@
 .input-component {
   line-height: 1.5rem;
   padding: .9rem; }
+
+.col-component {
+  display: flex;
+  flex-direction: column; }
+
+.row-component {
+  display: flex;
+  align-items: center; }

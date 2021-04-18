@@ -6,9 +6,10 @@
    
     border:  solid rgba(128, 128, 128, 0.294)
      .1rem;
-     width: 396px;
-     padding: .9rem;
+     width: 130px;
+     padding: .5rem;
      @extend .rounded-border;
+     background-color: transparent;
      font-family: $font-stack;
 }
 .text-input-unborded
@@ -20,18 +21,31 @@
 {
     width: 24rem;
     font-size: .98rem;
+    padding: .9rem;
 }
 .text-input-medium
 {
     width: 10rem;
     font-size: map-get($font-size,regular);
 }
-
+textarea
+{
+     background-color: transparent;
+     font-family: $font-stack;
+     border: none;
+     height: 550px;
+}
+textarea:focus
+{
+    outline: none;
+}
 .label
 {
     font-size: map-get($font-size, tiny );
     display: block;
     margin-left: .3rem;
+    padding: .5rem;
+    
     position: relative;
     &::after{
         content:"*";
@@ -48,4 +62,16 @@
 {
     line-height: 1.5rem;
     padding:.9rem;
+    
+
+}
+.col-component
+{
+    display: flex;
+    flex-direction: column;
+}
+.row-component
+{
+    display: flex;
+    align-items: center;
 }

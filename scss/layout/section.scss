@@ -203,7 +203,110 @@
     padding: 1rem;
     gap: 2rem;
 }
+.grided-section
+{
+    width: 100vw;
+    height: 100vh; 
+    display: grid ;
+    grid-template-columns: repeat(5,1fr);
+}
 .chat
 {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border: .01rem solid  rgba(128, 128, 128, 0.294);
+    &__header
+    {
+        border-bottom: .2rem solid $primary-color;
+        height: 5rem;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+    }
+    .message
+    {
+        background-color: black;
+        color: #ffffff;
+        padding: .4rem;
+        margin-bottom: 1.3rem;
+        &__client
+        {
+            align-items: center;
+            padding: .6rem;
+            font-size: .6rem;        
+            &--thumb{
+                width: 2.5rem;
+                height: 2.5rem;
+                padding-top: .5rem;
+                background-color: $primary-color;
+                border-radius: 10rem;
+                font-size: 1.3rem;
+                text-align: center;
+                margin-right: .5rem;
+            }
+            &--name
+            {
+                font-size: .8rem;
+            }
+        }
+    }
+}
+.displayed
+{
+    border: .01rem solid  rgba(128, 128, 128, 0.294);
+    grid-column: span 4;
+    position: relative;
+    .text-input
+    {
+        width: 12rem;
+    }
+    &__header
+    {
+        height: 5rem;
+        padding: 2rem;
+        width: 60vw;
+        justify-content: space-between;
+        border-bottom: .01rem solid  rgba(128, 128, 128, 0.294);
+    }
+    .input-component
+    {
+        padding: 1.5rem;
+        border-bottom: .01rem solid  rgba(128, 128, 128, 0.294);
+    }
+    textarea
+    {
+        width: 60vw;
+        padding: 1.2rem;
+        border-bottom: .01rem solid  rgba(128, 128, 128, 0.294);
+    }
+   &__footer
+   {
+       padding: 2rem;
+        display: flex;
+   }
+   &__content
+   {
+       padding: 2rem;
+     flex-direction: column;
+    .btn-larger
+    {
+        background-color:transparent;
+        border: 0.1rem solid rgba(128, 128, 128, 0.294);
+        margin-top: 1rem;
+        font-size: map-get($font-size , tiny );
+        text-align: left;
+        color: $secondary-color;
+        padding: 1.2rem;
+
+    }
+   }
+   .container
+   {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       text-align: center;
+       transform: translate(-50%,-50%);
+   }
 }

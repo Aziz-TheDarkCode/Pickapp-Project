@@ -157,5 +157,79 @@
   padding: 1rem;
   gap: 2rem; }
 
+.grided-section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+
 .chat {
-  background-color: red; }
+  display: flex;
+  flex-direction: column;
+  border: 0.01rem solid rgba(128, 128, 128, 0.294); }
+  .chat__header {
+    border-bottom: 0.2rem solid #BFA660;
+    height: 5rem;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .chat .message {
+    background-color: black;
+    color: #ffffff;
+    padding: .4rem;
+    margin-bottom: 1.3rem; }
+    .chat .message__client {
+      align-items: center;
+      padding: .6rem;
+      font-size: .6rem; }
+      .chat .message__client--thumb {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-top: .5rem;
+        background-color: #BFA660;
+        border-radius: 10rem;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-right: .5rem; }
+      .chat .message__client--name {
+        font-size: .8rem; }
+
+.displayed {
+  border: 0.01rem solid rgba(128, 128, 128, 0.294);
+  grid-column: span 4;
+  position: relative; }
+  .displayed .text-input {
+    width: 12rem; }
+  .displayed__header {
+    height: 5rem;
+    padding: 2rem;
+    width: 60vw;
+    justify-content: space-between;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.294); }
+  .displayed .input-component {
+    padding: 1.5rem;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.294); }
+  .displayed textarea {
+    width: 60vw;
+    padding: 1.2rem;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.294); }
+  .displayed__footer {
+    padding: 2rem;
+    display: flex; }
+  .displayed__content {
+    padding: 2rem;
+    flex-direction: column; }
+    .displayed__content .btn-larger {
+      background-color: transparent;
+      border: 0.1rem solid rgba(128, 128, 128, 0.294);
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      text-align: left;
+      color: #1e1e1e;
+      padding: 1.2rem; }
+  .displayed .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
