@@ -1,0 +1,134 @@
+@import"../abstract/classes";
+@import"../abstract/mixins";
+@import"../abstract/variables";
+@import"../base/typography";
+.card
+{
+
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    font-size: map-get($font-size, regular);
+
+    .icon
+    {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+}
+.card__category
+{       
+    height: 280px;
+    background-image: url("https://im0-tub-com.yandex.net/i?id=856ca5611a3be2d65ff1b181c083126f&n=13");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $main-color;
+    &--details
+    {
+        position: absolute;
+        bottom: 1rem;
+        z-index: 1;
+        left: 1rem;
+        font-size: map-get($font-size,regular);
+    }
+    &::after
+    {
+        content: "";
+        display: flex;
+        align-items: flex-end;
+        padding: 1.2rem;
+        background:linear-gradient(to top ,#1e1e1ebd,transparent);
+        color: $main-color;
+        position: absolute;
+        bottom: 0;
+        height: 18rem;
+        width: 100vw;
+    }
+}
+.card__product
+{
+    height: auto;
+    background-color: $main-color;
+    position: relative;
+    overflow: hidden;
+
+    .layer{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        padding:2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s ease-in;
+    }
+    .layer:hover{
+        opacity:1;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) ,transparent);
+    }
+    &--img
+    {
+      max-width: 100%;  
+    }
+    &--description
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        padding: 1rem;
+        line-height: 2rem;
+        font-size: 1rem;
+        &::after
+            {
+                content: "";
+                background-color: rgba(128, 128, 128, 0.294);
+                position: absolute;
+                bottom :0;
+                width: 100%;
+                left: .4rem;
+                height: .02rem;
+            }
+    }
+
+    &--title
+    {
+    
+    }
+    &--footer
+    {
+        padding: .9rem;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+    
+    }
+    .icon
+        {
+            display: flex;
+            width: 85%;
+            align-items: center;
+            margin: auto;
+            justify-content: space-between;
+            p
+                {
+                    @include set-background($secondary-color);
+                    padding: .5rem;
+                    width: 04rem;
+                    text-align: center;
+                    font-size: map-get($font-size, tiny );
+                    @extend .rounded-border;
+                }
+        }
+
+
+     
+}
+.greyed-out
+{
+   filter:grayscale(100%) ;
+   
+}

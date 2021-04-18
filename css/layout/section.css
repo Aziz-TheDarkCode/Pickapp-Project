@@ -1,0 +1,158 @@
+.text-larger {
+  font-size: 2.5rem;
+  padding: 1rem; }
+
+.text-medium {
+  font-size: 1.5rem; }
+
+.text-semi {
+  font-size: 1.2rem; }
+
+.green-text {
+  color: green; }
+
+.red-text {
+  color: red; }
+
+.golden-text {
+  color: #BFA660; }
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294); }
+
+.login__section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100vh; }
+  .login__section--illustration {
+    grid-column: span 3;
+    background-image: url("../../../assets/Illustration@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .login__section--footer {
+    line-height: 2.2rem;
+    transform: translateX(-75px);
+    margin-top: 2rem; }
+    .login__section--footer a {
+      color: #BFA660; }
+
+.container {
+  background-color: #fafafb;
+  grid-column: span 4;
+  height: 100vh; }
+  .container section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .container section .section {
+      padding: 1.2rem; }
+      .container section .section__content--header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #1e1e1e;
+        padding: 1rem; }
+        .container section .section__content--header div {
+          line-height: 2rem;
+          font-weight: bold; }
+      .container section .section__content--right {
+        background-color: #ffff;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: calc(100vh - 5rem); }
+        .container section .section__content--right .article {
+          display: flex;
+          align-items: center;
+          padding: .6rem;
+          font-size: 0.8rem;
+          line-height: 1.2rem; }
+          .container section .section__content--right .article .icon {
+            border-radius: 5rem;
+            margin-right: .5rem;
+            height: 2rem; }
+            .container section .section__content--right .article .icon:nth-child(odd) {
+              background-color: #d5c597; }
+            .container section .section__content--right .article .icon:nth-child(even) {
+              background-color: #444444; }
+            .container section .section__content--right .article .icon ion-icon {
+              font-size: 1.2rem; }
+          .container section .section__content--right .article .rounded-img {
+            border-radius: 2rem;
+            width: 03rem;
+            height: 03rem;
+            margin-right: 1rem; }
+      .container section .section__content--left {
+        background-color: initial;
+        grid-column: span 3;
+        overflow: scroll;
+        height: 100vh; }
+        .container section .section__content--left::-webkit-scrollbar {
+          display: none; }
+    .container section .no-aside {
+      grid-column: span 4;
+      height: 100vh;
+      overflow: scroll;
+      height: 100vh; }
+      .container section .no-aside::-webkit-scrollbar {
+        display: none; }
+      .container section .no-aside .section__content--header {
+        background-color: #ffff;
+        padding: 1.6rem; }
+        .container section .no-aside .section__content--header div {
+          font-size: smaller;
+          width: 20rem; }
+      .container section .no-aside::-webkit-scrollbar {
+        display: none; }
+      .container section .no-aside .box__section--small {
+        max-width: 80%; }
+
+.box__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto; }
+  .box__section--small {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.2rem;
+    gap: 1rem; }
+    .box__section--small .box {
+      background-color: #ffff;
+      color: #1e1e1e;
+      height: 7rem;
+      border-radius: .9rem;
+      font-size: smaller;
+      padding: .5rem; }
+      .box__section--small .box h1 {
+        font-size: 1.5rem; }
+      .box__section--small .box h4 {
+        opacity: .6; }
+    .box__section--small .box:nth-child(1) {
+      background-color: #BFA660;
+      color: #ffff; }
+  .box__section--larger {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.2rem;
+    gap: 2rem; }
+    .box__section--larger .box {
+      background-color: #ffff;
+      border-radius: .9rem;
+      height: 20rem; }
+  .box__section--medium {
+    background-color: #ffff;
+    height: 25rem;
+    width: 95%;
+    margin: auto;
+    border-radius: .9rem; }
+
+.row-five-items {
+  grid-template-columns: repeat(5, 1fr); }
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 2rem; }

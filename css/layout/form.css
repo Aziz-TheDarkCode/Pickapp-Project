@@ -1,0 +1,38 @@
+.text-larger {
+  font-size: 2.5rem;
+  padding: 1rem; }
+
+.text-medium {
+  font-size: 1.5rem; }
+
+.text-semi {
+  font-size: 1.2rem; }
+
+.green-text {
+  color: green; }
+
+.red-text {
+  color: red; }
+
+.golden-text {
+  color: #BFA660; }
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294); }
+
+.form--login__section {
+  background-color: #ffff;
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; }
+  .form--login__section .greeting {
+    text-align: left;
+    transform: translateX(-90px);
+    margin-top: 5rem; }
+    .form--login__section .greeting h1 {
+      font-size: 3.5rem; }
+    .form--login__section .greeting span {
+      opacity: 0.7; }

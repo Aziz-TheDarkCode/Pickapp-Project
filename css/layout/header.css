@@ -1,0 +1,74 @@
+.text-larger {
+  font-size: 2.5rem;
+  padding: 1rem; }
+
+.text-medium {
+  font-size: 1.5rem; }
+
+.text-semi {
+  font-size: 1.2rem; }
+
+.green-text {
+  color: green; }
+
+.red-text {
+  color: red; }
+
+.golden-text {
+  color: #BFA660; }
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.294); }
+
+header {
+  grid-column: span 6;
+  height: 5rem;
+  border: 0.01rem solid rgba(128, 128, 128, 0.294);
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  width: 100%; }
+  header .search-box {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1; }
+    header .search-box .search-component {
+      position: relative;
+      margin-left: 3rem; }
+      header .search-box .search-component .placeholder {
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        top: .2rem;
+        left: 1rem;
+        align-items: center; }
+        header .search-box .search-component .placeholder p {
+          font-size: 0.8rem; }
+        header .search-box .search-component .placeholder ion-icon {
+          font-size: 1.8rem;
+          margin-right: .7rem; }
+  header .user-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    width: 20rem;
+    margin-left: 2rem; }
+    header .user-info img {
+      width: 03rem; }
+  header .notification {
+    position: relative; }
+    header .notification .notif {
+      position: absolute;
+      top: .3rem;
+      right: .5rem;
+      background-color: red;
+      border-radius: 2rem;
+      padding: .1rem;
+      height: 1.2rem;
+      font-size: 0.8rem;
+      width: 1.2rem;
+      text-align: center;
+      color: #BFA660; }

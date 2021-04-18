@@ -1,0 +1,44 @@
+@import"../abstract/variables";
+@import"../abstract/classes";
+@import"../abstract/functions";
+@import"../abstract/mixins";
+@import"../base/typography";
+
+.btn
+{
+    padding: .7rem;
+    text-align: center;
+    @extend .rounded-border;
+    border: none;
+    width: 7rem;
+}
+//Button Color
+.btn-black
+{
+    @include set-background($secondary-color)
+}
+.btn-golden
+{
+    @include set-background($primary-color)
+}
+.btn-gray {
+    background-color: darken($tertiary-color, 03%);
+    color: $secondary-color;
+}
+
+//Button Size
+.btn-larger
+{
+    width: 418px;
+    font-size: map-get($font-size,regular);
+}
+
+.btn-medium
+{
+    width: 198px;
+}
+.btn-transparent-bg
+{
+    border: 2px solid   white;
+    background-color: transparent;
+}
