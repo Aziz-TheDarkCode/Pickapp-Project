@@ -26,7 +26,7 @@
   height: 100vh; }
   .login__section--illustration {
     grid-column: span 3;
-    background-image: url("../../../assets/Illustration@2x.png");
+    background-image: url("../../images/Illustration@2x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -156,3 +156,6 @@
   grid-template-columns: repeat(4, 1fr);
   padding: 1rem;
   gap: 2rem; }
+
+.chat {
+  background-color: red; }

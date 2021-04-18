@@ -113,12 +113,3 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   background-color: red; }
-
-  .col-9
-{
-  background-color: red;
-}
-.col-3
-{
-  background-color: yellow;
-}
