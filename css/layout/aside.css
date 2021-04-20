@@ -20,6 +20,9 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 aside {
   background-color: #ffff;
   border: 1px solid rgba(128, 128, 128, 0.294);
@@ -53,5 +56,5 @@ aside {
     opacity: 1;
     font-weight: 700; }
   .section-title {
-    font-size: 0.8rem;
+    font-size: 14px;
     padding: 1.2rem; }

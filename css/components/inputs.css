@@ -26,10 +26,11 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 .text-input {
-  border: solid rgba(128, 128, 128, 0.294) 0.1rem;
-  width: 130px;
-  padding: .5rem;
+  border: solid rgba(128, 128, 128, 0.294) 1px;
   background-color: transparent;
   font-family: "Poppins", sans-serif; }
 
@@ -37,7 +38,6 @@
   border: none; }
 
 .text-input-larger {
-  width: 24rem;
   font-size: .98rem;
   padding: .9rem; }
 
@@ -55,25 +55,18 @@ textarea:focus {
   outline: none; }
 
 .label {
-  font-size: 0.8rem;
+  font-size: 14px;
   display: block;
-  margin-left: .3rem;
-  padding: .5rem;
+  padding: .5rem 0;
+  font-weight: bold;
   position: relative; }
-  .label::after {
-    content: "*";
-    color: red;
-    top: 0;
-    right: 0; }
 
 .input-component {
   line-height: 1.5rem;
-  padding: .9rem; }
-
-.col-component {
-  display: flex;
-  flex-direction: column; }
-
-.row-component {
-  display: flex;
-  align-items: center; }
+  margin: 1.5rem 0rem; }
+  .input-component.inline {
+    display: flex;
+    align-items: center; }
+  .input-component.block {
+    display: flex;
+    flex-direction: column; }

@@ -20,6 +20,9 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 header {
   grid-column: span 6;
   height: 5rem;
@@ -45,14 +48,14 @@ header {
         left: 1rem;
         align-items: center; }
         header .search-box .search-component .placeholder p {
-          font-size: 0.8rem; }
+          font-size: 14px; }
         header .search-box .search-component .placeholder ion-icon {
           font-size: 1.8rem;
           margin-right: .7rem; }
   header .user-info {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 14px;
     line-height: 1.2rem;
     width: 20rem;
     margin-left: 2rem; }
@@ -68,7 +71,7 @@ header {
       border-radius: 2rem;
       padding: .1rem;
       height: 1.2rem;
-      font-size: 0.8rem;
+      font-size: 14px;
       width: 1.2rem;
       text-align: center;
       color: #BFA660; }

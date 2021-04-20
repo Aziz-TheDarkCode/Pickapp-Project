@@ -20,19 +20,17 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 .form--login__section {
   background-color: #ffff;
   grid-column: span 2;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-  text-align: left; }
-  .form--login__section .greeting {
-    text-align: left;
-    transform: translateX(-90px);
-    margin-top: 5rem; }
-    .form--login__section .greeting h1 {
-      font-size: 3.5rem; }
-    .form--login__section .greeting span {
-      opacity: 0.7; }
+  text-align: left;
+  padding: 2rem; }
+  .form--login__section > div {
+    width: 80%;
+    margin: 0 auto; }

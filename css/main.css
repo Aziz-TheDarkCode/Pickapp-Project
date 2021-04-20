@@ -20,9 +20,15 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 @font-face {
-  src: url(../../font/sofiapro-light.otf);
-  font-family: sofia; }
+  font-family: 'Sofia Pro';
+  src: url("../../fonts/Sofia/sofia-regular.otf") format("otf"); }
+
+html, body {
+  font-family: 'Sofia Pro'; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,7 +59,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-size: 16px;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
   overflow: hidden; }
 
 ol, ul {
@@ -84,9 +89,6 @@ input:focus {
 input:active {
   outline: none; }
 
-* {
-  font-family: "Poppins", sans-serif; }
-
 .text-larger {
   font-size: 2.5rem;
   padding: 1rem; }
@@ -108,6 +110,9 @@ input:active {
 
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
+
+.text-bold {
+  font-weight: bold; }
 
 main {
   display: grid;

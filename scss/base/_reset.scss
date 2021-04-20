@@ -1,8 +1,11 @@
 @import "typography";
 @font-face
 {
-   src: url(../../font/sofiapro-light.otf);
-   font-family: sofia;
+	font-family: 'Sofia Pro';
+	src: url("../../fonts/Sofia/sofia-regular.otf") format('otf');
+}
+html,body{
+	font-family: 'Sofia Pro';
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     font-size: 16px;
 	line-height: 1;
-	font-family: $font-stack;
+	// font-family: $font-stack;
 	overflow: hidden;
 }
 ol, ul {
@@ -69,5 +72,5 @@ input:active
 }
 *
 {
-	font-family: $font-stack;
+	// font-family: $font-stack;
 }

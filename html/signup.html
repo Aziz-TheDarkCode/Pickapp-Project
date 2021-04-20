@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sign up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
@@ -15,31 +16,39 @@
 </head>
 <body>
     <section class="login__section">
-        <form action="" class="form--login__section">
-            <div class="greeting">
-                <h1>Hello,</h1>
-                <span>Login your account here</span>
+        <div class="form--login__section">
+            <div>
+                <div class="greeting">
+                    <h1 class="mb-1">Hello,</h1>
+                    <span class="gray-text">Create your account here</span>
+                </div>
+                <form action="">
+                    <div class="input__section">
+                        <div class="input-component block">
+                            <div class="d-flex align-items-center">
+                                <label class="label d-block">First Name</label>
+                                <span class="red-text ml-2">*</span>
+                            </div>
+                            <input type="text" class="text-input text-input-larger" placeholder="Enter your first name" name="fname">
+                        </div>
+                        <div class="input-component block">
+                            <label class="label">Last Name</label>
+                            <input type="text" class="text-input text-input-larger" placeholder="Enter your last name" name="lname">
+                        </div>
+                        <div class="input-component block">
+                            <label class="label">Email</label>
+                            <input type="text" class="text-input text-input-larger" placeholder="Enter your email" name="mail">
+                        </div>
+                        <div class="input-component block">
+                            <label class="label">Phone Number</label>
+                            <input type="text" class="text-input text-input-larger" placeholder="Country code | Phone number"
+                                name="number">
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-golden btn-larger" value="Next Step">
+                </form>
             </div>
-            <div class="input__section">
-                <div class="input-component">
-                    <label class="label">First Name</label>
-                    <input type="text" class="text-input text-input-larger" placeholder="Enter your first name" name="fname">
-                </div>
-                <div class="input-component">
-                    <label class="label">Last Name</label>
-                    <input type="text" class="text-input text-input-larger" placeholder="Enter your last name" name="lname">
-                </div>
-                <div class="input-component">
-                    <label class="label">Email</label>
-                    <input type="text" class="text-input text-input-larger"placeholder="Enter your email" name="mail"> 
-                </div>
-                <div class="input-component">
-                    <label class="label">Phone Number</label>
-                    <input type="text" class="text-input text-input-larger" placeholder="Country code | Phone number" name="number">
-                </div>
-            </div>
-            <input type="submit" class="btn btn-golden btn-larger" value="Next Step">           
-        </form>
+        </div>
         <div class="login__section--illustration"></div>
     </section>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

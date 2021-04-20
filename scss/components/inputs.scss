@@ -1,13 +1,12 @@
 @import"../abstract/classes";
 @import"../abstract/variables";
 @import"../base/typography";
+
 .text-input
 {
    
     border:  solid rgba(128, 128, 128, 0.294)
-     .1rem;
-     width: 130px;
-     padding: .5rem;
+     1px;
      @extend .rounded-border;
      background-color: transparent;
      font-family: $font-stack;
@@ -19,7 +18,6 @@
 // text-input size
 .text-input-larger
 {
-    width: 24rem;
     font-size: .98rem;
     padding: .9rem;
 }
@@ -43,17 +41,9 @@ textarea:focus
 {
     font-size: map-get($font-size, tiny );
     display: block;
-    margin-left: .3rem;
-    padding: .5rem;
-    
+    padding: .5rem 0;
+    font-weight: bold;
     position: relative;
-    &::after{
-        content:"*";
-        color: red;
-        top: 0;
-        right: 0;
-
-    }
 }
 
 
@@ -61,17 +51,23 @@ textarea:focus
 .input-component
 {
     line-height: 1.5rem;
-    padding:.9rem;
-    
-
-}
-.col-component
-{
-    display: flex;
-    flex-direction: column;
-}
-.row-component
-{
-    display: flex;
+    margin: 1.5rem 0rem;
+    &.inline{
+        display: flex;
     align-items: center;
+    }
+    &.block{
+        display: flex;
+    flex-direction: column;
+    }
 }
+// .col-component
+// {
+//     display: flex;
+//     flex-direction: column;
+// }
+// .row-component
+// {
+//     display: flex;
+//     align-items: center;
+// }

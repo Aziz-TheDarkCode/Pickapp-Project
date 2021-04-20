@@ -26,6 +26,9 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 .btn {
   padding: .7rem;
   text-align: center;

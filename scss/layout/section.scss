@@ -1,11 +1,11 @@
 @import"../abstract/variables";
 @import"../abstract/mixins";
 @import"../base/typography";
+
 .login__section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     height: 100vh;
-
     &--illustration {
         grid-column: span 3;
         background-image: url("../../images/Illustration@2x.png");
@@ -22,6 +22,15 @@
             color: $primary-color
         }
     }
+    .greeting {
+		text-align: left;
+		h1 {
+			font-size: map-get($font-size, larger);
+		}
+		span {
+			opacity: 0.7;
+		}
+	}
 }
 .container {
     background-color: $tertiary-color;

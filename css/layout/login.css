@@ -20,6 +20,9 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 .greeting h1 {
   font-size: 3.5rem; }
 

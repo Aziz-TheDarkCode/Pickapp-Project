@@ -26,6 +26,9 @@
 .gray-text {
   color: rgba(128, 128, 128, 0.294); }
 
+.text-bold {
+  font-weight: bold; }
+
 .card {
   border-radius: 16px;
   overflow: hidden;
@@ -114,7 +117,7 @@
       padding: .5rem;
       width: 04rem;
       text-align: center;
-      font-size: 0.8rem; }
+      font-size: 14px; }
 
 .greyed-out {
   filter: grayscale(100%); }
