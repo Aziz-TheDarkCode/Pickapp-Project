@@ -1,15 +1,23 @@
+.text-x-larger {
+  font-size: 40px;
+  padding: 1rem; }
+
 .text-larger {
-  font-size: 2.5rem;
+  font-size: 32px;
   padding: 1rem; }
 
 .text-medium {
-  font-size: 1.5rem; }
+  font-size: 24px; }
 
 .text-semi {
-  font-size: 1.2rem; }
+  font-size: 16px; }
 
 .green-text {
-  color: green; }
+  background-color: #e6ffe6;
+  color: green;
+  border-radius: .3rem;
+  font-size: smaller;
+  padding: .3rem; }
 
 .red-text {
   color: red; }
@@ -18,7 +26,7 @@
   color: #BFA660; }
 
 .gray-text {
-  color: rgba(128, 128, 128, 0.294); }
+  color: rgba(128, 128, 128, 0.973); }
 
 .text-bold {
   font-weight: bold; }
@@ -57,8 +65,9 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
+  font-family: "Poppins", sans-serif;
   overflow: hidden; }
 
 ol, ul {
@@ -89,18 +98,26 @@ input:focus {
 input:active {
   outline: none; }
 
+.text-x-larger {
+  font-size: 40px;
+  padding: 1rem; }
+
 .text-larger {
-  font-size: 2.5rem;
+  font-size: 32px;
   padding: 1rem; }
 
 .text-medium {
-  font-size: 1.5rem; }
+  font-size: 24px; }
 
 .text-semi {
-  font-size: 1.2rem; }
+  font-size: 16px; }
 
 .green-text {
-  color: green; }
+  background-color: #e6ffe6;
+  color: green;
+  border-radius: .3rem;
+  font-size: smaller;
+  padding: .3rem; }
 
 .red-text {
   color: red; }
@@ -109,12 +126,11 @@ input:active {
   color: #BFA660; }
 
 .gray-text {
-  color: rgba(128, 128, 128, 0.294); }
+  color: rgba(128, 128, 128, 0.973); }
 
 .text-bold {
   font-weight: bold; }
 
 main {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: red; }
+  grid-template-columns: 1fr 4fr; }

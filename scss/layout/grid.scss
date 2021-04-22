@@ -1,6 +1,6 @@
 main
 {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    background-color: red;
+    grid-template-columns: 1fr 4fr;
+
 }
