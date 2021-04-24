@@ -1,13 +1,9 @@
-let cardBefore= document.querySelectorAll(".card__product");
-cardBefore.forEach(elem=>{
-    elem.addEventListener("mouseenter",x=>{
-        if(x.target.className == 'card card__product'){
-            x.target.app
-        }
-    })
-    elem.addEventListener("mouseleave",x=>{
-        if(x.target.className == 'card card__product'){
-            console.log(x.target.className);
-        }
-    })
-})
+let links=document.querySelectorAll(".links");
+
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }

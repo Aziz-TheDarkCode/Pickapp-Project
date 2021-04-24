@@ -6,15 +6,18 @@
     <title>Revenue</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/cards.css'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/charts.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/grid.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/section.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-4-utilities.min.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 </head>
@@ -29,14 +32,15 @@
                         <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
                     </a>
                     <a href="../Dashboard.html">
-                        <li><ion-icon name="clipboard-outline" class="current"></ion-icon>Dashboard</li>
+                        <li><ion-icon name="clipboard-outline"></ion-icon>Dashboard</li>
                     </a>
-                    <a href="#">
-                        <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
-                    </a>
+                    <a class="click-text">
+                        <li class="current"><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
+                         <span class="arrow"></span>
+                       </a>
                         <div class="dropdown--links">
                             <a href="Revenue.html">
-                                <li>Revenue</li>
+                                <li class="text-bold">Revenue</li>
                             </a>
                             <a href="Customers.html">
                                 <li>Customers</li>
@@ -45,7 +49,7 @@
                                 <li>Products list</li>
                             </a>
                         </div>
-                    <a href="#">
+                    <a href="../products-list.html">
                         <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
                     </a>
                 </ul>
@@ -53,10 +57,10 @@
             <div class="section">
                 <p class="section-title">OTHER</p>
                     <ul>
-                        <a href="#">
+                        <a href=../message.html">
                             <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
                         </a>
-                        <a href="#">
+                        <a href="../Settings/invoice.html">
                             <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
                         </a>
                     </ul>
@@ -88,7 +92,7 @@
             <section>
                 <div class="no-aside">
                     <div class="section__content--header">
-                        <h1 class="text-medium">Revenue</h1>
+                        <h1 class="text-medium text-bold">Revenue</h1>
                         <select class="btn">
                             <option value="">This month</option>
                             <option value="dog">Dog</option>
@@ -100,31 +104,37 @@
                         </select>
                     </div>
                     <div class="box__section">
-                        <div class="box__section--small">
+                        <div class="box__section--small text-bold">
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+31,45</h6>
-                                <h1>$10,478.00</h1>
-                                <h4>Total revenue</h4>
+                                <h6 class=" d-flex align-items-center text-bold">+32,45%<ion-icon class="text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">$10,478.00</h1>
+                                <h4 class="gray-text">Total revenue</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+17</h6>
-                                <h1>1485<h1>
-                                <h4>Total Customers</h4>
+                                <h6 class="d-flex align-items-center green-text text-bold">+32,5%<ion-icon class="ml-2 lighten-green-bg text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">128<h1>
+                                <h4 class="gray-text">Total sales</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>-17</h6>
-                                <h1>3275</h1>
-                                <h4>Total Sale</h4>
+                                <h6 class=" d-flex align-items-center green-text text-bold">+17<ion-icon class="ml-2 lighten-green-bg text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">1445</h1>
+                                <h4 class="gray-text">Total customers</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+32,45</h6>
-                                <h1>$15</h1>
-                                <h4>Average spend</h4>
+                                <h6 class=" d-flex align-items-center red-text text-bold">-124<ion-icon class="ml-2 lighten-red-bg text-x-smaller" name="arrow-down-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">3277</h1>
+                                <h4 class="gray-text">Average spend</h4>
                             </div>
                         </div>
                         <div class="box__section--larger">
-                            <div class="box"></div>
-                            <div class="box"></div>
+                            <div class="box p-4">
+                                <p class="text-bold mb-2">Average spending</p>
+                                    <div class="ct-chart ct-perfect-fourth" id="chart4"></div>
+                            </div>
+                            <div class="box p-4">
+                                <p class="text-bold mb-2">Revenue this month</p>
+                            <div class="ct-chart ct-perfect-fourth" id="chart5"></div>
+                            </div>
                         </div>
                         <div class="box__section--medium">
                         
@@ -134,7 +144,11 @@
             </section>
         </div>
     </main>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src='main.js'></script>
+    <script src="../../js/chart.js">
+    </script>
+    <script src="../../js/dropdown.js">
+    </script>
 </body>
 </html>

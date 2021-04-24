@@ -4,13 +4,14 @@
 .bordered-section {
   border: 1px solid rgba(128, 128, 128, 0.294); }
 
+.text-x-smaller {
+  font-size: 10.2px; }
+
 .text-x-larger {
-  font-size: 40px;
-  padding: 1rem; }
+  font-size: 40px; }
 
 .text-larger {
-  font-size: 32px;
-  padding: 1rem; }
+  font-size: 32px; }
 
 .text-medium {
   font-size: 24px; }
@@ -19,14 +20,24 @@
   font-size: 16px; }
 
 .green-text {
-  background-color: #e6ffe6;
-  color: green;
+  color: #52bf85; }
+
+.lighten-green-bg {
   border-radius: .3rem;
   font-size: smaller;
-  padding: .3rem; }
+  padding: .3rem;
+  background-color: #52bf8533;
+  border-radius: 2rem; }
 
 .red-text {
   color: red; }
+
+.lighten-red-bg {
+  border-radius: .3rem;
+  font-size: smaller;
+  padding: .3rem;
+  background-color: #ff000029;
+  border-radius: 2rem; }
 
 .golden-text {
   color: #BFA660; }
@@ -68,3 +79,84 @@
 
 .btn-black-border {
   border: 0.2px solid #1e1e1e; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffff;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #BFA660; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #BFA660; }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+
+.toggler {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggler:before {
+  position: absolute;
+  content: "";
+  border-radius: 34px;
+  height: 26px;
+  width: 26px;
+  right: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.availiable::before {
+  content: "";
+  background-color: #1e1e1e;
+  left: 4px; }

@@ -20,16 +20,17 @@ aside
         margin: auto;
     }
 }
+
 .section
 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     li{
-        padding: .7rem;
+        padding: .5rem;
         display: flex;
         align-items: center;
         color: $secondary-color;
         font-size: .9rem;
-        opacity: .8;
+        opacity: 1;
         ion-icon{
             padding: .5rem;
             font-size: 1.45rem;
@@ -42,8 +43,9 @@ aside
     }
     .current
     {
-        opacity: 1;
-        font-weight: 700;
+    
+        font-weight: bold;
+        border-right: 2px solid $secondary-color;
     }
     &-title
     {

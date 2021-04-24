@@ -1,11 +1,22 @@
 @import "typography";
-@font-face
-{
-	font-family: 'Sofia Pro';
-	src: url("../../fonts/Sofia/sofia-regular.otf") format('otf');
+
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../../fonts/sofia_pro_light_az-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+// @font-face {
+//     font-family: "Sofia Pro regular";
+//     src: url('../../fonts/sofia_pro_medium_az-webfont.woff2') format('woff2');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
 html,body{
-	font-family: 'Sofia Pro';
+	font-family: $font-stack;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -34,7 +45,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    font-size: map-get($font-size , regular );
+    font-size: map-get($font-size ,regular);
 	line-height: 1;
 	font-family: $font-stack;
 	overflow: hidden;
@@ -59,7 +70,7 @@ a{
 }
 ion-icon
             {
-                font-size:2rem;
+                font-size:1.6rem;
 				padding: .5rem;
             }
 input:focus
@@ -72,5 +83,6 @@ input:active
 }
 *
 {
-	// font-family: $font-stack;
+	font-family: $font-stack;
+	font-weight: 5	00;
 }

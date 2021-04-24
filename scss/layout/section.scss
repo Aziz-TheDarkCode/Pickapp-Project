@@ -48,7 +48,7 @@
                 padding: 1rem;
                 div
                 {
-                    line-height: 2rem;
+                    line-height: 1.2rem;
                     font-weight: bold;
                 }
             }
@@ -100,7 +100,7 @@
                
                 &::-webkit-scrollbar
                 {
-                    display: none;
+                
                 }
             }
            
@@ -159,10 +159,6 @@
             border-radius: .9rem;
             font-size: smaller;
             padding: .5rem;
-            h1
-            {
-                font-size: map-get($font-size, semi);
-            }
             h4{
                 opacity: .6;
             }
@@ -182,15 +178,34 @@
         {
             background-color:$main-color ;
             border-radius: .9rem;
-            height: 20rem;
-            
+            height: auto;
+            #chart1
+            {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
+                padding: 1.5rem;
+    
+            }
+            #chart2
+            {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
+            }
+            #chart3
+            {
+                width: 100%;
+                height: 100%;
+                margin-top: 1rem;
+            }
         }
     }
     &--medium
     {
 
         background-color:$main-color;
-        height: 25rem;
+        height: auto;
         width: 95%;
         margin: auto;
         border-radius: .9rem;
@@ -209,26 +224,47 @@
 }
 .grided__section
 {
-    width: 85vw;
     height: 100vh; 
     display: grid ;
-    grid-template-columns: 1.2fr 4fr;
+    grid-template-columns: 1.5fr 4fr;
     background-color:$main-color;
     &--left{
         display: grid;
         grid-template-columns: 1fr;
         height: 10rem;
+        &--header
+        {
+            border-bottom: 3px $primary-color solid;
+            text-align: center;
+            padding: 2rem;
+            height: 05rem;
+            color: $primary-color;
+        }
         .links
         {
            
-            padding: 1.2rem;
+            padding: .8rem;
             color: $secondary-color;
             opacity: .6;
             line-height: 1.5rem;
             font-size: .9rem;
+
+            div
+            {
+                
+                span{
+                    background-color:$primary-color;
+                    border-radius: 2rem;
+                    padding: .5rem;
+                    height: 3rem;
+                    text-align: center;
+                    width: 3rem;
+                    font-size: 1.3rem;
+                }
+            }
             p:nth-child(2)
             {
-                font-size: .6rem;
+                font-size: .7rem;
     
             }
             ion-icon
@@ -305,6 +341,7 @@
             background-color:$main-color;
             border-radius: 16px;
             height: 20rem;
+            text-align: center;
             .btn
             {
                 padding: 1.3rem;

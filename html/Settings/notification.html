@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Bank</title>
+    <title>Notifications</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
    <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/cards.css'>
@@ -91,11 +91,11 @@
                             <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
-                        <a href="bank.html" class="links active">
+                        <a href="bank.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
                             <p class="ml-4">Billing information,card information</p>
                         </a>
-                        <a href="notification.html" class="links">
+                        <a href="notification.html" class="links active">
                             <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
@@ -113,18 +113,43 @@
                             <p class="ml-4">Our terms and conditions</p>
                         </a>
                     </div>
-                       <div class="grided__section--right p-4 d-flex justify-content-center align-items-center">
-                           <div class="content">
-                               <img src="../../images/bank-illustration.png" alt="">
-                               <p class="text-semi text-bold">Bank account not linked</p>
-                               <p class="gray-text">Please add a bank account to receive <br>payments</p>
-                                <button class="btn btn-medium btn-golden">+ Enter bank details</button>
-                            </div>
+                       <div class="grided__section--right p-4">
+                               <div class="section p-4">
+                                   <p class="text-bold mb-3">Display alert notification when  :</p>
+                                   <div class=" text-semi d-flex align-items-center justify-content-between mb-4">
+                                       <p class="gray-text">An order is received</p>
+                                       <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                   </div>
+                                   <div class="  text-semi d-flex align-items-center justify-content-between mb-4">
+                                       <p class="gray-text">Stock falls bellow 20%</p>
+                                       <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                   </div>
+                                   <div class=" text-semi d-flex align-items-center justify-content-between mb-4">
+                                       <p class="gray-text">An order has been cancelled</p>
+                                       <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                   </div>
+                                   <div class=" text-semi d-flex align-items-center justify-content-between mb-4">
+                                       <p class="gray-text">A customer send a message</p>
+                                       <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>                                      
+                                   </div>
+                               </div>
                        </div>
                    </div>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src='/javascript/app.js'></script>
+    <script src='../../js/app.js'></script>
 </body>
 </html>

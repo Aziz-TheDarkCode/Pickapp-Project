@@ -1,10 +1,11 @@
+.text-x-smaller {
+  font-size: 10.2px; }
+
 .text-x-larger {
-  font-size: 40px;
-  padding: 1rem; }
+  font-size: 40px; }
 
 .text-larger {
-  font-size: 32px;
-  padding: 1rem; }
+  font-size: 32px; }
 
 .text-medium {
   font-size: 24px; }
@@ -13,14 +14,24 @@
   font-size: 16px; }
 
 .green-text {
-  background-color: #e6ffe6;
-  color: green;
+  color: #52bf85; }
+
+.lighten-green-bg {
   border-radius: .3rem;
   font-size: smaller;
-  padding: .3rem; }
+  padding: .3rem;
+  background-color: #52bf8533;
+  border-radius: 2rem; }
 
 .red-text {
   color: red; }
+
+.lighten-red-bg {
+  border-radius: .3rem;
+  font-size: smaller;
+  padding: .3rem;
+  background-color: #ff000029;
+  border-radius: 2rem; }
 
 .golden-text {
   color: #BFA660; }
@@ -33,10 +44,12 @@
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url("../../fonts/Sofia/sofia-regular.otf") format("otf"); }
+  src: url("../../fonts/sofia_pro_light_az-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 html, body {
-  font-family: 'Sofia Pro'; }
+  font-family: "Sofia Pro"; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,7 +80,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-size: 14px;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  font-family: "Sofia Pro";
   overflow: hidden; }
 
 ol, ul {
@@ -89,7 +102,7 @@ a {
   text-decoration: none; }
 
 ion-icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: .5rem; }
 
 input:focus {
@@ -98,13 +111,18 @@ input:focus {
 input:active {
   outline: none; }
 
+* {
+  font-family: "Sofia Pro";
+  font-weight: 5	00; }
+
+.text-x-smaller {
+  font-size: 10.2px; }
+
 .text-x-larger {
-  font-size: 40px;
-  padding: 1rem; }
+  font-size: 40px; }
 
 .text-larger {
-  font-size: 32px;
-  padding: 1rem; }
+  font-size: 32px; }
 
 .text-medium {
   font-size: 24px; }
@@ -113,14 +131,24 @@ input:active {
   font-size: 16px; }
 
 .green-text {
-  background-color: #e6ffe6;
-  color: green;
+  color: #52bf85; }
+
+.lighten-green-bg {
   border-radius: .3rem;
   font-size: smaller;
-  padding: .3rem; }
+  padding: .3rem;
+  background-color: #52bf8533;
+  border-radius: 2rem; }
 
 .red-text {
   color: red; }
+
+.lighten-red-bg {
+  border-radius: .3rem;
+  font-size: smaller;
+  padding: .3rem;
+  background-color: #ff000029;
+  border-radius: 2rem; }
 
 .golden-text {
   color: #BFA660; }

@@ -29,23 +29,23 @@
                         <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
                     </a>
                     <a href="../Dashboard.html">
-                        <li><ion-icon name="clipboard-outline" class="current"></ion-icon>Dashboard</li>
+                        <li><ion-icon name="clipboard-outline" ></ion-icon>Dashboard</li>
                     </a>
-                    <a href="#">
+                    <a href="">
                         <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
                     </a>
                         <div class="dropdown--links">
-                            <a href="Revenue.html">
+                            <a href="../Analytics/Revenue.html">
                                 <li>Revenue</li>
                             </a>
-                            <a href="Customers.html">
+                            <a href="../Analytics/Customers.html">
                                 <li>Customers</li>
                             </a>
-                            <a href="Product.html">
+                            <a href="../Analytics/Product.html">
                                 <li>Products list</li>
                             </a>
                         </div>
-                    <a href="#">
+                    <a href="../products-list.html">
                         <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
                     </a>
                 </ul>
@@ -53,11 +53,11 @@
             <div class="section">
                 <p class="section-title">OTHER</p>
                     <ul>
-                        <a href="#">
+                        <a href="../message.html">
                             <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
                         </a>
-                        <a href="#">
-                            <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
+                        <a href="invoice.html">
+                            <li class="current"><ion-icon name="settings-outline"></ion-icon>Settings</li>
                         </a>
                     </ul>
                 </div>
@@ -85,40 +85,39 @@
                         </div>
                 </div>
             </header>
-            <section>
                    <div class="grided__section">
-                       <div class="grided__section--left">
-                           <a href="" class="links active">
-                               <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
-                               <p class="ml-4">Transactions,Statements,etc</p>
-                           </a>
-                           <a href="bank.html" class="links">
-                               <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
-                               <p class="ml-4">Billing information,card information</p>
-                           </a>
-                           <a href="" class="links">
-                               <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
-                               <p class="ml-4">Transactions,Statements,etc</p>
-                           </a>
-                           <a href="" class="links">
-                               <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
-                               <p class="ml-4">Company informations,Password</p>
-                           </a>
-                           <a href="" class="links">
-                               <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
-                               <p class="ml-4">Our privacy policy</p>
-                           </a>
-                           <a href="" class="links">
-                               <p class="d-flex align-items-center">
-                                   <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
-                               <p class="ml-4">Our terms and conditions</p>
-                           </a>
-                       </div>
+                    <div class="grided__section--left">
+                        <a href="invoice.html" class="links active">
+                            <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
+                            <p class="ml-4">Transactions,Statements,etc</p>
+                        </a>
+                        <a href="bank.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
+                            <p class="ml-4">Billing information,card information</p>
+                        </a>
+                        <a href="notification.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
+                            <p class="ml-4">Transactions,Statements,etc</p>
+                        </a>
+                        <a href="account.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
+                            <p class="ml-4">Company informations,Password</p>
+                        </a>
+                        <a href="privacy.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
+                            <p class="ml-4">Our privacy policy</p>
+                        </a>
+                        <a href="legal.html" class="links">
+                            <p class="d-flex align-items-center">
+                                <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
+                            <p class="ml-4">Our terms and conditions</p>
+                        </a>
+                    </div>
                        <div class="grided__section--right p-4">
                                 <div class="grided__section--right-box-section">
                                     <span class="box-section--header d-flex align-items-center justify-content-between">
                                         <p class="text-medium">Payements from PICKAPP</p>
-                                        <button class="btn btn-gray"><ion-icon name="calendar-outline"></ion-icon>Last 3 months</button>  
+                                        <button class=" d-flex align-items-center btn btn-gray"><ion-icon name="calendar-outline"></ion-icon>Last 3 months</button>  
                                     </span>
                                         <div>
                                             <div class="d-flex flex-column justify-content-around">
@@ -141,7 +140,7 @@
                                 <div class="grided__section--right-box-section">
                                     <span class="box-section--header d-flex align-items-center justify-content-between">
                                         <p class="text-medium">Customers transactions</p>
-                                        <button class="btn btn-gray"><ion-icon name="calendar-outline"></ion-icon>Last 3 months</button>  
+                                        <button class=" d-flex align-items-center btn btn-gray"><ion-icon name="calendar-outline"></ion-icon>Last 3 months</button>  
                                     </span>
                                         <div>
                                             <div class="d-flex flex-column justify-content-around">
@@ -163,7 +162,6 @@
                                 </div>
                        </div>
                    </div>
-            </section>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

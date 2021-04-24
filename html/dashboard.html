@@ -5,9 +5,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dashboard</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/charts.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/grid.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
@@ -29,7 +31,7 @@
                         <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
                     </a>
                     <a href="Dashboard.html">
-                        <li><ion-icon name="clipboard-outline" class="current"></ion-icon>Dashboard</li>
+                        <li class="current"><ion-icon name="clipboard-outline"></ion-icon>Dashboard</li>
                     </a>
                     <a href="#">
                         <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
@@ -45,7 +47,7 @@
                                 <li>Products list</li>
                             </a>
                         </div>
-                    <a href="#">
+                    <a href="products-list.html">
                         <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
                     </a>
                 </ul>
@@ -56,7 +58,7 @@
                         <a href="#">
                             <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
                         </a>
-                        <a href="#">
+                        <a href="Settings/invoice.html">
                             <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
                         </a>
                     </ul>
@@ -91,37 +93,75 @@
             <section>
                 <div class="section__content--left">
                     <div class="section__content--header">
-                        <h1 class="text-medium">Dashboard</h1>
+                        <h1 class="text-bold text-medium">Dashboard</h1>
                     </div>
                     <div class="box__section">
-                        <div class="box__section--small">
+                        <div class="box__section--small text-bold">
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+32,45</h6>
-                                <h1>$10,478.00</h1>
-                                <h4>Total revenue</h4>
+                                <h6 class=" d-flex align-items-center text-bold">+32,45%<ion-icon class="text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">$10,478.00</h1>
+                                <h4 class="gray-text">Total revenue</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+17</h6>
-                                <h1>1485<h1>
-                                <h4>Total Customers</h4>
+                                <h6 class="d-flex align-items-center green-text text-bold">+32,5%<ion-icon class="ml-2 lighten-green-bg text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">1485<h1>
+                                <h4 class="gray-text">Total Customers</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>-17</h6>
-                                <h1>3275</h1>
-                                <h4>Total Sale</h4>
+                                <h6 class=" d-flex align-items-center green-text text-bold">+17<ion-icon class="ml-2 lighten-green-bg text-x-smaller" name="arrow-up-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">3275</h1>
+                                <h4 class="gray-text">Total Sale</h4>
                             </div>
                             <div class="box d-flex flex-column  justify-content-between">
-                                <h6>+32,45</h6>
-                                <h1>$15</h1>
-                                <h4>Average spend</h4>
+                                <h6 class=" d-flex align-items-center red-text text-bold">-124<ion-icon class="ml-2 lighten-red-bg text-x-smaller" name="arrow-down-outline"></ion-icon></h6>
+                                <h1 class="text-larger text-bold">$15</h1>
+                                <h4 class="gray-text">Average spend</h4>
                             </div>
                         </div>
                         <div class="box__section--larger">
-                            <div class="box"></div>
-                            <div class="box"></div>
+                            <div class="box p-4">
+                                <p class="text-bold">Total Customers in this month</p>
+                                    <div class="ct-chart ct-perfect-fourth" id="chart1"></div>
+                            </div>
+                            <div class="box p-4">
+                                <p class="text-bold">Most ordered products</p>
+                                <div class="d-flex align-items-center">
+                                    <div  class="ct-chart ct-perfect-fourth" id="chart2"></div>
+                                    <div class=" d-flex flex-column ">
+                                            <div class="p-2">
+                                               <div class="d-flex align-items-center">
+                                                <span class="text-medium golden-text">•</span>
+                                                <p class="text-bold">Vanilla Latte</p>
+                                               </div>
+                                                <div class="text-x-smaller gray-text">1.200(25%)</div>
+                                            </div>
+                                            <div class="p-2">
+                                               <div class="d-flex align-items-center">
+                                                <span class="text-medium black-text">•</span>
+                                                <p class="text-bold">Brown Sugar</p>
+                                               </div>
+                                                <div class="text-x-smaller gray-text">1.200(25%)</div>
+                                            </div>
+                                            <div class="p-2">
+                                               <div class="d-flex align-items-center">
+                                                <span class="text-medium gray-text">•</span>
+                                                <p class="text-bold">Other</p>
+                                               </div>
+                                                <div class="text-x-smaller gray-text">1.200(25%)</div>
+                                            </div>
+                                            <div class="p-2">
+                                               <div class="d-flex align-items-center">
+                                                <span class="text-medium gray-text">•</span>
+                                                <p class="text-bold">Other</p>
+                                               </div>
+                                                <div class="text-x-smaller gray-text">1.200(25%)</div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="box__section--medium">
-                        
+                            <div class="ct-chart ct-perfect-fourth" id="chart3"></div>
                         </div>    
                     </div>
                 </div> 
@@ -191,7 +231,9 @@
             </section>
         </div>
     </main>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src='main.js'></script>
+    <script src="../js/chart.js">
+    </script>
 </body>
 </html>

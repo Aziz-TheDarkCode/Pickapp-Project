@@ -29,8 +29,8 @@
                     <a href="#">
                         <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
                     </a>
-                    <a href="../Dashboard.html">
-                        <li><ion-icon name="clipboard-outline" class="current"></ion-icon>Dashboard</li>
+                    <a href="Dashboard.html">
+                        <li><ion-icon name="clipboard-outline"></ion-icon>Dashboard</li>
                     </a>
                     <a href="#">
                         <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
@@ -46,18 +46,18 @@
                                 <li>Products list</li>
                             </a>
                         </div>
-                    <a href="#">
-                        <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
+                    <a href="products-list.html">
+                        <li class="current"><ion-icon name="grid-outline"></ion-icon>Product List</li>
                     </a>
                 </ul>
             </div>
             <div class="section">
                 <p class="section-title">OTHER</p>
                     <ul>
-                        <a href="#">
+                        <a href="message.html">
                             <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
                         </a>
-                        <a href="#">
+                        <a href="Settings/invoice.html">
                             <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
                         </a>
                     </ul>
@@ -109,15 +109,18 @@
                                 <ion-icon name="grid-outline"></ion-icon>
                                 <p>New</p>
                             </div>
-                            <img src="../images/J95Rub.jpg" alt="" class="card__product--img ">
+                            <img src="../../images/J95Rub.jpg" alt="" class="card__product--img ">
                             <div class="card__product--description">
                                 <p class="card__product--title">Pizza Alberta</p>
                                 <p class="card__product--price golden-text">$ 2.29</p>
                                 <p class="card__product--status">100 stock avaliable</p>
                             </div>
                             <div class="card__product--footer">
-                                <ion-icon name="toggle-outline"></ion-icon>
-                                <p  class="red-text">Out of stock</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggler availiable"></span>
+                                  </label>                                  
+                                <p  class="ml-2 text-bold green-text">Stock Availiable</p>
                             </div>
                         </div>
                         <div class="card card__product">
@@ -132,13 +135,16 @@
                                 <p class="card__product--status">100 stock avaliable</p>
                             </div>
                             <div class="card__product--footer">
-                                <ion-icon name="toggle-outline"></ion-icon>
-                                <p class="green-text">Stock avaliable</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggler"></span>
+                                  </label>                                  
+                                <p class="ml-2 text-bold red-text">Out of stock</p>
                             </div>
                         </div>
                         <div class="card card__product">
                             <div class="icon">
-                                <ion-icon name="grid-outline"></ion-icon>
+                                <ion-icon name="grid-outline"></ion-icon>                              
                                 <p>New</p>
                             </div>
                             <img src="../images/J95Rub.jpg"" alt="" class="card__product--img">
@@ -148,40 +154,12 @@
                                 <p class="card__product--status">100 stock avaliable</p>
                             </div>
                             <div class="card__product--footer">
-                                <ion-icon name="toggle-outline"></ion-icon>
-                                <p class="green-text">Stock avaliable</p>
-                            </div>
-                        </div>
-                        <div class="card card__product">
-                            <div class="icon">
-                                <ion-icon name="grid-outline"></ion-icon>
-                                <p>New</p>
-                            </div>
-                            <img src="../images/J95Rub.jpg"" alt="" class="card__product--img greyed-out">
-                            <div class="card__product--description">
-                                <p class="card__product--title">Pizza Alberta</p>
-                                <p class="card__product--price golden-text">$ 2.29</p>
-                                <p class="card__product--status">100 stock avaliable</p>
-                            </div>
-                            <div class="card__product--footer">
-                                <ion-icon name="toggle-outline"></ion-icon>
-                                <p  class="red-text">Out of stock</p>
-                            </div>
-                        </div>
-                        <div class="card card__product">
-                            <div class="icon">
-                                <ion-icon name="grid-outline"></ion-icon>
-                                <p>New</p>
-                            </div>
-                            <img src="../images/J95Rub.jpg"" alt="" class="card__product--img">
-                            <div class="card__product--description">
-                                <p class="card__product--title">Pizza Alberta</p>
-                                <p class="card__product--price golden-text">$ 2.29</p>
-                                <p class="card__product--status">100 stock avaliable</p>
-                            </div>
-                            <div class="card__product--footer">
-                                <ion-icon name="toggle-outline"></ion-icon>
-                                <p  class="green-text">Stock avaliable</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggler  availiable"></span>
+                                  </label>
+                                  
+                                <p class="ml-2 text-bold green-text">Stock avaliable</p>
                             </div>
                         </div>
                     </div>
