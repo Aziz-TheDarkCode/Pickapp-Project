@@ -31,8 +31,8 @@
   border: none; }
 
 .text-input-larger {
-  font-size: .98rem;
-  padding: .9rem; }
+  font-size: 0.98rem;
+  padding: 0.9rem; }
 
 .text-input-medium {
   width: 10rem;
@@ -49,7 +49,7 @@ textarea:focus {
 
 .label {
   display: block;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-weight: bold;
   position: relative; }
 

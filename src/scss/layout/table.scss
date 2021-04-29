@@ -1,0 +1,29 @@
+@import '../abstract/_variables.scss';
+.table {
+  &__header {
+    background-color: $secondary-color;
+    color: $main-color;
+    padding: 1rem;
+  }
+  &__content {
+    &--row:nth-child(even) {
+      background-color: #f1f2f3;
+    }
+  }
+}
+.total-section {
+  width: 45%;
+}
+
+.details {
+  width: 41%;
+  justify-content: space-between;
+}
+.invoice {
+  position: relative;
+  &__footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 95vw;
+  }
+}

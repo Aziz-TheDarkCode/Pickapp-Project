@@ -1,65 +1,54 @@
-@import"../abstract/classes";
-@import"../abstract/variables";
-@import"../base/typography";
+@import '../abstract/classes';
+@import '../abstract/variables';
+@import '../base/typography';
 
-.text-input
-{
-   
-    border:  solid rgba(128, 128, 128, 0.294)
-     1px;
-     @extend .rounded-border;
-     background-color: transparent;
-     font-family: $font-stack;
+.text-input {
+  border: solid rgba(128, 128, 128, 0.294) 1px;
+  @extend .rounded-border;
+  background-color: transparent;
+  font-family: $font-stack;
 }
-.text-input-unborded
-{
-    border: none;
+.text-input-unborded {
+  border: none;
 }
 // text-input size
-.text-input-larger
-{
-    font-size: .98rem;
-    padding: .9rem;
+.text-input-larger {
+  font-size: 0.98rem;
+  padding: 0.9rem;
 }
-.text-input-medium
-{
-    width: 10rem;
-    font-size: map-get($font-size,regular);
+.text-input-medium {
+  width: 10rem;
+  font-size: map-get($font-size, regular);
 }
-textarea
-{
-     background-color: transparent;
-     font-family: $font-stack;
-     border: none;
-     height: 550px;
+textarea {
+  background-color: transparent;
+  font-family: $font-stack;
+  border: none;
+  height: 550px;
 }
-textarea:focus
-{
-    outline: none;
+textarea:focus {
+  outline: none;
 }
-.label
-{
-    font-size: map-get($font-size, tiny );
-    display: block;
-    padding: .5rem 0;
-    font-weight: bold;
-    position: relative;
+.label {
+  font-size: map-get($font-size, tiny);
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  position: relative;
 }
-
 
 // label & input
-.input-component
-{
-    line-height: 1.5rem;
-    margin: 1.5rem 0rem;
-    &.inline{
-        display: flex;
+.input-component {
+  line-height: 1.5rem;
+  margin: 1.5rem 0rem;
+  &.inline {
+    display: flex;
     align-items: center;
-    }
-    &.block{
-        display: flex;
+  }
+  &.block {
+    display: flex;
     flex-direction: column;
-    }
+  }
 }
 // .col-component
 // {

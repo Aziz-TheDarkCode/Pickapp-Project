@@ -164,6 +164,35 @@ function createD3Donut(
 (function () {
   $(document).ready(function () {
     createD3Donut(
+      '#chart2',
+      [
+        {
+          color: '#BFA660',
+          value: 11
+        },
+        {
+          color: '#846F35',
+          value: 20
+        },
+        {
+          color: '#292929',
+          value: 12
+        },
+        {
+          color: 'transparent',
+          value: 22
+        }
+      ],
+      210,
+      200,
+      30,
+      30,
+      30,
+      100,
+      120,
+      '3267 (100%)'
+    );
+    createD3Donut(
       '#chart7',
       [
         {
