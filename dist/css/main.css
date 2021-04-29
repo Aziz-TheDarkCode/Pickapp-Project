@@ -1,0 +1,240 @@
+.text-x-smaller {
+  font-size: 10.2px; }
+
+.text-x-larger {
+  font-size: 40px; }
+
+.text-larger {
+  font-size: 32px; }
+
+.text-medium {
+  font-size: 24px; }
+
+.text-semi {
+  font-size: 16px; }
+
+.text-bold {
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url("../fonts/sofia_pro_light_az-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html,
+body {
+  font-family: "Sofia Pro"; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Sofia Pro";
+  overflow: hidden; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+ion-icon {
+  font-size: 1.6rem;
+  padding: 0.5rem; }
+
+input:focus {
+  outline: none; }
+
+input:active {
+  outline: none; }
+
+* {
+  font-family: "Sofia Pro";
+  font-weight: 5 00; }
+
+.text-x-smaller {
+  font-size: 10.2px; }
+
+.text-x-larger {
+  font-size: 40px; }
+
+.text-larger {
+  font-size: 32px; }
+
+.text-medium {
+  font-size: 24px; }
+
+.text-semi {
+  font-size: 16px; }
+
+.text-bold {
+  font-weight: bold; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr; }
+
+d-none {
+  display: none; }
+
+.bg-light-primary {
+  background-color: #faf8f3; }
+
+.bg-light-green {
+  background-color: #52bf8533; }
+
+.bg-light-red {
+  border-radius: 0.3rem;
+  font-size: smaller;
+  padding: 0.3rem;
+  background-color: #ff000029;
+  border-radius: 2rem; }
+
+.bg-light-white {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+.bg-white {
+  background-color: #fff; }
+
+.text-primary {
+  color: #BFA660 !important; }
+
+.text-green {
+  color: #52bf85; }
+
+.text-red {
+  color: red; }
+
+.text-primary {
+  color: #BFA660; }
+
+.gray-text {
+  color: rgba(128, 128, 128, 0.973); }
+
+.text-dark {
+  color: #000; }
+
+.rounded-text {
+  border-radius: 2rem; }
+
+.rounded-box {
+  border-radius: 16px; }

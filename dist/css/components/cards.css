@@ -1,0 +1,115 @@
+.rounded-border, .card__product .icon p {
+  border-radius: 16px; }
+
+.bordered-section {
+  border: 1px solid rgba(128, 128, 128, 0.294); }
+
+.text-x-smaller {
+  font-size: 10.2px; }
+
+.text-x-larger {
+  font-size: 40px; }
+
+.text-larger {
+  font-size: 32px; }
+
+.text-medium {
+  font-size: 24px; }
+
+.text-semi {
+  font-size: 16px; }
+
+.text-bold {
+  font-weight: bold; }
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px; }
+  .card .icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
+
+.card__category {
+  height: 280px;
+  background-image: url("https://im0-tub-com.yandex.net/i?id=856ca5611a3be2d65ff1b181c083126f&n=13");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffff; }
+  .card__category--details {
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    left: 1rem;
+    font-size: 14px; }
+  .card__category::after {
+    content: "";
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2rem;
+    background: linear-gradient(to top, #1e1e1ebd, transparent);
+    color: #ffff;
+    position: absolute;
+    bottom: 0;
+    height: 18rem;
+    width: 100vw; }
+
+.card__product {
+  height: auto;
+  background-color: #ffff;
+  position: relative;
+  overflow: hidden; }
+  .card__product .layer {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s ease-in; }
+  .card__product .layer:hover {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); }
+  .card__product--img {
+    max-width: 100%; }
+  .card__product--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1rem; }
+    .card__product--description::after {
+      content: "";
+      background-color: rgba(128, 128, 128, 0.294);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: .4rem;
+      height: .02rem; }
+  .card__product--footer {
+    padding: .9rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center; }
+  .card__product .icon {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between; }
+    .card__product .icon p {
+      background-color: #1e1e1e;
+      color: #ffff;
+      padding: .5rem;
+      width: 04rem;
+      text-align: center; }
+
+.greyed-out {
+  filter: grayscale(100%); }

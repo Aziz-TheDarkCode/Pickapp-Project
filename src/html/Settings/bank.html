@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bank</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-4-utilities.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <aside>
+            <div class="logo"><img src="../../images/Logo.png" alt=""></div>
+          <div class="section">
+              <p class="section-title">MAIN</p>
+              <ul>
+                  <a href="#">
+                      <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
+                  </a>
+                  <a href="../Dashboard.html">
+                      <li><ion-icon name="clipboard-outline" ></ion-icon>Dashboard</li>
+                  </a>
+                  <a href="">
+                      <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
+                  </a>
+                      <div class="dropdown--links">
+                          <a href="../Analytics/Revenue.html">
+                              <li>Revenue</li>
+                          </a>
+                          <a href="../Analytics/Customers.html">
+                              <li>Customers</li>
+                          </a>
+                          <a href="../Analytics/Product.html">
+                              <li>Products list</li>
+                          </a>
+                      </div>
+                  <a href="../products-list.html">
+                      <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
+                  </a>
+              </ul>
+          </div>
+          <div class="section">
+              <p class="section-title">OTHER</p>
+                  <ul>
+                      <a href="../message.html">
+                          <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
+                      </a>
+                      <a href="invoice.html">
+                          <li class="current"><ion-icon name="settings-outline"></ion-icon>Settings</li>
+                      </a>
+                  </ul>
+              </div>
+      </aside>
+        <div class="container">
+            <header>
+                <div class="search-box">
+                    <div class="search-component">
+                        <div class="placeholder">
+                            <p>Search Anything...</p>
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                        <input type="text" class="text-input text-input-larger text-input-unborded">
+                    </div>
+                    <div class="notification">
+                        <ion-icon name="notifications-outline" class="icon"></ion-icon>
+                        <div class="notif">1</div>
+                    </div>
+                </div>
+                <div class="user-info">
+                        <img src="https://berserkon.com/images/1-vector-flat.png" alt="">
+                        <div class="info">
+                            <p class="title-black">Abdou Aziz Ndiaye</p>
+                            <p title="subtitle">Administrator</p>
+                        </div>
+                </div>
+            </header>
+                   <div class="grided__section">
+                    <div class="grided__section--left">
+                        <a href="invoice.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
+                            <p class="ml-4">Transactions,Statements,etc</p>
+                        </a>
+                        <a href="bank.html" class="links active">
+                            <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
+                            <p class="ml-4">Billing information,card information</p>
+                        </a>
+                        <a href="notification.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
+                            <p class="ml-4">Transactions,Statements,etc</p>
+                        </a>
+                        <a href="account.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
+                            <p class="ml-4">Company informations,Password</p>
+                        </a>
+                        <a href="privacy.html" class="links">
+                            <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
+                            <p class="ml-4">Our privacy policy</p>
+                        </a>
+                        <a href="legal.html" class="links">
+                            <p class="d-flex align-items-center">
+                                <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
+                            <p class="ml-4">Our terms and conditions</p>
+                        </a>
+                    </div>
+                       <div class="grided__section--right p-4 d-flex justify-content-center align-items-center">
+                           <div class="content">
+                               <img src="../../images/bank-illustration.png" alt="">
+                               <p class="text-semi text-bold">Bank account not linked</p>
+                               <p class="gray-text">Please add a bank account to receive <br>payments</p>
+                                <button class="btn btn-medium btn-golden">+ Enter bank details</button>
+                            </div>
+                       </div>
+                   </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src='/javascript/app.js'></script>
+</body>
+</html>

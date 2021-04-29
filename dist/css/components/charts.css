@@ -1,0 +1,133 @@
+.chart-wrapper {
+  position: relative; }
+
+.chart-stroke-hide {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 13px;
+  background-color: #fff;
+  height: 8px; }
+
+.chart-week-data {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  width: 100px;
+  color: #fff;
+  top: 18px;
+  position: absolute;
+  transition: 0.4s; }
+  .chart-week-data .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    bottom: -4px;
+    left: calc(50% - 12px);
+    z-index: 0;
+    transform: rotate(46deg); }
+  .chart-week-data .dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    bottom: -23px;
+    left: calc(50% - 12px); }
+
+#chart1,
+#chart5 {
+  right: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  position: relative;
+  left: -24px; }
+  #chart1 .ct-grid,
+  #chart5 .ct-grid {
+    stroke: #c7b071;
+    opacity: 0.2;
+    stroke-width: 1px;
+    stroke-dasharray: 18px; }
+    #chart1 .ct-grid.ct-horizontal,
+    #chart5 .ct-grid.ct-horizontal {
+      display: none; }
+
+#chart2 {
+  margin-top: 1rem; }
+  #chart2 svg {
+    height: 250px; }
+
+#chart3 .ct-label.ct-horizontal.ct-end,
+#chart6 .ct-label.ct-horizontal.ct-end {
+  position: relative;
+  left: -18px; }
+
+#chart3 .ct-grids .ct-horizontal:nth-child(-n + 1),
+#chart3 .ct-grids .ct-horizontal:nth-child(6),
+#chart6 .ct-grids .ct-horizontal:nth-child(-n + 1),
+#chart6 .ct-grids .ct-horizontal:nth-child(6) {
+  display: none; }
+
+#chart3 .ct-grid,
+#chart6 .ct-grid {
+  stroke: #edeef5;
+  stroke-width: 2.5px;
+  stroke-dasharray: 0px; }
+  #chart3 .ct-grid.ct-vertical,
+  #chart6 .ct-grid.ct-vertical {
+    display: none; }
+  #chart3 .ct-grid.ct-horizontal,
+  #chart6 .ct-grid.ct-horizontal {
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative; }
+    #chart3 .ct-grid.ct-horizontal:hover,
+    #chart6 .ct-grid.ct-horizontal:hover {
+      stroke: #000; }
+
+.ct-point {
+  display: none; }
+
+.ct-series {
+  stroke-linecap: round; }
+
+.ct-series-a .ct-slice-donut-solid,
+.ct-series-a .ct-slice-donut {
+  fill: #f5f6fc;
+  stroke-width: 5px !important;
+  stroke-linecap: round; }
+
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-donut-solid,
+.ct-series-d {
+  fill: #1e1e1e;
+  stroke-width: 5px !important;
+  stroke-linecap: round; }
+
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
+.ct-series-b {
+  fill: #BFA660;
+  stroke-width: 5px !important;
+  stroke-linecap: round; }
+
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-donut-solid,
+.ct-series-c {
+  fill: #846f35;
+  stroke-width: 5px !important;
+  stroke-linecap: round; }
+
+.ct-series .ct-bar {
+  stroke: #BFA660;
+  stroke-width: 16px; }
+
+.ct-series .ct-line {
+  stroke: #BFA660;
+  stroke-width: 3px; }
+
+.ct-label {
+  font-weight: bold; }

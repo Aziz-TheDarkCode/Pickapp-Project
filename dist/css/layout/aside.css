@@ -1,0 +1,71 @@
+.text-x-smaller {
+  font-size: 10.2px; }
+
+.text-x-larger {
+  font-size: 40px; }
+
+.text-larger {
+  font-size: 32px; }
+
+.text-medium {
+  font-size: 24px; }
+
+.text-semi {
+  font-size: 16px; }
+
+.text-bold {
+  font-weight: bold; }
+
+aside {
+  background-color: #ffff;
+  border: 1px solid rgba(128, 128, 128, 0.294);
+  border-top: none; }
+  aside .logo {
+    height: 05rem;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.294);
+    padding-left: 1.5rem;
+    box-sizing: border-box; }
+  aside .dropdown-links {
+    text-align: center;
+    width: 80%;
+    margin: auto; }
+  aside .menu-links {
+    font-size: 16px; }
+    aside .menu-links ion-icon {
+      font-size: 17px; }
+    aside .menu-links li > a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: rgba(128, 128, 128, 0.973);
+      position: relative; }
+      aside .menu-links li > a.active {
+        color: #000;
+        font-weight: bold; }
+      aside .menu-links li > a.bordered::after {
+        content: '';
+        position: absolute;
+        width: 1.5px;
+        height: 48px;
+        background-color: #000;
+        right: -41px; }
+      aside .menu-links li > a.bordered.main::after {
+        right: -9px; }
+    aside .menu-links > * + * {
+      margin-top: 1rem; }
+
+.section {
+  margin-top: 1rem; }
+  .section li {
+    padding: 0.5rem;
+    color: #1e1e1e;
+    font-size: 0.9rem;
+    opacity: 1; }
+  .section .specific {
+    background-color: #fafafb;
+    color: #BFA660; }
+  .section .current {
+    font-weight: bold;
+    border-right: 2px solid #1e1e1e; }
+  .section-title {
+    padding: 1.2rem; }

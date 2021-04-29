@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Revenue</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/charts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/grid.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
+</head>
+<body>
+    <main>
+        @@include('./includes/aside.html')
+        <div class="container">
+            @@include('./includes/header.html')
+            <section>
+                <div class="no-aside">
+                    <div class="section__content--header">
+                        <div class="section__content--header">
+                            <h1 class="text-bold text-larger">Revenue</h1>
+                        </div>
+                        <select class="btn" style="background-color: #efeff0;border-radius: 8px;">
+                            <option value="">This month</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                            <option value="spider">Spider</option>
+                            <option value="goldfish">Goldfish</option>
+                        </select>
+                    </div>
+                    <div class="box__section">
+                        <div class="box__section--small text-bold">
+                            <div class="p-3 box d-flex flex-column justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="text-bold">+32,45%</h6>
+                                    <div class="ml-2 box-icon d-flex align-items-center justify-content-center bg-light-white">
+                                        <ion-icon name="arrow-up-outline" class="text-primary"></ion-icon>
+                                    </div>
+                                </div>
+                                <h1 class="text-larger text-bold">$10,478.00</h1>
+                                <h4 class="text-white mt-2">Total revenue</h4>
+                            </div>
+                            <div class="p-3 box d-flex flex-column justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="text-bold text-green">+32,5%</h6>
+                                    <div class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
+                                        <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
+                                    </div>
+                                </div>
+                                <h1 class="text-larger text-bold">1485<h1>
+                                        <h4 class="gray-text">Total Customers</h4>
+                            </div>
+                            <div class="p-3 box d-flex flex-column justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="text-bold text-green">+32,5%</h6>
+                                    <div class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
+                                        <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
+                                    </div>
+                                </div>
+                                <h1 class="text-larger text-bold">3267<h1>
+                                        <h4 class="gray-text">Total Products</h4>
+                            </div>
+                            <div class="p-3 box d-flex flex-column justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="text-bold text-green">+32,5%</h6>
+                                    <div class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
+                                        <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
+                                    </div>
+                                </div>
+                                <h1 class="text-larger text-bold">128<h1>
+                                        <h4 class="gray-text">Total Sales</h4>
+                            </div>
+                        </div>
+                        <div class="box__section--larger">
+                            <div class="box p-4">
+                                <p class="text-bold mb-2">Average spending</p>
+                                    <div class="ct-chart ct-perfect-fourth" id="chart4"></div>
+                            </div>
+                            <div class="box p-3 chart-wrapper">
+                                <p class="text-bold mb-2">Revenue this month</p>
+                                <div class="ct-chart ct-perfect-fourth" id="chart5"></div>
+                                <div class="chart-stroke-hide">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="box__section--medium mt-4 py-3 d-flex justify-content-between" style='background-color: #fafafb;'>
+                            <div class="bg-white px-4 py-4 rounded-box" style="flex-basis:69%">
+                                <p class="text-bold mb-3">Total revenue</p>
+                                <div class="ct-chart ct-perfect-fourth" id="chart6"></div>
+                                <div class="chart-week-data flex-column p-2" style="display: none;">
+                                    <span class="text-bold" id="chart-week-value">3500</span>
+                                    <span class="text-bold mt-2" id="chart-week-text">Gross Sales</span>
+                                    <div class="arrow">&nbsp;</div>
+                                    <div class="dot">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="bg-white px-4 py-4 rounded-box d-flex flex-column" style="flex-basis:29%">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <ion-icon name="chevron-back-outline" class="text-dark"></ion-icon>
+                                    <span class="text-dark text-bold">March</span>
+                                    <ion-icon name="chevron-forward-outline" class="text-dark"></ion-icon>
+                                </div>
+                                <div id="chart7" class="my-3"></div>
+                                <div class="d-flex flex-wrap">
+                                    <div class="p-2 d-flex align-items-center">
+                                        <span class="text-medium golden-text mr-2 text-primary">•</span>
+                                        <div class="d-flex flex-column align-items-start">
+                                            <p class="text-bold">Vanilla Latte</p>
+                                            <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 d-flex align-items-center">
+                                        <span class="text-medium golden-text mr-2" style="color:#846f35">•</span>
+                                        <div class="d-flex flex-column align-items-start">
+                                            <p class="text-bold">Oreo Latte</p>
+                                            <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 d-flex align-items-center">
+                                        <span class="text-medium golden-text mr-2" style="color:#292929">•</span>
+                                        <div class="d-flex flex-column align-items-start">
+                                            <p class="text-bold">Brown Sugar</p>
+                                            <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 d-flex align-items-center">
+                                        <span class="text-medium golden-text mr-2" style="color:#D4D4D6">•</span>
+                                        <div class="d-flex flex-column align-items-start">
+                                            <p class="text-bold">Other</p>
+                                            <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div> 
+            </section>
+        </div>
+    </main>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/components/chart.js"></script>
+    <script src="../js/components/header.js"></script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+$font-stack: 'Sofia Pro';
+$font-size: (
+  x-larger: 40px,
+  larger: 32px,
+  medium: 24px,
+  semi: 16px,
+  regular: 14px
+);
+.text-x-smaller {
+  font-size: 10.2px;
+}
+.text-x-larger {
+  font-size: map-get($font-size, x-larger);
+}
+.text-larger {
+  font-size: map-get($font-size, larger);
+}
+.text-medium {
+  font-size: map-get($font-size, medium);
+}
+.text-semi {
+  font-size: map-get($font-size, semi);
+}
+.text-bold {
+  font-weight: bold;
+}

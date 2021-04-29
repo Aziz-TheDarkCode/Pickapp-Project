@@ -1,0 +1,77 @@
+@import '../abstract/variables';
+@import '../base/typography';
+aside {
+  background-color: $main-color;
+  border: 1px solid rgba(128, 128, 128, 0.294);
+  border-top: none;
+  .logo {
+    height: 05rem;
+    border-bottom: 0.01rem solid rgba(128, 128, 128, 0.294);
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+  }
+  .dropdown-links {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .menu-links {
+    ion-icon {
+      font-size: 17px;
+    }
+    li {
+      > a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgba(128, 128, 128, 0.973);
+        position: relative;
+        &.active {
+          color: #000;
+          font-weight: bold;
+        }
+        &.bordered {
+          &::after {
+            content: '';
+            position: absolute;
+            width: 1.5px;
+            height: 48px;
+            background-color: #000;
+            right: -41px;
+          }
+        }
+        &.bordered.main {
+          &::after {
+            right: -9px;
+          }
+        }
+      }
+    }
+    font-size: 16px;
+    > * + * {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.section {
+  margin-top: 1rem;
+  li {
+    padding: 0.5rem;
+    color: $secondary-color;
+    font-size: 0.9rem;
+    opacity: 1;
+  }
+  .specific {
+    background-color: $tertiary-color;
+    color: $primary-color;
+  }
+  .current {
+    font-weight: bold;
+    border-right: 2px solid $secondary-color;
+  }
+  &-title {
+    font-size: map-get($font-size, tiny);
+    padding: 1.2rem;
+  }
+}

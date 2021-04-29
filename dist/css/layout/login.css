@@ -1,0 +1,23 @@
+.text-x-smaller {
+  font-size: 10.2px; }
+
+.text-x-larger {
+  font-size: 40px; }
+
+.text-larger {
+  font-size: 32px; }
+
+.text-medium {
+  font-size: 24px; }
+
+.text-semi {
+  font-size: 16px; }
+
+.text-bold {
+  font-weight: bold; }
+
+.greeting h1 {
+  font-size: 32px; }
+
+.greeting span {
+  opacity: 0.7; }
