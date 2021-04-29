@@ -30,6 +30,13 @@
 		}
 	}
 }
+.bordered-section
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dashed gray;
+}
 .container {
     background-color: $tertiary-color;
     height: 100vh;

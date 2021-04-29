@@ -1,0 +1,21 @@
+.table__header {
+  background-color: #1e1e1e;
+  color: #ffff;
+  padding: 1rem; }
+
+.table__content--row:nth-child(even) {
+  background-color: #F1F2F3; }
+
+.total-section {
+  width: 45%; }
+
+.details {
+  width: 41%;
+  justify-content: space-between; }
+
+.invoice {
+  position: relative; }
+  .invoice__footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 95vw; }
