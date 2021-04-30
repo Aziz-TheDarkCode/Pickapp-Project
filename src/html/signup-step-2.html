@@ -9,6 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/modal.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
@@ -17,6 +18,20 @@
 </head>
 <body>
     <section class="login__section">
+        <div class="modal">
+            <div class="modal__backdrop" onclick="closeModal()"></div>
+            <div class="modal__content semi-larger p-4 d-flex flex-column justify-content-center align-items-center" style="height: 406px;">
+                    <div class="d-flex flex-column justify-content-between align-items-center text-center">
+                        <img src="../images/hands.png" width="200px" class="align-self-center mb-2">
+                        <div class="mb-2 p-3">
+                            <p class="text-medium text-bold">We have sent the<br> confirmation email to</p>
+                            <p class="gray-text text-semi text-bold mt-3">gordoncoffee@gmail.com</p>
+                        </div>
+                    </div>
+                    <button style="width: 95%;" class="ml-3 btn text-input-larger btn-golden">Got it</button>
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+            </div>
+        </div>
         <div class="form--login__section">
             <div>
                
@@ -29,7 +44,7 @@
                     </div>
                    
                 
-                <form action="">
+                <form>
                     <div class="input__section">
                         <div class="input-component block">
                             <div class="d-flex align-items-center">
@@ -71,6 +86,14 @@
         <div class="login__section--illustration"></div>
     </section>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src='main.js'></script>
+    <script src='../js/modal.js'></script>
+    <script>
+        const form=document.querySelector("form")
+        form.addEventListener("submit",function(e)
+        {
+            e.preventDefault(); 
+            openModal();
+        })
+    </script>
 </body>
 </html>

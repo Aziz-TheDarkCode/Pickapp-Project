@@ -120,3 +120,14 @@
 
 .greyed-out {
   opacity: .4; }
+
+.credit-card {
+  height: 150px;
+  width: 250px;
+  border-radius: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  color: #ffff;
+  background-size: cover;
+  background-image: url(../../images/Pattern.svg); }

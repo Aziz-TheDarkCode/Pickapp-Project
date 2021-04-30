@@ -42,7 +42,7 @@ textarea {
   background-color: transparent;
   font-family: "Sofia Pro";
   border: none;
-  height: 550px; }
+  height: auto; }
 
 textarea:focus {
   outline: none; }

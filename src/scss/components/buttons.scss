@@ -10,21 +10,24 @@
     text-align: center;
     @extend .rounded-border;
     font-weight: bold;
-    border: 1px solid transparent;
     cursor: pointer;
 }
 //Button Color
 .btn-black
 {
-    @include set-background($secondary-color)
+    @include set-background($secondary-color);
+    border: 1px $secondary-color solid
+    
 }
 .btn-golden
 {
-    @include set-background($primary-color)
+    @include set-background($primary-color);
+    border: 1px $primary-color solid;
 }
 .btn-gray {
     background-color: darken($tertiary-color, 03%);
     color: $secondary-color;
+    border: 1px darken($tertiary-color, 03%) solid;
 }
 
 //Button Size

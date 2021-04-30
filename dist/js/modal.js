@@ -1,5 +1,4 @@
 const modal = document.querySelector(".modal");
-console.log(modal)
 
 function openModal() {
     modal.classList.add("active");
@@ -9,5 +8,4 @@ function openModal() {
     // remove .active class
     modal.classList.remove("active");
   }
-  
   

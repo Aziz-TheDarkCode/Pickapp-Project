@@ -193,7 +193,7 @@
         opacity: 1;
         color: white; }
   .grided__section--right {
-    background-color: #ffff;
+    background-color: #fafafb;
     display: flex;
     flex-direction: column;
     position: relative; }

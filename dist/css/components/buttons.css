@@ -26,20 +26,22 @@
   padding: .7rem;
   text-align: center;
   font-weight: bold;
-  border: 1px solid transparent;
   cursor: pointer; }
 
 .btn-black {
   background-color: #1e1e1e;
-  color: #ffff; }
+  color: #ffff;
+  border: 1px #1e1e1e solid; }
 
 .btn-golden {
   background-color: #BFA660;
-  color: #ffff; }
+  color: #ffff;
+  border: 1px #BFA660 solid; }
 
 .btn-gray {
   background-color: #f2f2f4;
-  color: #1e1e1e; }
+  color: #1e1e1e;
+  border: 1px #f2f2f4 solid; }
 
 .btn-larger {
   font-size: 0.98rem; }
