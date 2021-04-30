@@ -58,6 +58,9 @@
     }
   }
 }
+#chart5 {
+  left: -12px;
+}
 #chart2 {
   margin-top: 1rem;
   svg {
@@ -143,4 +146,19 @@
 }
 .ct-label {
   font-weight: bold;
+}
+#chart4 {
+  > svg > g:nth-child(2) {
+    .ct-series:nth-child(even) > line {
+      stroke: #000;
+    }
+  }
+  .ct-series {
+    .ct-bar {
+      stroke-width: 10px;
+    }
+  }
+  .ct-label {
+    margin-top: 10px;
+  }
 }

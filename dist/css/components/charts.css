@@ -55,6 +55,9 @@
     #chart5 .ct-grid.ct-horizontal {
       display: none; }
 
+#chart5 {
+  left: -12px; }
+
 #chart2 {
   margin-top: 1rem; }
   #chart2 svg {
@@ -131,3 +134,12 @@
 
 .ct-label {
   font-weight: bold; }
+
+#chart4 > svg > g:nth-child(2) .ct-series:nth-child(even) > line {
+  stroke: #000; }
+
+#chart4 .ct-series .ct-bar {
+  stroke-width: 10px; }
+
+#chart4 .ct-label {
+  margin-top: 10px; }

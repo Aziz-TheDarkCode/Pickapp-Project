@@ -16,12 +16,39 @@ new Chartist.Bar(
     labels: ['$2-$5', '$6-$10', '$11-$15', '$16-20$', '$25-$40'],
     series: [20, 45, 15, 35, 40]
   },
-
   {
     distributeSeries: true,
-    showLabel: false
+    axisX: {
+      showGrid: false
+    },
+    axisY: { showGrid: false, showLabel: false }
   }
 );
+// new Chartist.Bar(
+//   '.ct-chart',
+//   {
+//     labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+//     series: [
+//       [800000, 1200000, 1400000, 1300000],
+//       [200000, 400000, 500000, 300000],
+//       [100000, 200000, 400000, 600000]
+//     ]
+//   },
+//   {
+//     stackBars: true,
+//     axisY: {
+//       labelInterpolationFnc: function (value) {
+//         return value / 1000 + 'k';
+//       }
+//     }
+//   }
+// ).on('draw', function (data) {
+//   if (data.type === 'bar') {
+//     data.element.attr({
+//       style: 'stroke-width: 30px'
+//     });
+//   }
+// });
 new Chartist.Bar(
   '#chart5',
   {
@@ -32,7 +59,10 @@ new Chartist.Bar(
     distributeSeries: true,
     showLabel: false,
     axisY: {
-      onlyInteger: true
+      onlyInteger: true,
+      labelInterpolationFnc: function (value) {
+        return '$' + value + 'k';
+      }
     }
   }
 );

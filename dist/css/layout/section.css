@@ -74,11 +74,8 @@
           .container section .section__content--right .article .icon {
             border-radius: 5rem;
             margin-right: 0.5rem;
-            height: 2rem; }
-            .container section .section__content--right .article .icon:nth-child(odd) {
-              background-color: #d5c597; }
-            .container section .section__content--right .article .icon:nth-child(even) {
-              background-color: #444444; }
+            height: 2.5rem;
+            width: 2.5rem; }
             .container section .section__content--right .article .icon ion-icon {
               font-size: 1.2rem; }
           .container section .section__content--right .article .rounded-img {
