@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; }
+  .modal__backdrop {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: opacity 0.32s ease-out; }
+  .modal__content {
+    background-color: white;
+    border-radius: 32px;
+    width: 800px;
+    height: auto;
+    padding: 4rem;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    transition: top 0.23s ease-out;
+    z-index: 1; }
+    .modal__content ion-icon {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      font-size: 2rem; }
+    .modal__content.larger {
+      width: 100%;
+      height: 100%; }
+      .modal__content.larger ion-icon {
+        left: 1rem;
+        top: 0; }
+    .modal__content.semi-larger {
+      width: 500px;
+      height: auto; }
+
+.modal.active {
+  pointer-events: auto; }
+
+.modal.active > .backdrop {
+  opacity: 0.5; }
+
+.modal.active > .content {
+  top: 0%; }
+
+.active {
+  display: flex; }

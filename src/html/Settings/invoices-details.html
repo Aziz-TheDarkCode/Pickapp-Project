@@ -21,72 +21,11 @@
 </head>
 <body>
     <main>
-        <aside>
-              <div class="logo"><img src="../../images/Logo.png" alt=""></div>
-            <div class="section">
-                <p class="section-title">MAIN</p>
-                <ul>
-                    <a href="#">
-                        <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
-                    </a>
-                    <a href="../Dashboard.html">
-                        <li><ion-icon name="clipboard-outline"></ion-icon>Dashboard</li>
-                    </a>
-                    <a href="#">
-                        <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
-                    </a>
-                        <div class="dropdown--links">
-                            <a href="Revenue.html">
-                                <li>Revenue</li>
-                            </a>
-                            <a href="Customers.html">
-                                <li>Customers</li>
-                            </a>
-                            <a href="Product.html">
-                                <li>Products list</li>
-                            </a>
-                        </div>
-                    <a href="#">
-                        <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="section">
-                <p class="section-title">OTHER</p>
-                    <ul>
-                        <a href="#">
-                            <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
-                        </a>
-                        <a href="#">
-                            <li class="current"><ion-icon name="settings-outline"></ion-icon>Settings</li>
-                        </a>
-                    </ul>
-                </div>
-        </aside>
+       
+        @@include('../includes/aside.html')
         <div class="container">
-            <header>
-                <div class="search-box">
-                    <div class="search-component">
-                        <div class="placeholder">
-                            <p>Search Anything...</p>
-                            <ion-icon name="search-outline"></ion-icon>
-                        </div>
-                        <input type="text" class="text-input text-input-larger text-input-unborded">
-                    </div>
-                    <div class="notification">
-                        <ion-icon name="notifications-outline" class="icon"></ion-icon>
-                        <div class="notif">1</div>
-                    </div>
-                </div>
-                <div class="user-info">
-                        <img src="https://berserkon.com/images/1-vector-flat.png" alt="">
-                        <div class="info">
-                            <p class="title-black">Abdou Aziz Ndiaye</p>
-                            <p title="subtitle">Administrator</p>
-                        </div>
-                </div>
-            </header>
-            <section>
+            @@include('../includes/header.html')
+           
                    <div class="grided__section">
                        <div class="grided__section--left">
                            <a href="" class="links active">
@@ -124,54 +63,86 @@
                                 </h1><br>
                                 <p class="gray-text">46 invoices</p>
                             </span>
-                            <div class="list--section mt-4">
-                                <div class="list d-flex justify-content-between align-items-center">
-                                    <ion-icon name="newspaper-outline"></ion-icon>
-                                    <div>
-                                        <p class="gray-text">Order ID</p>
-                                        <p class="text-bold mt-2">412211351</p>
+                            <div class="mt-4">
+                                <div class="d-flex justify-content-between align-items-center rounded-box p-4 col-12 p-3 mb-3" style="background-color:white;">
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Order ID</p>
+                                        <p>41114953</p>
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Date</p>
-                                        <p class="text-bold mt-2">25 March 2021</p>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Date</p>
+                                        <p>25 March 2021</p>
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Total Price</p>
-                                        <p class="text-bold mt-2">$8</p>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Total Price</p>
+                                        <p>41114953</p>
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Order by</p>
-                                        <p class=" d-flex align-items-center text-bold mt-2">
-                                            <!-- <img src="https://berserkon.com/images/1-vector-flat.png" alt="" width="35px"> -->
-                                            Andy Carroll
-                                        </p>
+                                    <div class="d-flex align-items-center">
+                                        <img class="mt-1 mr-2" src="../../images/J95Rub.jpg" alt="" width="30px" height="30px" style="border-radius: 10rem;">
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Order by</p>
+                                            <p>John Doe</p>    
+                                        </div>
                                     </div>
-                                    <button class="btn green-text mt-2">Completed</button>
-                                </div>
-                                <div class="list d-flex justify-content-between align-items-center">
-                                    <ion-icon name="newspaper-outline"></ion-icon>
-                                    <div>
-                                        <p class="gray-text">Order ID</p>
-                                        <p class="text-bold mt-2">412211351</p>
+                                    <div class="d-flex flex-column text-bold">
+                                            <div class="p-2 text-green bg-light-green rounded-text text-bold">Completed</div>
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Date</p>
-                                        <p class="text-bold mt-2">25 March 2021</p>
+                                                                                   
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Total Price</p>
-                                        <p class="text-bold mt-2">$8</p>
+                                <div class="d-flex justify-content-between align-items-center rounded-box p-4 col-12 p-3 mb-3" style="background-color:white;">
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Order ID</p>
+                                        <p>41114953</p>
                                     </div>
-                                    <div>
-                                        <p class="gray-text">Order by</p>
-                                        <p class="text-bold mt-2">Andy Carroll</p>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Date</p>
+                                        <p>25 March 2021</p>
                                     </div>
-                                    <button class="btn green-text mt-2">Completed</button>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Total Price</p>
+                                        <p>41114953</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="mt-1 mr-2" src="../../images/J95Rub.jpg" alt="" width="30px" height="30px" style="border-radius: 10rem;">
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Order by</p>
+                                            <p>John Doe</p>    
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-bold">
+                                            <div class="p-2 text-green bg-light-green rounded-text text-bold">Completed</div>
+                                    </div>
+                                                                                   
+                                    </div>
+                                <div class="d-flex justify-content-between align-items-center rounded-box p-4 col-12 p-3 mb-3" style="background-color:white;">
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Order ID</p>
+                                        <p>41114953</p>
+                                    </div>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Date</p>
+                                        <p>25 March 2021</p>
+                                    </div>
+                                    <div class="d-flex flex-column text-bold">
+                                        <p class="gray-text mb-2">Total Price</p>
+                                        <p>41114953</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="mt-1 mr-2" src="../../images/J95Rub.jpg" alt="" width="30px" height="30px" style="border-radius: 10rem;">
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Order by</p>
+                                            <p>John Doe</p>    
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-bold">
+                                            <div class="p-2 text-green bg-light-green rounded-text text-bold">Completed</div>
+                                    </div>
+                                                                                   
+                                    </div>
                                 </div>
                             </div>
                        </div>
                    </div>
-            </section>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

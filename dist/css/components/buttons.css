@@ -25,7 +25,9 @@
 .btn {
   padding: .7rem;
   text-align: center;
-  border: none; }
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer; }
 
 .btn-black {
   background-color: #1e1e1e;
@@ -40,16 +42,15 @@
   color: #1e1e1e; }
 
 .btn-larger {
-  padding: .9rem;
-  width: 100%;
-  font-size: 14px; }
+  font-size: 0.98rem; }
 
 .btn-medium {
   width: 198px; }
 
 .btn-transparent-bg {
   border: 2px solid   white;
-  background-color: transparent; }
+  background-color: transparent;
+  color: white; }
 
 .btn-black-border {
   border: 0.2px solid #1e1e1e; }
@@ -99,12 +100,6 @@ input:focus + .slider {
 
 .slider.round:before {
   border-radius: 50%; }
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px; }
 
 .toggler {
   position: absolute;

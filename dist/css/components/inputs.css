@@ -23,7 +23,7 @@
   font-weight: bold; }
 
 .text-input {
-  border: solid rgba(128, 128, 128, 0.294) 1px;
+  border: solid rgba(128, 128, 128, 0.294) 1.5px;
   background-color: transparent;
   font-family: "Sofia Pro"; }
 
@@ -55,10 +55,17 @@ textarea:focus {
 
 .input-component {
   line-height: 1.5rem;
-  margin: 1.5rem 0rem; }
+  margin: 0 0rem; }
   .input-component.inline {
     display: flex;
     align-items: center; }
   .input-component.block {
     display: flex;
     flex-direction: column; }
+
+.img-browser {
+  border: dashed #ebebeb 2px;
+  width: 10rem;
+  height: 10rem;
+  font-size: .8rem;
+  border-radius: 2rem; }

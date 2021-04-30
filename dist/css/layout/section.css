@@ -62,7 +62,7 @@
           font-weight: bold; }
       .container section .section__content--right {
         background-color: #ffff;
-        padding: 1rem;
+        padding: 2.5rem 1.5rem;
         display: grid;
         grid-template-columns: 1fr;
         height: calc(100vh - 5rem); }
@@ -95,13 +95,11 @@
       grid-column: span 4;
       height: 100vh;
       overflow: scroll;
-      height: 100vh;
-      padding: 2.5rem 1.5rem; }
+      height: 100vh; }
       .container section .no-aside::-webkit-scrollbar {
         display: none; }
-      .container section .no-aside .section__content--header div {
-        font-size: smaller;
-        width: 20rem; }
+      .container section .no-aside .section__content--header {
+        background-color: white; }
       .container section .no-aside::-webkit-scrollbar {
         display: none; }
       .container section .no-aside .box__section--small {
@@ -176,8 +174,6 @@
     .grided__section--left--header {
       border-bottom: 3px #BFA660 solid;
       text-align: center;
-      padding: 2rem;
-      height: 05rem;
       color: #BFA660; }
     .grided__section--left .links {
       padding: 0.8rem;
@@ -187,11 +183,9 @@
       font-size: 0.9rem; }
       .grided__section--left .links div span {
         background-color: #BFA660;
-        border-radius: 2rem;
-        padding: 0.5rem;
-        height: 3rem;
-        text-align: center;
-        width: 3rem;
+        border-radius: 50%;
+        height: 2.7rem;
+        width: 2.7rem;
         font-size: 1.3rem; }
       .grided__section--left .links p:nth-child(2) {
         font-size: 0.7rem; }
@@ -202,7 +196,7 @@
         opacity: 1;
         color: white; }
   .grided__section--right {
-    background-color: #fafafb;
+    background-color: #ffff;
     display: flex;
     flex-direction: column;
     position: relative; }
@@ -225,10 +219,6 @@
         height: 140px;
         border-radius: 16px;
         background-color: #ffff; }
-    .grided__section--right .list--section {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem; }
     .grided__section--right .list {
       background-color: #ffff;
       padding: 1.5rem;
@@ -258,3 +248,11 @@
       .grided__section .profile-update > div .component {
         padding: 1.5rem;
         display: flex; }
+
+.order-details {
+  overflow: scroll; }
+  .order-details-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 05rem; }

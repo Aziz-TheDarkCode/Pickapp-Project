@@ -3,7 +3,7 @@
 @import '../base/typography';
 
 .text-input {
-  border: solid rgba(128, 128, 128, 0.294) 1px;
+  border: solid rgba(128, 128, 128, 0.294) 1.5px;
   @extend .rounded-border;
   background-color: transparent;
   font-family: $font-stack;
@@ -40,7 +40,7 @@ textarea:focus {
 // label & input
 .input-component {
   line-height: 1.5rem;
-  margin: 1.5rem 0rem;
+  margin: 0 0rem;
   &.inline {
     display: flex;
     align-items: center;
@@ -50,13 +50,12 @@ textarea:focus {
     flex-direction: column;
   }
 }
-// .col-component
-// {
-//     display: flex;
-//     flex-direction: column;
-// }
-// .row-component
-// {
-//     display: flex;
-//     align-items: center;
-// }
+.img-browser
+{
+  border: dashed rgb(235, 235, 235) 2px;
+  width: 10rem;
+  height: 10rem;
+  font-size: .8rem;
+  border-radius: 2rem;
+}
+

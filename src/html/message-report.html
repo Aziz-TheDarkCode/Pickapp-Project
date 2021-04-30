@@ -20,113 +20,39 @@
 </head>
 <body>
     <main>
-        <aside>
-              <div class="logo"><img src="../images/Logo.png" alt=""></div>
-            <div class="section">
-                <p class="section-title">MAIN</p>
-                <ul>
-                    <a href="#">
-                        <li class="specific"><ion-icon name="cube-outline"></ion-icon>Orders</li>
-                    </a>
-                    <a href="../Dashboard.html">
-                        <li><ion-icon name="clipboard-outline" class="current"></ion-icon>Dashboard</li>
-                    </a>
-                    <a href="#">
-                        <li><ion-icon name="analytics-outline"></ion-icon>Analytics</li>
-                    </a>
-                        <div class="dropdown--links">
-                            <a href="Revenue.html">
-                                <li>Revenue</li>
-                            </a>
-                            <a href="Customers.html">
-                                <li>Customers</li>
-                            </a>
-                            <a href="Product.html">
-                                <li>Products list</li>
-                            </a>
-                        </div>
-                    <a href="#">
-                        <li><ion-icon name="grid-outline"></ion-icon>Product List</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="section">
-                <p class="section-title">OTHER</p>
-                    <ul>
-                        <a href="#">
-                            <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
-                        </a>
-                        <a href="#">
-                            <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
-                        </a>
-                    </ul>
-                </div>
-        </aside>
+       
+        @@include('./includes/aside.html')
         <div class="container">
-            <header>
-                <div class="search-box">
-                    <div class="search-component">
-                        <div class="placeholder">
-                            <p>Search Anything...</p>
-                            <ion-icon name="search-outline"></ion-icon>
-                        </div>
-                        <input type="text" class="text-input text-input-larger text-input-unborded">
-                    </div>
-                    <div class="notification">
-                        <ion-icon name="notifications-outline" class="icon"></ion-icon>
-                        <div class="notif">1</div>
-                    </div>
-                </div>
-                <div class="user-info">
-                        <img src="https://berserkon.com/images/1-vector-flat.png" alt="">
-                        <div class="info">
-                            <p class="title-black">Abdou Aziz Ndiaye</p>
-                            <p title="subtitle">Administrator</p>
-                        </div>
-                </div>
-            </header>
-            <section>
-                    <div class="grided-section">
-                        <div class="chat d-flex flex-column">
-                            <div class="chat__header">
-                                Chat with PICKAPP
-                            </div>
-                            <div class="chat__content">
-                                <div class="message">
-                                    <div class="message__client d-flex justify-content-between align-items-center">
-                                        <div class="message__client--info d-flex align-items-center">
-                                            <div class="message__client--thumb">P</div>
-                                            <p class="message__client--name">PICKAPP</p>
-                                        </div>
-                                        <p class="message__client--date">Yesterday,12:48PM</p> 
-                                    </div>
-                                </div>
-                                <div class="message">
-                                    <div class="message__client d-flex justify-content-between align-items-center">
-                                        <div class="message__client--info d-flex align-items-center">
-                                            <div class="message__client--thumb">S</div>
-                                            <p class="message__client--name">PICKAPP</p>
-                                        </div>
-                                        <p class="message__client--date">Yesterday,12:48PM</p> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="displayed">
-                                <div class="displayed__header bordered d-flex align-items-center">
-                                    <p>Report Problem</p>
-                                </div>
-                                <div class="displayed__content d-flex">
-                                    <p>How Would you describe your issue?</p>
-                                    <a href="#" class="btn btn-larger">Rude Customers</a>
-                                    <a href="#" class="btn btn-larger">Unresponsive System</a>
-                                    <a href="#" class="btn btn-larger">Deactive account</a>
-                                    <a href="#" class="btn btn-larger">Problem with withdrawal</a>
-                                    <a href="#" class="btn btn-larger">Other isssue</a>
-                                </div>
-                        </div>
-                    </div> 
-            </section>
+            @@include('./includes/header.html')
+          
+                   <div class="grided__section">
+                       <div class="grided__section--left bordered-right">
+                           <div class="grided__section--left--header mb-4 p-4">
+                               <p class="text-bold">Chat with PICKAPP</p>
+                           </div>
+                           <div href="invoice.html" class="d-flex links active mb-4 justify-content-between align-items-center">
+                               <div class="d-flex align-items-center">
+                                    <span class="text-bold text-center py-2 mr-2">P</span>   
+                                    <p class="text-bold text-larger">PICKAPP</p>
+                               </div>
+                               <p class="">Yesterday,12:48 PM</p>
+                           </div>
+                       </div>
+                       <div class="grided__section--right bordered-left">
+                        <div class="bordered-bottom p-4">
+                            <p class="text-bold">Report Problem</p>
+                       </div>
+                       <div class="p-4">
+                            <p class="text-bold mb-4 px-4">How would you describe your issue?</p>
+                            <div class="d-flex flex-column col-8">
+                                <button class="btn btn-larger fully-bordered text-left  mb-3">Rude Customers</button>
+                                <button class="btn btn-larger fully-bordered text-left  mb-3">Unresponsive System</button>
+                                <button class="btn btn-larger fully-bordered text-left  mb-3">Deactive account</button>
+                                <button class="btn btn-larger fully-bordered text-left  mb-3">Problem with withdrawals</button>
+                                <button class="btn btn-larger fully-bordered text-left  mb-3">Other issue</button>
+                            </div> 
+                       </div>
+                   </div>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

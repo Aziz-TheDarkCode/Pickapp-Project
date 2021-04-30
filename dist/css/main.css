@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Sofia Pro';
-  src: url("../fonts/sofia_pro_light_az-webfont.woff") format("woff");
+  src: url("../fonts/sofia-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -219,7 +219,7 @@ d-none {
   color: #BFA660 !important; }
 
 .text-green {
-  color: #52bf85; }
+  color: #19AA5C; }
 
 .text-red {
   color: red; }
@@ -234,7 +234,32 @@ d-none {
   color: #000; }
 
 .rounded-text {
-  border-radius: 2rem; }
+  border-radius: 7px; }
 
 .rounded-box {
-  border-radius: 16px; }
+  border-radius: 1rem; }
+
+.bg-secondary-color {
+  background-color: #1e1e1e;
+  color: white; }
+
+.bg-gray-color {
+  background-color: #ebebeb; }
+
+.circle-radius {
+  border-radius: 50%; }
+
+.bordered-bottom {
+  background-color: transparent;
+  color: #1e1e1e;
+  border-bottom: #ebebeb 0.5px solid; }
+
+.bordered-left {
+  background-color: transparent;
+  color: #1e1e1e;
+  border-left: #ebebeb 0.5px solid; }
+
+.fully-bordered {
+  background-color: transparent;
+  color: #1e1e1e;
+  border: #ebebeb 0.5px solid; }

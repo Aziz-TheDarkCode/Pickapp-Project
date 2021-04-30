@@ -22,7 +22,7 @@
   color: $primary-color !important;
 }
 .text-green {
-  color: #52bf85;
+  color: #19AA5C;
 }
 .text-red {
   color: red;
@@ -38,8 +38,40 @@
 }
 
 .rounded-text {
-  border-radius: 2rem;
+  border-radius: 7px;
 }
 .rounded-box {
-  border-radius: 16px;
+  border-radius: 1rem;
+}
+.bg-secondary-color
+{
+  background-color: $secondary-color;
+  color: white;
+}
+.bg-gray-color
+{
+  background-color: $gray-color;
+}
+.circle-radius
+{
+  border-radius: 50%;
+}
+.bordered-bottom
+{
+  background-color: transparent;
+    color: $secondary-color;
+    border-bottom:rgb(235, 235, 235) .5px solid;
+
+}
+.bordered-left
+{
+  background-color: transparent;
+  color: $secondary-color;
+  border-left:rgb(235, 235, 235) .5px solid; 
+}
+.fully-bordered
+{
+  background-color: transparent;
+  color: $secondary-color;
+  border:rgb(235, 235, 235) .5px solid;
 }

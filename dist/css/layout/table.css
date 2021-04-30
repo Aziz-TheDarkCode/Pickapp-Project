@@ -1,10 +1,21 @@
 .table__header {
   background-color: #1e1e1e;
   color: #ffff;
-  padding: 1rem; }
+  padding: 1rem;
+  font-weight: bold; }
+  .table__header.primary {
+    background-color: transparent;
+    color: #1e1e1e;
+    border-bottom: #ebebeb 2px solid; }
 
 .table__content--row:nth-child(even) {
   background-color: #f1f2f3; }
+
+.table__content.primary > div {
+  background-color: #ffff;
+  transition: .5s ease; }
+  .table__content.primary > div:hover {
+    background-color: #fafafb; }
 
 .total-section {
   width: 45%; }
