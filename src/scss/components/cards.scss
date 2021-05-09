@@ -1,158 +1,134 @@
-@import"../abstract/classes";
-@import"../abstract/mixins";
-@import"../abstract/variables";
-@import"../base/typography";
-.card
-{
+@import '../abstract/classes';
+@import '../abstract/mixins';
+@import '../abstract/variables';
+@import '../base/typography';
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  font-size: map-get($font-size, regular);
 
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    font-size: map-get($font-size, regular);
-
-    .dots,.icon
-    {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-    }
+  .dots,
+  .icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
 }
-.card__category
-{       
-    height: 280px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.card__category {
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $main-color;
+  &--details {
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    left: 1rem;
+    font-size: map-get($font-size, medium);
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  &::after {
+    content: '';
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2rem;
+    background: linear-gradient(to top, #100f0fe0, transparent);
     color: $main-color;
-    &--details
-    {
-        position: absolute;
-        bottom: 1rem;
-        z-index: 1;
-        left: 1rem;
-        font-size: map-get($font-size,medium);
-        p
-        {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        span{
-            font-size: 14px;
-        }
-    }
-    &::after
-    {
-        content: "";
-        display: flex;
-        align-items: flex-end;
-        padding: 1.2rem;
-        background:linear-gradient(to top ,#100f0fe0,transparent);
-        color: $main-color;
-        position: absolute;
-        bottom: 0;
-        height: 18rem;
-        width: 100vw;
-    }
+    position: absolute;
+    bottom: 0;
+    height: 18rem;
+    width: 100vw;
+  }
 }
-.card__product
-{
-    height: auto;
-    background-color: $main-color;
-    position: relative;
-    overflow: hidden;
-    &--status
-    {   
-        color: gray;
-        font-size: 14px;
-    }
+.card__product {
+  height: auto;
+  background-color: $main-color;
+  position: relative;
+  overflow: hidden;
+  &--status {
+    color: gray;
+    font-size: 14px;
+  }
 
-    .layer{
-        position: absolute;
-        width: 100%;
-        height: 45%;
-        padding:2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: .5s ease-in;
-    }
-    .layer:hover{
-        opacity:1;
-        background: linear-gradient(to top, rgba(0,0,0,0.7) ,transparent);
-    }
-    &--img
-    {
+  .layer {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+  .layer:hover {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+  &--img {
+    width: 100%;
+  }
+  &--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    &::after {
+      content: '';
+      background-color: rgba(128, 128, 128, 0.294);
+      position: absolute;
+      bottom: 0;
       width: 100%;
-
+      left: 0.4rem;
+      height: 0.02rem;
     }
-    &--description
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: relative;
-        padding: 1rem;
-        line-height: 2rem;
-        font-size: 1rem;
-        &::after
-            {
-                content: "";
-                background-color: rgba(128, 128, 128, 0.294);
-                position: absolute;
-                bottom :0;
-                width: 100%;
-                left: .4rem;
-                height: .02rem;
-            }
-    }
+  }
 
-    &--title
-    {
-    
+  &--title {
+  }
+  &--footer {
+    padding: 0.9rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+  }
+  .icon {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    p {
+      @include set-background($secondary-color);
+      padding: 0.5rem;
+      width: 04rem;
+      text-align: center;
+      font-size: map-get($font-size, tiny);
+      @extend .rounded-border;
     }
-    &--footer
-    {
-        padding: .9rem;
-        display: flex;
-        font-size: 1rem;
-        align-items: center;
-    
-    }
-    .icon
-        {
-            display: flex;
-            width: 85%;
-            align-items: center;
-            margin: auto;
-            justify-content: space-between;
-            p
-                {
-                    @include set-background($secondary-color);
-                    padding: .5rem;
-                    width: 04rem;
-                    text-align: center;
-                    font-size: map-get($font-size, tiny );
-                    @extend .rounded-border;
-                }
-        }
-
-
-     
+  }
 }
-.greyed-out
-{
-  opacity: .4;
+.greyed-out {
+  opacity: 0.4;
 }
-.credit-card
-{
-    height:150px; 
-    width: 250px; 
-    border-radius: 1.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    color: $main-color;
-    background-size: cover;
-    background-image: url(../../images/Pattern.svg);
+.credit-card {
+  width: 250px;
+  border-radius: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  color: $main-color;
+  background-size: cover;
+  background-image: url(../../images/Pattern.svg);
 }

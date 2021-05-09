@@ -1,7 +1,6 @@
 //Modal semi larger
-.modal
-{
- position: fixed;
+.modal {
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -11,18 +10,16 @@
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  &__backdrop
-  {
+  &__backdrop {
     position: absolute;
     background-color: black;
     width: 100%;
     height: 100%;
-    opacity: .6;
+    opacity: 0.6;
     transition: opacity 0.32s ease-out;
   }
-  &__content
-  {
-    background-color:white;
+  &__content {
+    background-color: white;
     border-radius: 32px;
     width: 800px;
     height: auto;
@@ -32,45 +29,39 @@
     position: relative;
     transition: top 0.23s ease-out;
     z-index: 1;
-    ion-icon
-    {
-        position: absolute;
-        right: 2rem;
-        top: 1rem;
-        font-size: 2rem;
+    ion-icon {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      font-size: 2rem;
+    }
+    &.larger {
+      width: 100%;
+      height: 100%;
 
+      ion-icon {
+        left: 1rem;
+        top: 0;
+      }
     }
-    &.larger
-    {
-        width: 100%;
-        height: 100%;
-        
-        ion-icon
-    {
-      left : 1rem;
-      top:0;
-    }
-    }
-    &.semi-larger
-    {
+    &.semi-larger {
       width: 500px;
       height: auto;
     }
   }
 }
-.modal.active {
-    pointer-events: auto;
-  }
-  
-  .modal.active > .backdrop {
-    opacity: 0.5;
-  }
-  
-  .modal.active > .content {
-    top: 0%;
-  }
+.modal.active-modal {
+  pointer-events: auto;
+}
 
-.active
-{
-    display: flex;
+.modal.active-modal > .backdrop {
+  opacity: 0.5;
+}
+
+.modal.active-modal > .content {
+  top: 0%;
+}
+
+.active-modal {
+  display: flex;
 }

@@ -23,7 +23,7 @@
   font-weight: bold; }
 
 .btn {
-  padding: .7rem;
+  padding: 0.7rem;
   text-align: center;
   font-weight: bold;
   cursor: pointer; }
@@ -50,7 +50,7 @@
   width: 198px; }
 
 .btn-transparent-bg {
-  border: 2px solid   white;
+  border: 2px solid white;
   background-color: transparent;
   color: white; }
 
@@ -76,25 +76,30 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: #ffff;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 input:checked + .slider {
   background-color: #BFA660; }
 
 input:focus + .slider {
   box-shadow: 0 0 1px #BFA660; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
 
 /* Rounded sliders */
 .slider.round {
@@ -112,22 +117,22 @@ input:focus + .slider {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .toggler:before {
   position: absolute;
-  content: "";
+  content: '';
   border-radius: 34px;
   height: 26px;
   width: 26px;
   right: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s; }
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
 
 .availiable::before {
-  content: "";
+  content: '';
   background-color: #1e1e1e;
   left: 4px; }
