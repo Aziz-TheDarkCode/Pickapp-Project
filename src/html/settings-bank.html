@@ -5,26 +5,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Bank</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-   <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/cards.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/buttons.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/inputs.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/aside.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/form.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../../dist/css/layout/modal.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/section.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-grid.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-4-utilities.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href=''>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+   <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../dist/css/layout/modal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
+
 </head>
 <body>
     <main>
-        @@include('../includes/aside.html')
+        @@include('./includes/aside.html')
         <div class="container">
-            @@include('../includes/header.html')
+            @@include('./includes/header.html')
             <!-- MODAL --> 
     <div class="modal">
         <div class="modal__backdrop" onclick="closeModal()"></div>
@@ -102,27 +100,27 @@
     </div>
                    <div class="grided__section">
                     <div class="grided__section--left">
-                        <a href="invoice.html" class="links">
+                        <a href="settings-invoice.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
-                        <a href="bank.html" class="links active">
+                        <a href="settings-bank.html" class="links active">
                             <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
                             <p class="ml-4">Billing information,card information</p>
                         </a>
-                        <a href="notification.html" class="links">
+                        <a href="settings-notification.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
-                        <a href="account.html" class="links">
+                        <a href="settings-account.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
                             <p class="ml-4">Company informations,Password</p>
                         </a>
-                        <a href="privacy.html" class="links">
+                        <a href="settings-privacy.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
                             <p class="ml-4">Our privacy policy</p>
                         </a>
-                        <a href="legal.html" class="links">
+                        <a href="settings-legal.html" class="links">
                             <p class="d-flex align-items-center">
                                 <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
                             <p class="ml-4">Our terms and conditions</p>
@@ -130,9 +128,9 @@
                     </div>
                        <div class="grided__section--right p-4 d-flex justify-content-center align-items-center">
                            <div class="content">
-                               <img src="../../images/bank-illustration.png" alt="">
-                               <p class="text-semi text-bold">Bank account not linked</p>
-                               <p class="gray-text">Please add a bank account to receive <br>payments</p>
+                               <img src="../images/bank-illustration.png" alt="">
+                               <p class="text-semi text-bold my-2">Bank account not linked</p>
+                               <p class="gray-text mb-2">Please add a bank account to receive <br>payments</p>
                                 <button onclick="openModal()" class="btn btn-medium btn-golden">+ Enter bank details</button>
                             </div>
                        </div>
@@ -140,6 +138,9 @@
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="../../../dist/js/modal.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/components/header.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/tables.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/charts.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/grid.css'>
@@ -32,12 +33,12 @@
     <p class="section-title">MAIN</p>
     <ul class="menu-links">
       <li class="bg-light-primary">
-        <a href="#" class="text-bold text-primary ">
+        <a href="order-list.html" class="text-bold text-primary ">
           <ion-icon name="cube-outline"></ion-icon>Orders
         </a>
       </li>
       <li>
-        <a href="Dashboard.html" class="active bordered main text-bold">
+        <a href="dashboard.html" class="active bordered main text-bold">
           <img src="../images/dashboard/icons/Dashboard Active.svg" class="mr-2" />
           <span>Dashboard</span>
         </a>
@@ -52,9 +53,9 @@
         </a>
         <div class="d-none flex-column px-4 my-3">
           <ul>
-            <li class="mb-2"><a href="/dist/html/analytics-revenue.html">Revenue</a></li>
-            <li class="mb-2"><a href="" class="active bordered">Customers</a></li>
-            <li class="mb-2"><a href="">Products list</a></li>
+            <li class="mb-2"><a href="analytics-revenue.html">Revenue</a></li>
+            <li class="mb-2"><a href="analytics-customer.html" class="active bordered">Customers</a></li>
+            <li class="mb-2"><a href="analytics-product.html">Products</a></li>
           </ul>
         </div>
       </li>
@@ -70,13 +71,13 @@
     <p class="section-title gray-text text-bold">OTHER</p>
     <ul class="menu-links">
       <li>
-        <a href="Dashboard.html">
+        <a href="message.html">
           <img src="../images/dashboard/icons/Message.svg" class="mr-2" />
           <span>Message</span>
         </a>
       </li>
       <li>
-        <a href="Dashboard.html">
+        <a href="settings-invoice.html">
           <img src="../images/dashboard/icons/Setting.svg" class="mr-2" />
           <span>Settings</span>
         </a>
@@ -112,7 +113,7 @@
                         <h1 class="text-larger">Order List</h1>
                         <div>
                             <span class="gray-text">Filter order:</span>
-                            <select class="btn btn-gray" >
+                            <select class="btn btn-gray ml-3" >
                                 <option value=""><ion-icon name="american-football-outline"></ion-icon>This Month</option>
                                 <option value="">January</option>
                                 <option value="">February</option>
@@ -130,7 +131,7 @@
                         </div>
                         
                     </div>
-                    <table class="col-12">
+                    <table class="col-12 order-list-table">
                         <thead class="bordered-bottom p-2">
                             <th class="text-bold text-left py-3">Customer</th>
                             <th class="text-bold text-center">Pickapp+</th>
@@ -144,20 +145,23 @@
                                     <div class="d-flex align-items-center">
                                         <div class="bg-secondary-color p-1 circle-radius text-sm-center" style="height:22px;width:22px;">G</div>
                                         <div class="ml-2">
-                                            <p class="text-bold">Guest</p>
-                                            <p class="mt-2 gray-text text-bold">#45790A3B</p>
+                                            <p class="">Guest</p>
+                                            <p class="mt-2 gray-text">#45790A3B</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">Yes</p>
+                                    <div class=" d-flex">
+                                       <img src="../images/Star-half.png" alt=""> 
+                                        <p class="ml-1">Yes</p>
+                                    </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">0min :30sec</p>
+                                    <p class="">0min :30sec</p>
                                 </td>
                                 <td class="">    
-                                    <p class="text-bold">Premium Hazelnut Latte(2)<br>
-                                        <span class="gray-text" sty>$8</span>
+                                    <p class="">Premium Hazelnut Latte(2)<br>
+                                        <span class="gray-text d-block mt-2">$8</span>
                                     </p>
                                     </td>
                                 <td class="text-center">
@@ -169,24 +173,27 @@
                                     <div class="d-flex align-items-center">
                                         <div class="bg-secondary-color p-1 circle-radius text-sm-center" style="height:22px;width:22px;">G</div>
                                         <div class="ml-2">
-                                            <p class="text-bold">Guest</p>
-                                            <p class="mt-2 gray-text text-bold">#45790A3B</p>
+                                            <p class="">Guest</p>
+                                            <p class="mt-2 gray-text">#45790A3B</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">Yes</p>
+                                    <div class=" d-flex">
+                                        <img src="../images/Star-half.png" alt=""> 
+                                         <p class="ml-1">Yes</p>
+                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">0min :30sec</p>
+                                    <p class="">0min :30sec</p>
                                 </td>
                                 <td>    
-                                    <p class="text-bold">Premium Hazelnut Latte(2)<br>
-                                        <span class="gray-text text-left">$8</span>
+                                    <p class="">Premium Hazelnut Latte(2)<br>
+                                        <span class="gray-text text-left d-block mt-2">$8</span>
                                     </p>
                                     </td>
                                 <td class="text-center">
-                                    <p class="text-bold text-green">In progress</p>
+                                    <button class="bg-secondary-color  p-3  text-sm-center" style="border-radius: .7rem; border: none;">Begin order</button>
                                 </td>
                             </tr>
                             <tr  class="bordered-bottom">
@@ -194,92 +201,76 @@
                                     <div class="d-flex align-items-center">
                                         <div class="bg-secondary-color p-1 circle-radius text-sm-center" style="height:22px;width:22px;">G</div>
                                         <div class="ml-2">
-                                            <p class="text-bold">Guest</p>
-                                            <p class="mt-2 gray-text text-bold">#45790A3B</p>
+                                            <p class="">Guest</p>
+                                            <p class="mt-2 gray-text">#45790A3B</p>
                                         </div>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">Yes</p>
+                                    <div class="d-flex">
+                                         <p class="ml-1">No</p>
+                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold">0min :30sec</p>
+                                    <p class="">Begin at 10:33 PM</p>
                                 </td>
                                 <td>    
-                                <p class="text-bold">Premium Hazelnut Latte(2)<br>
-                                    <span class="gray-text text-left">$8</span>
+                                <p class="">Premium Hazelnut Latte(2)<br>
+                                    <span class="gray-text text-left d-block mt-2">$8</span>
                                 </p>
                                 </td>
                                 <td class="text-center">
-                                    <p class="text-bold text-green">
-                                        <p class="bg-secondary-color  p-3  text-sm-center" style="border-radius: .7rem;">Begin order</p>
-                                    </p>
+                                    <p class=" text-green">In progress</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                </div>
-                <div class="py-5 px-3" class="order-details" style="position: relative;">
-                    <div class="col-12 p-3 rounded-box text-sm-center bg-light-green text-green text-bold">
+                <div class="p-3" class="order-details" style="position: relative;">
+                    <div class="col-12 p-3 rounded-box text-sm-center bg-light-green text-green">
                             <p>Order preparation in progress</p>
                     </div>
-                    <div class="p-2 bordered-section mb-4">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="p-2 bordered-section mb-1">
+                        <div class="d-flex justify-content-between align-items-center mt-2">
                             <h1 class="text-medium">Order Details</h1>
-                            <p class="gray-text text-bold">#45790A3B</p>
+                            <p class="gray-text">#45790A3B</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <p class="gray-text text-bold">Total Price(3)</p>
-                            <p class="gray-text text-bold">$8</p>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <p class="gray-text">Total Price(3)</p>
+                            <p class="gray-text">$8</p>
                         </div>
                       
                     </div>
                     <div>
-                        <div style="height: 200px;" class="rounded-box col-12 mb-4 bg-gray-color">
+                        <div style="height: 200px;" class="mt-3 mb-4 rounded-box col-12 bg-gray-color">
                             
                         </div>
-                        <div class="col-12 p-3 rounded-box text-sm-center bg-gray-color">
-                            <span class="gray-text">Customers will arrive in:</span>
+                        <div class="col-12 p-3 rounded-box bg-gray-color customer-box" style="border: 1px solid #ddd">
+                            <div class="box-head p-2 text-primary text-primary bg-light-primary">Pickapp+</div>
+                            <div class="mt-3">
+                                <span class="gray-text">Customers will arrive in:</span>
                             <span class="ml-0 text-bold">5:48sec</span>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <div class="article d-flex p-2 align-items-center justify-content-between mb-2" >
+                    <div class="mt-3">
+                        <div class="article d-flex p-2 align-items-center justify-content-between mb-1" >
                             <div class="d-flex align-items-center">
                                 <img src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img" width="60px">
-                                <span class="text-bold ml-2">
-                                    <p>Coffee of the week</p>
-                                    <p class="gray-text mt-2">200 disshes ordered</p>
+                                <span class="ml-2">
+                                    <p>Greentea Frappucino</p>
+                                    <p class="gray-text mt-2">Grande Extra 1 shot, Whip Cream</p>
                                 </span>
                             </div>
                             <p class="text-bold">1</p>
                         </div>
-                        <div class="article d-flex p-2 align-items-center justify-content-between mb-2" >
-                            <div class="d-flex align-items-center">
-                                <img src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img" width="60px">
-                                <span class="text-bold ml-2">
-                                    <p>Coffee of the week</p>
-                                    <p class="gray-text mt-2">200 disshes ordered</p>
-                                </span>
-                            </div>
-                            <p class="text-bold">1</p>
-                        </div>
-                        <div class="article d-flex p-2 align-items-center justify-content-between mb-2" >
-                            <div class="d-flex align-items-center">
-                                <img src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img" width="60px">
-                                <span class="text-bold ml-2">
-                                    <p>Coffee of the week</p>
-                                    <p class="gray-text mt-2">200 disshes ordered</p>
-                                </span>
-                            </div>
-                            <p class="text-bold">1</p>
-                        </div>
-                        <div class="col-12 p-3 rounded-box bg-gray-color">
-                           <p class="text-bold">For premium hazelnut latte please separate the sugar</p>
+                        <div class="col-12 p-3 rounded-box bg-gray-color customer-box" style="border: 1px solid #ddd">
+                           <p class="">For premium hazelnut latte please separate the sugar</p>
                         </div>
                     </div>
-                    <div class="rounded-box bg-secondary-color col-12 p-4 justify-content-center align-items-center" style="position: absolute; bottom: 4rem; left: 0; height: 05rem;">
-                            <p class="text-semi text-center">Begin Order Preparation</p>
+                    <div class="order-button bg-secondary-color p-4 d-flex justify-content-center align-items-center" style="">
+                        <p class="text-center">Begin Order Preparation</p>
                     </div>
                 </div>
             </section>

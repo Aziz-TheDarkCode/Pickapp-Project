@@ -11,6 +11,10 @@
   background-color: #ff000029;
   border-radius: 2rem;
 }
+
+.orange-text {
+  color: orange;
+}
 .bg-light-white {
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -25,7 +29,7 @@
   color: $primary-color !important;
 }
 .text-green {
-  color: #19AA5C;
+  color: #19aa5c;
 }
 .text-red {
   color: red;
@@ -37,7 +41,7 @@
   color: rgba(128, 128, 128, 0.973);
 }
 .text-dark {
-  color: #000;
+  color: #000 !important;
 }
 
 .rounded-text {
@@ -46,35 +50,28 @@
 .rounded-box {
   border-radius: 1rem;
 }
-.bg-secondary-color
-{
+.bg-secondary-color {
   background-color: $secondary-color;
   color: white;
 }
-.bg-gray-color
-{
+.bg-gray-color {
   background-color: $gray-color;
 }
-.circle-radius
-{
+.circle-radius {
   border-radius: 50%;
 }
-.bordered-bottom
-{
-  background-color: transparent;
-    color: $secondary-color;
-    border-bottom:rgb(235, 235, 235) .5px solid;
-
-}
-.bordered-left
-{
+.bordered-bottom {
   background-color: transparent;
   color: $secondary-color;
-  border-left:rgb(235, 235, 235) .5px solid; 
+  border-bottom: rgb(235, 235, 235) 0.5px solid;
 }
-.fully-bordered
-{
+.bordered-left {
   background-color: transparent;
   color: $secondary-color;
-  border:rgb(235, 235, 235)  .5px solid;
+  border-left: rgb(235, 235, 235) 0.5px solid;
+}
+.fully-bordered {
+  background-color: transparent;
+  color: $secondary-color;
+  border: rgb(235, 235, 235) 0.5px solid;
 }

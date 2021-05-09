@@ -1,0 +1,10 @@
+table.order-list-table {
+  td {
+    padding: 1.5rem 0;
+  }
+  tr:hover {
+    cursor: pointer;
+    background-color: #f8fafd;
+    padding-left: 0.5rem;
+  }
+}

@@ -5,18 +5,17 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Notifications</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-   <link rel='stylesheet' type='text/css' media='screen' href='../../css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/cards.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/buttons.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/components/inputs.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/aside.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/form.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/layout/section.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-grid.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../../css/plugin/bootstrap-4-utilities.min.css'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../dist/css/layout/modal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
 </head>
 <body>
     <main>
@@ -30,12 +29,12 @@
     <p class="section-title">MAIN</p>
     <ul class="menu-links">
       <li class="bg-light-primary">
-        <a href="#" class="text-bold text-primary ">
+        <a href="order-list.html" class="text-bold text-primary ">
           <ion-icon name="cube-outline"></ion-icon>Orders
         </a>
       </li>
       <li>
-        <a href="Dashboard.html" class="active bordered main text-bold">
+        <a href="dashboard.html" class="active bordered main text-bold">
           <img src="../images/dashboard/icons/Dashboard Active.svg" class="mr-2" />
           <span>Dashboard</span>
         </a>
@@ -50,9 +49,9 @@
         </a>
         <div class="d-none flex-column px-4 my-3">
           <ul>
-            <li class="mb-2"><a href="/dist/html/analytics-revenue.html">Revenue</a></li>
-            <li class="mb-2"><a href="" class="active bordered">Customers</a></li>
-            <li class="mb-2"><a href="">Products</a></li>
+            <li class="mb-2"><a href="analytics-revenue.html">Revenue</a></li>
+            <li class="mb-2"><a href="analytics-customer.html" class="active bordered">Customers</a></li>
+            <li class="mb-2"><a href="analytics-product.html">Products</a></li>
           </ul>
         </div>
       </li>
@@ -68,13 +67,13 @@
     <p class="section-title gray-text text-bold">OTHER</p>
     <ul class="menu-links">
       <li>
-        <a href="Dashboard.html">
+        <a href="message.html">
           <img src="../images/dashboard/icons/Message.svg" class="mr-2" />
           <span>Message</span>
         </a>
       </li>
       <li>
-        <a href="Dashboard.html">
+        <a href="settings-invoice.html">
           <img src="../images/dashboard/icons/Setting.svg" class="mr-2" />
           <span>Settings</span>
         </a>
@@ -107,27 +106,27 @@
            
                    <div class="grided__section">
                     <div class="grided__section--left">
-                        <a href="invoice.html" class="links">
+                        <a href="settings-invoice.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
-                        <a href="bank.html" class="links">
+                        <a href="settings-bank.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
                             <p class="ml-4">Billing information,card information</p>
                         </a>
-                        <a href="notification.html" class="links active">
+                        <a href="settings-notification.html" class="links active">
                             <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
                             <p class="ml-4">Transactions,Statements,etc</p>
                         </a>
-                        <a href="account.html" class="links">
+                        <a href="settings-account.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
                             <p class="ml-4">Company informations,Password</p>
                         </a>
-                        <a href="privacy.html" class="links">
+                        <a href="settings-privacy.html" class="links">
                             <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
                             <p class="ml-4">Our privacy policy</p>
                         </a>
-                        <a href="legal.html" class="links">
+                        <a href="settings-legal.html" class="links">
                             <p class="d-flex align-items-center">
                                 <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
                             <p class="ml-4">Our terms and conditions</p>
@@ -170,6 +169,6 @@
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src='../../js/app.js'></script>
+    <script src='../js/app.js'></script>
 </body>
 </html>
