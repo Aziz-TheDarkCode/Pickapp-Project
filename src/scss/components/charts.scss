@@ -58,11 +58,38 @@
     }
   }
 }
+.chart{
+  width: 30%;
+  position: relative;
+  .chart-data
+  {
+    top: 40%;
+    left: 45%;
+  }
+}
 #chart5 {
   left: -12px;
 }
+#chart7{
+  position: relative;
+}
+#chart8{
+  
+}
+#chart9{
+ 
+}
+#chart10{
+}
+.chart-data{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 #chart2 {
   margin-top: 1rem;
+  position: relative;
   svg {
     height: 250px;
   }

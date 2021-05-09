@@ -305,3 +305,15 @@
     height: 05rem;
   }
 }
+.customer-box
+{
+  position: relative;
+  height: 4rem;
+}
+.box-head
+{
+  position: absolute;
+  top: -.7rem;
+  border: 1px $primary-color solid;
+  border-radius: .5rem;
+}

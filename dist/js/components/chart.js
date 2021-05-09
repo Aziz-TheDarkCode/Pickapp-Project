@@ -181,7 +181,7 @@ function createD3Donut(
       })
       .attr('fill', 'none')
       .attr('d', arc);
-    // 3267 (100%)
+
     svg
       .append('text')
       .text(text)
@@ -220,7 +220,7 @@ function createD3Donut(
       30,
       100,
       120,
-      '3267 (100%)'
+
     );
     createD3Donut(
       '#chart7',
@@ -249,7 +249,69 @@ function createD3Donut(
       5,
       130,
       120,
-      '$10.321'
+    );
+    createD3Donut(
+      '#chart8',
+      [
+        {
+          color: '#BFA660',
+          value: 46
+        },
+        
+        {
+          color: 'transparent',
+          value: 22
+        }
+      ],
+      160,
+      150,
+      10,
+      10,
+      5,
+      80,
+      75,
+    );
+    createD3Donut(
+      '#chart9',
+      [
+        {
+          color: '#846F35',
+          value: 74
+        },
+        
+        {
+          color: 'transparent',
+          value: 22
+        }
+      ],
+      160,
+      150,
+      10,
+      10,
+      5,
+      80,
+      75,
+    );
+    createD3Donut(
+      '#chart10',
+      [
+        {
+          color: '#292929',
+          value: 14
+        },
+        
+        {
+          color: 'transparent',
+          value: 22
+        }
+      ],
+      160,
+      150,
+      10,
+      10,
+      5,
+      80,
+      75,
     );
     $('#chart3 line, #chart6 line')
       .mouseenter(function () {

@@ -30,7 +30,7 @@
     <p class="section-title">MAIN</p>
     <ul class="menu-links">
       <li class="bg-light-primary">
-        <a href="#" class="text-bold text-primary ">
+        <a href="order-list.html" class="text-bold text-primary ">
           <ion-icon name="cube-outline"></ion-icon>Orders
         </a>
       </li>
@@ -50,9 +50,9 @@
         </a>
         <div class="d-none flex-column px-4 my-3">
           <ul>
-            <li class="mb-2"><a href="/dist/html/analytics-revenue.html">Revenue</a></li>
-            <li class="mb-2"><a href="" class="active bordered">Customers</a></li>
-            <li class="mb-2"><a href="">Products list</a></li>
+            <li class="mb-2"><a href="analytics-revenue.html">Revenue</a></li>
+            <li class="mb-2"><a href="analytics-customer.html" class="active bordered">Customers</a></li>
+            <li class="mb-2"><a href="analytics-product.html">Products</a></li>
           </ul>
         </div>
       </li>
@@ -68,13 +68,13 @@
     <p class="section-title gray-text text-bold">OTHER</p>
     <ul class="menu-links">
       <li>
-        <a href="Dashboard.html">
+        <a href="message.html">
           <img src="../images/dashboard/icons/Message.svg" class="mr-2" />
           <span>Message</span>
         </a>
       </li>
       <li>
-        <a href="Dashboard.html">
+        <a href="settings-invoice.html">
           <img src="../images/dashboard/icons/Setting.svg" class="mr-2" />
           <span>Settings</span>
         </a>
@@ -110,7 +110,7 @@
                         <div class="section__content--header p-4">
                             <h1 class="text-bold text-larger">Revenue</h1>
                         </div>
-                        <select class="btn" style="background-color: #efeff0;border-radius: 8px;">
+                        <select class="btn btn-gray mr-3" style="border-radius: 8px;">
                             <option value="">This month</option>
                             <option value="dog">Dog</option>
                             <option value="cat">Cat</option>
@@ -191,7 +191,12 @@
                                     <span class="text-dark text-bold">March</span>
                                     <ion-icon name="chevron-forward-outline" class="text-dark"></ion-icon>
                                 </div>
-                                <div id="chart7" class="my-3"></div>
+                                <div id="chart7" class="my-3">
+                                    <div class="chart-data text-center">
+                                        <p class="text-bold text-larger mb-4">$10.321</p>
+                                        <p class="gray-text text-bold">Revenue per products</p>
+                                    </div>
+                                </div>
                                 <div class="d-flex flex-wrap">
                                     <div class="p-2 d-flex align-items-center">
                                         <span class="text-medium golden-text mr-2 text-primary">•</span>
