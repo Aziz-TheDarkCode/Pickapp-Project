@@ -196,6 +196,9 @@ main {
 d-none {
   display: none; }
 
+d-block {
+  display: block; }
+
 .bg-light-primary {
   background-color: #f2eddf; }
 
@@ -225,7 +228,7 @@ d-none {
   color: #BFA660 !important; }
 
 .text-green {
-  color: #19AA5C; }
+  color: #19aa5c; }
 
 .text-red {
   color: red; }
@@ -237,7 +240,7 @@ d-none {
   color: rgba(128, 128, 128, 0.973); }
 
 .text-dark {
-  color: #000; }
+  color: #000 !important; }
 
 .rounded-text {
   border-radius: 7px; }

@@ -1,52 +1,45 @@
-@import"../abstract/variables";
-@import"../abstract/classes";
-@import"../abstract/functions";
-@import"../abstract/mixins";
-@import"../base/typography";
+@import '../abstract/variables';
+@import '../abstract/classes';
+@import '../abstract/functions';
+@import '../abstract/mixins';
+@import '../base/typography';
 
-.btn
-{
-    padding: .7rem;
-    text-align: center;
-    @extend .rounded-border;
-    font-weight: bold;
-    cursor: pointer;
+.btn {
+  padding: 0.7rem;
+  text-align: center;
+  @extend .rounded-border;
+  font-weight: bold;
+  cursor: pointer;
 }
 //Button Color
-.btn-black
-{
-    @include set-background($secondary-color);
-    border: 1px $secondary-color solid
-    
+.btn-black {
+  @include set-background($secondary-color);
+  border: 1px $secondary-color solid;
 }
-.btn-golden
-{
-    @include set-background($primary-color);
-    border: 1px $primary-color solid;
+.btn-golden {
+  @include set-background($primary-color);
+  border: 1px $primary-color solid;
 }
 .btn-gray {
-    background-color: darken($tertiary-color, 03%);
-    color: $secondary-color;
-    border: 1px darken($tertiary-color, 03%) solid;
+  background-color: darken($tertiary-color, 03%);
+  color: $secondary-color;
+  border: 1px darken($tertiary-color, 03%) solid;
 }
 
 //Button Size
-.btn-larger
-{   font-size: 0.98rem;
+.btn-larger {
+  font-size: 0.98rem;
 }
-.btn-medium
-{
-    width: 198px;
+.btn-medium {
+  width: 198px;
 }
-.btn-transparent-bg
-{
-    border: 2px solid   white;
-    background-color: transparent;
-
+.btn-transparent-bg {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
 }
-.btn-black-border
-{
-    border: .2px solid  $secondary-color;
+.btn-black-border {
+  border: 0.2px solid $secondary-color;
 }
 //toggle button
 .switch {
@@ -56,7 +49,7 @@
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -70,20 +63,20 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: $main-color;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -91,50 +84,60 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px $primary-color
+  box-shadow: 0 0 1px $primary-color;
 }
 
-
-
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
-  
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
 
-  //static switch
-  .toggler {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 34px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .toggler:before {
-    position: absolute;
-    content: "";
-    border-radius: 34px;
-    height: 26px;
-    width: 26px;
-    right: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  .availiable::before
-  {
-    content: "";
-    background-color: $secondary-color;
-    left: 4px;
-  }
+//static switch
+.toggler {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggler:before {
+  position: absolute;
+  content: '';
+  border-radius: 34px;
+  height: 26px;
+  width: 26px;
+  right: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.availiable::before {
+  content: '';
+  background-color: $secondary-color;
+  left: 4px;
+}
+.order-button {
+  position: absolute;
+  width: 100%;
+  bottom: 5rem;
+  left: 0;
+  height: 0rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
