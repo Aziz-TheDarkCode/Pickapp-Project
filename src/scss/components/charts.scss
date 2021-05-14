@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   z-index: 100;
-  bottom: 13px;
+  bottom: 05px;
   background-color: #fff;
   height: 8px;
 }
@@ -73,14 +73,7 @@
 #chart7{
   position: relative;
 }
-#chart8{
-  
-}
-#chart9{
- 
-}
-#chart10{
-}
+
 .chart-data{
   position: absolute;
   top: 50%;
@@ -118,7 +111,7 @@
       transition: 0.4s;
       position: relative;
       &:hover {
-        stroke: #000;
+        stroke: $secondary-color;
       }
     }
   }
@@ -177,7 +170,7 @@
 #chart4 {
   > svg > g:nth-child(2) {
     .ct-series:nth-child(even) > line {
-      stroke: #000;
+      stroke: $secondary-color;
     }
   }
   .ct-series {
@@ -187,5 +180,68 @@
   }
   .ct-label {
     margin-top: 10px;
+  }
+}
+#chart11 {
+  > svg > g:nth-child(2) {
+    .ct-series:nth-child(even) > line {
+      stroke: $secondary-color;
+    }
+  }
+  .ct-series {
+    .ct-bar {
+      stroke-width: 10px;
+    }
+  }
+  .ct-label {
+    margin-top: 10px;
+  }
+}
+#chart12 {
+  height: 85%;
+  > svg > g:nth-child(2) {
+    .ct-series:nth-child(even) > line {
+      stroke: $secondary-color;
+    }
+  }
+  .ct-series {
+    .ct-bar {
+      stroke-width: 07px;
+    }
+  }
+  .ct-label {
+    margin-top: 10px;
+  }
+  .ct-grid
+  {
+    display: none;
+  }
+  .ct-vertical
+  {
+    display: none;
+  }
+}
+#chart13{
+  height: 80%;
+  > svg > g:nth-child(2) {
+    .ct-series:nth-child(even) > line {
+      stroke: $secondary-color;
+    }
+  }
+  .ct-series {
+    .ct-bar {
+      stroke-width: 05px;
+    }
+  }
+  .ct-label {
+    margin-top: 10px;
+  }
+  .ct-grid
+  {
+    display: none;
+  }
+  .ct-vertical
+  {
+    display: none;
   }
 }

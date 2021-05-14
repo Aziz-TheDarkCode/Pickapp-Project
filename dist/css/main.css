@@ -269,3 +269,9 @@ d-none {
   background-color: transparent;
   color: #1e1e1e;
   border: #ebebeb 0.5px solid; }
+
+.active-primary {
+  border-right: 1px solid #BFA660; }
+
+small {
+  font-size: 12px; }

@@ -5,7 +5,7 @@
   position: absolute;
   width: 100%;
   z-index: 100;
-  bottom: 13px;
+  bottom: 05px;
   background-color: #fff;
   height: 8px; }
 
@@ -106,7 +106,7 @@
     position: relative; }
     #chart3 .ct-grid.ct-horizontal:hover,
     #chart6 .ct-grid.ct-horizontal:hover {
-      stroke: #000; }
+      stroke: #1e1e1e; }
 
 .ct-point {
   display: none; }
@@ -153,10 +153,45 @@
   font-weight: bold; }
 
 #chart4 > svg > g:nth-child(2) .ct-series:nth-child(even) > line {
-  stroke: #000; }
+  stroke: #1e1e1e; }
 
 #chart4 .ct-series .ct-bar {
   stroke-width: 10px; }
 
 #chart4 .ct-label {
   margin-top: 10px; }
+
+#chart11 > svg > g:nth-child(2) .ct-series:nth-child(even) > line {
+  stroke: #1e1e1e; }
+
+#chart11 .ct-series .ct-bar {
+  stroke-width: 10px; }
+
+#chart11 .ct-label {
+  margin-top: 10px; }
+
+#chart12 {
+  height: 85%; }
+  #chart12 > svg > g:nth-child(2) .ct-series:nth-child(even) > line {
+    stroke: #1e1e1e; }
+  #chart12 .ct-series .ct-bar {
+    stroke-width: 07px; }
+  #chart12 .ct-label {
+    margin-top: 10px; }
+  #chart12 .ct-grid {
+    display: none; }
+  #chart12 .ct-vertical {
+    display: none; }
+
+#chart13 {
+  height: 80%; }
+  #chart13 > svg > g:nth-child(2) .ct-series:nth-child(even) > line {
+    stroke: #1e1e1e; }
+  #chart13 .ct-series .ct-bar {
+    stroke-width: 05px; }
+  #chart13 .ct-label {
+    margin-top: 10px; }
+  #chart13 .ct-grid {
+    display: none; }
+  #chart13 .ct-vertical {
+    display: none; }

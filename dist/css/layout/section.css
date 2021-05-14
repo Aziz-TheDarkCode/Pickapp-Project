@@ -45,7 +45,7 @@
 
 .container {
   background-color: #fafafb;
-  height: 100vh; }
+  height: auto; }
   .container section {
     display: grid;
     grid-template-columns: 3fr 1fr; }
@@ -64,8 +64,7 @@
         background-color: #ffff;
         padding: 2.5rem 1.5rem;
         display: grid;
-        grid-template-columns: 1fr;
-        height: calc(100vh - 5rem); }
+        grid-template-columns: 1fr; }
         .container section .section__content--right .article {
           display: flex;
           align-items: center;
@@ -90,7 +89,6 @@
         padding: 2.5rem 1.5rem; }
     .container section .no-aside {
       grid-column: span 4;
-      height: 100vh;
       overflow: scroll;
       height: 100vh; }
       .container section .no-aside::-webkit-scrollbar {
@@ -184,10 +182,6 @@
         height: 2.7rem;
         width: 2.7rem;
         font-size: 1.3rem; }
-      .grided__section--left .links p:nth-child(2) {
-        font-size: 0.7rem; }
-      .grided__section--left .links ion-icon {
-        font-size: 0.9rem; }
       .grided__section--left .links.active {
         background-color: #1e1e1e;
         opacity: 1;
@@ -203,7 +197,6 @@
       line-height: 1.2rem; }
     .grided__section--right .content {
       text-align: center;
-      line-height: 1.5rem;
       position: absolute;
       left: 25%;
       top: 25%; }
