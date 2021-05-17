@@ -37,7 +37,7 @@
 }
 .container {
   background-color: $tertiary-color;
-  height: 100vh;
+  height: auto;
   section {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -60,7 +60,7 @@
         padding: 2.5rem 1.5rem;
         display: grid;
         grid-template-columns: 1fr;
-        height: calc(100vh - 5rem);
+
         .article {
           display: flex;
           align-items: center;
@@ -95,7 +95,6 @@
     }
     .no-aside {
       grid-column: span 4;
-      height: 100vh;
       overflow: scroll;
       height: 100vh;
       &::-webkit-scrollbar {
@@ -208,12 +207,8 @@
           font-size: 1.3rem;
         }
       }
-      p:nth-child(2) {
-        font-size: 0.7rem;
-      }
-      ion-icon {
-        font-size: 0.9rem;
-      }
+      
+ 
       &.active {
         background-color: $secondary-color;
         opacity: 1;
@@ -233,7 +228,7 @@
     }
     .content {
       text-align: center;
-      line-height: 1.5rem;
+
       position: absolute;
       left: 25%;
       top: 25%;

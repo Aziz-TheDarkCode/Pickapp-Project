@@ -24,6 +24,34 @@ new Chartist.Bar(
     axisY: { showGrid: false, showLabel: false }
   }
 );
+new Chartist.Bar(
+  '#chart4',
+  {
+    labels: ['$2-$5', '$6-$10', '$11-$15', '$16-20$', '$25-$40'],
+    series: [20, 45, 15, 35, 40]
+  },
+  {
+    distributeSeries: true,
+    axisX: {
+      showGrid: false
+    },
+    axisY: { showGrid: false, showLabel: false }
+  }
+);
+new Chartist.Bar(
+  '#chart11',
+  {
+    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+    series: [20, 45, 15, 35]
+  },
+  {
+    distributeSeries: true,
+    axisX: {
+      showGrid: false
+    },
+    axisY: { showGrid: false, showLabel: false }
+  }
+);
 // new Chartist.Bar(
 //   '.ct-chart',
 //   {
@@ -313,6 +341,38 @@ function createD3Donut(
       80,
       75,
     );
+    new Chartist.Bar('#chart12', {
+      labels: ['W1', 'W2', 'W3', 'W4'],
+      series: [
+        [5, 4, 3, 5],
+        [3, 2, 6, 5]
+      ]
+    }, {
+      axisX: {
+        // On the x-axis start means top and end means bottom
+        position: 'end'
+      },
+      axisY: {
+        // On the y-axis start means left and end means right
+        position: 'end'
+      }
+    });
+    new Chartist.Bar('#chart13', {
+      labels: ['6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM',],
+      series: [
+        [5, 4, 3, 7,3,4,7,2,6,3,4,6,2,7],
+        [3, 2, 7, 5,6,5,6,4,2,1,3,5,6,3]
+      ]
+    }, {
+      axisX: {
+        // On the x-axis start means top and end means bottom
+        position: 'end'
+      },
+      axisY: {
+        // On the y-axis start means left and end means right
+        position: 'end'
+      }
+    });
     $('#chart3 line, #chart6 line')
       .mouseenter(function () {
         let x = +$(this).attr('x1') - 20;

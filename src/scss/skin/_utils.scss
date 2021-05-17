@@ -75,5 +75,13 @@
 .fully-bordered {
   background-color: transparent;
   color: $secondary-color;
-  border: rgb(235, 235, 235) 0.5px solid;
+  border:rgb(235, 235, 235)  .5px solid;
+}
+.active-primary
+{
+  border-right: 1px solid $primary-color;
+}
+small
+{
+  font-size: 12px;
 }
