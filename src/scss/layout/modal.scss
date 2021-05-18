@@ -29,11 +29,15 @@
     position: relative;
     transition: top 0.23s ease-out;
     z-index: 1;
-    ion-icon {
+    ion-icon.close {
       position: absolute;
       right: 2rem;
       top: 1rem;
       font-size: 2rem;
+    }
+    ion-icon.trash {
+      color: red;
+      font-size: 14px;
     }
     &.larger {
       width: 100%;
@@ -65,4 +69,3 @@
 .active-modal {
   display: flex;
 }
-

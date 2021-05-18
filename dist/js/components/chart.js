@@ -97,8 +97,8 @@ new Chartist.Bar(
 new Chartist.Line(
   '#chart6',
   {
-    labels: ['', 'Week 1', 'Week 2', 'Week 3', 'Week 4', ''],
-    series: [['2000', 2500, 1000, 2800, 2000, 3000]]
+    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+    series: [[2500, 1000, 2800, 2000]]
   },
   {
     fullWidth: true,
@@ -114,11 +114,12 @@ new Chartist.Line(
 new Chartist.Line(
   '#chart3',
   {
-    labels: ['', 'Week 1', 'Week 2', 'Week 3', 'Week 4', ''],
-    series: [['2000', 2500, 1000, 2800, 2000, 3000]]
+    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+    series: [[2500, 1000, 2800, 2000]]
   },
   {
     fullWidth: true,
+    labelOffset: 550,
     height: '60%',
     axisY: {
       onlyInteger: true,
@@ -247,8 +248,7 @@ function createD3Donut(
       30,
       30,
       100,
-      120,
-
+      120
     );
     createD3Donut(
       '#chart7',
@@ -276,7 +276,7 @@ function createD3Donut(
       10,
       5,
       130,
-      120,
+      120
     );
     createD3Donut(
       '#chart8',
@@ -285,7 +285,7 @@ function createD3Donut(
           color: '#BFA660',
           value: 46
         },
-        
+
         {
           color: 'transparent',
           value: 22
@@ -297,7 +297,7 @@ function createD3Donut(
       10,
       5,
       80,
-      75,
+      75
     );
     createD3Donut(
       '#chart9',
@@ -306,7 +306,7 @@ function createD3Donut(
           color: '#846F35',
           value: 74
         },
-        
+
         {
           color: 'transparent',
           value: 22
@@ -318,7 +318,7 @@ function createD3Donut(
       10,
       5,
       80,
-      75,
+      75
     );
     createD3Donut(
       '#chart10',
@@ -327,7 +327,7 @@ function createD3Donut(
           color: '#292929',
           value: 14
         },
-        
+
         {
           color: 'transparent',
           value: 22
@@ -339,40 +339,64 @@ function createD3Donut(
       10,
       5,
       80,
-      75,
+      75
     );
-    new Chartist.Bar('#chart12', {
-      labels: ['W1', 'W2', 'W3', 'W4'],
-      series: [
-        [5, 4, 3, 5],
-        [3, 2, 6, 5]
-      ]
-    }, {
-      axisX: {
-        // On the x-axis start means top and end means bottom
-        position: 'end'
+    new Chartist.Bar(
+      '#chart12',
+      {
+        labels: ['W1', 'W2', 'W3', 'W4'],
+        series: [
+          [5, 4, 3, 5],
+          [3, 2, 6, 5]
+        ]
       },
-      axisY: {
-        // On the y-axis start means left and end means right
-        position: 'end'
+      {
+        fullWidth: true,
+        axisX: {
+          // On the x-axis start means top and end means bottom
+          position: 'end'
+        },
+        axisY: {
+          // On the y-axis start means left and end means right
+          position: 'end'
+        }
       }
-    });
-    new Chartist.Bar('#chart13', {
-      labels: ['6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM','6AM',],
-      series: [
-        [5, 4, 3, 7,3,4,7,2,6,3,4,6,2,7],
-        [3, 2, 7, 5,6,5,6,4,2,1,3,5,6,3]
-      ]
-    }, {
-      axisX: {
-        // On the x-axis start means top and end means bottom
-        position: 'end'
+    );
+    new Chartist.Bar(
+      '#chart13',
+      {
+        labels: [
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM',
+          '6AM'
+        ],
+        series: [
+          [5, 4, 3, 7, 3, 4, 7, 2, 6, 3, 4, 6, 2, 7],
+          [3, 2, 7, 5, 6, 5, 6, 4, 2, 1, 3, 5, 6, 3]
+        ]
       },
-      axisY: {
-        // On the y-axis start means left and end means right
-        position: 'end'
+      {
+        axisX: {
+          // On the x-axis start means top and end means bottom
+          position: 'end'
+        },
+        axisY: {
+          // On the y-axis start means left and end means right
+          position: 'end'
+        }
       }
-    });
+    );
     $('#chart3 line, #chart6 line')
       .mouseenter(function () {
         let x = +$(this).attr('x1') - 20;

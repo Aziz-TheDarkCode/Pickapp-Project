@@ -189,15 +189,14 @@ input:active {
 .text-bold {
   font-weight: bold; }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 4fr; }
-
 d-none {
   display: none; }
 
 d-block {
   display: block; }
+
+.w-100 {
+  width: 100%; }
 
 .bg-light-primary {
   background-color: #f2eddf; }
@@ -211,6 +210,12 @@ d-block {
   padding: 0.3rem;
   background-color: #ff000029;
   border-radius: 2rem; }
+
+.bg-light-orange {
+  background-color: #fff3ea; }
+
+.bg-primary {
+  background-color: #bfa660; }
 
 .orange-text {
   color: orange; }
@@ -278,3 +283,6 @@ d-block {
 
 small {
   font-size: 12px; }
+
+.font-weight-normal {
+  font-weight: 500 !important; }

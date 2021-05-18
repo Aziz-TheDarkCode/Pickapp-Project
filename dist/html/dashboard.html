@@ -11,6 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/charts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/grid.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
@@ -21,7 +22,9 @@
 
 <body>
     <main>
-        <aside>
+        <div class="content">
+            <div class="sidebar">
+                <aside>
   <div class="logo d-flex flex-column align-items-start justify-content-center">
     <img src="../images/dashboard/PICKAPP.png" width="100px" heigh="100px" alt="">
     <span class="gray-text d-block mt-2">Takeaway coffee, Redefined</span>
@@ -83,7 +86,215 @@
     </ul>
   </div>
 </aside>
-        <div class="container">
+            </div>
+            <div class="header">
+                <header class="d-flex justify-content-between align-items-center">
+  <div>
+    <div class="d-flex align-items-center">
+      <img src="../images/dashboard/icons/Search.svg" class="mr-2">
+      <input type="text" class="text-input-unborded" placeholder="Search anything" />
+    </div>
+  </div>
+  <div class="user-info justify-content-end">
+    <div class="notification mr-3">
+      <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px" onclick="openModal()">
+      <div class="notif">2</div>
+    </div>
+    <div class="d-flex align-items-center">
+      <img class="user-icon" src="https://berserkon.com/images/1-vector-flat.png" alt="">
+      <div class="info">
+        <p class="title-black text-bold">Abdou Aziz Ndiaye</p>
+        <p title="subtitle" class="gray-text text-bold">Administrator</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="modal">
+  <div class="col-9 modal__backdrop larger" onclick="closeModal()"></div>
+  <div class="my-auto col-3 d-flex modal__content larger">
+      <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+  </div>
+</div>
+            </div>
+            <div class="page-content">
+                <section>
+                    <div class="section__content--left">
+                        <div class="section__content--header">
+                            <h1 class="text-bold text-larger">Dashboard</h1>
+                        </div>
+                        <div class="box__section">
+                            <div class="box__section--small text-bold">
+                                <div class="p-3 box d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="text-bold">+32,45%</h6>
+                                        <div class="ml-2 box-icon d-flex align-items-center justify-content-center bg-light-white">
+                                            <ion-icon name="arrow-up-outline" class="text-primary"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-larger text-bold">$10,478.00</h1>
+                                    <h4 class="text-white mt-2">Total revenue</h4>
+                                </div>
+                                <div class="p-3 box d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="text-bold text-green">+32,5%</h6>
+                                        <div
+                                            class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
+                                            <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-larger text-bold">1485<h1>
+                                            <h4 class="gray-text">Total Customers</h4>
+                                </div>
+                                <div class="p-3 box d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="text-bold text-green">+32,5%</h6>
+                                        <div
+                                            class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
+                                            <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-larger text-bold">3267<h1>
+                                            <h4 class="gray-text">Total Products</h4>
+                                </div>
+                                <div class="p-3 box d-flex flex-column justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="text-bold text-red">-12,5%</h6>
+                                        <div class="ml-2 box-icon d-flex align-items-center justify-content-center bg-light-red">
+                                            <ion-icon name="arrow-down-outline" class="text-red"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-larger text-bold">128<h1>
+                                            <h4 class="gray-text">Total Sales</h4>
+                                </div>
+                            </div>
+                            <div class="box__section--larger">
+                                <div class="box p-3 chart-wrapper">
+                                    <p class="text-bold">Total Customers in this month</p>
+                                    <div class="ct-chart ct-perfect-fourth" id="chart1"></div>
+                                    <div class="chart-stroke-hide">&nbsp;</div>
+                                </div>
+                                <div class="box p-4">
+                
+                                    <p class="text-bold">Most ordered products</p>
+                                    <div class="d-flex align-items-center">
+                                        <div id="chart2">
+                                            <div class="chart-data text-center">
+                                                <p class="text-bold mb-1" style="font-size: 16px;">Total</p>
+                                                <p class="gray-text">3267(100%)</p>
+                                            </div>
+                                        </div>
+                                        <div class=" d-flex flex-column ">
+                                            <div class="p-2 d-flex align-items-center">
+                                                <span class="text-medium golden-text mr-2 text-primary">•</span>
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <p class="text-bold">Vanilla Latte</p>
+                                                    <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-2 d-flex align-items-center">
+                                                <span class="text-medium golden-text mr-2" style="color:#846f35">•</span>
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <p class="text-bold">Oreo Latte</p>
+                                                    <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-2 d-flex align-items-center">
+                                                <span class="text-medium golden-text mr-2" style="color:#292929">•</span>
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <p class="text-bold">Brown Sugar</p>
+                                                    <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                                </div>
+                                            </div>
+                                            <div class="p-2 d-flex align-items-center">
+                                                <span class="text-medium golden-text mr-2" style="color:#D4D4D6">•</span>
+                                                <div class="d-flex flex-column align-items-start">
+                                                    <p class="text-bold">Other</p>
+                                                    <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__section--medium mt-4 px-4 py-5">
+                                <p class="text-bold mb-3">Total sales</p>
+                                <div class="ct-chart ct-perfect-fourth" id="chart3"></div>
+                                <div class="chart-week-data flex-column p-2" style="display: none;">
+                                    <span class="text-bold" id="chart-week-value">3500</span>
+                                    <span class="text-bold mt-2" id="chart-week-text">Gross Sales</span>
+                                    <div class="arrow">&nbsp;</div>
+                                    <div class="dot">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__content--right bg-white">
+                        <p class="text-bold mb-3">Insight Overview</p>
+                        <div class="d-flex py-3 align-items-center">
+                            <div class="icon mr-2 circle-radius d-flex bg-light-primary align-items-center justify-content-center">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="">Coffee of the week</p>
+                                <p class="mt-2">2 times</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3 align-items-center">
+                            <div class="icon mr-2 circle-radius bg-light-gray d-flex align-items-center justify-content-center">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="">Total Products</p>
+                                <p class="mt-2">426/<i class="gray-text">500 dishes ordered</i></p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3 align-items-center">
+                            <div class="icon mr-2 circle-radius bg-light-primary d-flex align-items-center justify-content-center">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="">Average Spend</p>
+                                <p class="mt-2">$ 15</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3 align-items-center">
+                            <div class="icon mr-2 circle-radius bg-light-primary d-flex align-items-center justify-content-center">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="">Most common payment type</p>
+                                <p class="mt-2">Credit Card <i class="gray-text">(200 times)</i></p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3 align-items-center">
+                            <div class="icon mr-2 circle-radius bg-light-gray d-flex align-items-center justify-content-center">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <p class="">Monthly 5 star reviews</p>
+                                <p class="mt-2">43 person <i class="gray-text">(5 star)</i></p>
+                            </div>
+                        </div>
+                        <p class="text-bold my-4">Top 5 products this month</p>
+                        <div class="d-flex align-items-center py-2">
+                            <img width="50px" height="50px" src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img">
+                            <div>
+                                <p>Coffee of the week</p>
+                                <p class="gray-text mt-2">200 disshes ordered</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <img width="50px" height="50px" src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img">
+                            <div>
+                                <p>Coffee of the week</p>
+                                <p class="gray-text mt-2">200 dishes ordered</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- <div class="container">
             <header class="d-flex justify-content-between align-items-center">
   <div>
     <div class="d-flex align-items-center">
@@ -111,180 +322,7 @@
       <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
   </div>
 </div>
-            <section>
-                <div class="section__content--left">
-                    <div class="section__content--header">
-                        <h1 class="text-bold text-larger">Dashboard</h1>
-                    </div>
-                    <div class="box__section">
-                        <div class="box__section--small text-bold">
-                            <div class="p-3 box d-flex flex-column justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="text-bold">+32,45%</h6>
-                                    <div class="ml-2 box-icon d-flex align-items-center justify-content-center bg-light-white">
-                                        <ion-icon name="arrow-up-outline" class="text-primary"></ion-icon>
-                                    </div>
-                                </div>
-                                <h1 class="text-larger text-bold">$10,478.00</h1>
-                                <h4 class="text-white mt-2">Total revenue</h4>
-                            </div>
-                            <div class="p-3 box d-flex flex-column justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="text-bold text-green">+32,5%</h6>
-                                    <div class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
-                                        <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
-                                    </div>
-                                </div>
-                                <h1 class="text-larger text-bold">1485<h1>
-                                <h4 class="gray-text">Total Customers</h4>
-                            </div>
-                            <div class="p-3 box d-flex flex-column justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="text-bold text-green">+32,5%</h6>
-                                    <div class="ml-2 box-icon lighten-green-bg d-flex align-items-center justify-content-center bg-light-green">
-                                        <ion-icon name="arrow-up-outline" class="text-green"></ion-icon>
-                                    </div>
-                                </div>
-                                <h1 class="text-larger text-bold">3267<h1>
-                                        <h4 class="gray-text">Total Products</h4>
-                            </div>
-                            <div class="p-3 box d-flex flex-column justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <h6 class="text-bold text-red">-12,5%</h6>
-                                    <div class="ml-2 box-icon d-flex align-items-center justify-content-center bg-light-red">
-                                        <ion-icon name="arrow-down-outline" class="text-red"></ion-icon>
-                                    </div>
-                                </div>
-                                <h1 class="text-larger text-bold">128<h1>
-                                        <h4 class="gray-text">Total Sales</h4>
-                            </div>
-                        </div>
-                        <div class="box__section--larger">
-                            <div class="box p-3 chart-wrapper">
-                                <p class="text-bold">Total Customers in this month</p>
-                                <div class="ct-chart ct-perfect-fourth" id="chart1"></div>
-                                <div class="chart-stroke-hide">&nbsp;</div>
-                            </div>
-                            <div class="box p-4">
-                               
-                                <p class="text-bold">Most ordered products</p>
-                                <div class="d-flex align-items-center">
-                                    <div id="chart2">
-                                        <div class="chart-data text-center">
-                                            <p class="text-bold">Total</p>
-                                            <p class="gray-text text-bold">3267(100%)</p>
-                                        </div>
-                                    </div>
-                                    <div class=" d-flex flex-column ">
-                                        <div class="p-2 d-flex align-items-center">
-                                            <span class="text-medium golden-text mr-2 text-primary">•</span>
-                                            <div class="d-flex flex-column align-items-start">
-                                                <p class="text-bold">Vanilla Latte</p>
-                                                <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
-                                            </div>
-                                        </div>
-                                        <div class="p-2 d-flex align-items-center">
-                                            <span class="text-medium golden-text mr-2" style="color:#846f35">•</span>
-                                            <div class="d-flex flex-column align-items-start">
-                                                <p class="text-bold">Oreo Latte</p>
-                                                <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
-                                            </div>
-                                        </div>
-                                        <div class="p-2 d-flex align-items-center">
-                                            <span class="text-medium golden-text mr-2" style="color:#292929">•</span>
-                                            <div class="d-flex flex-column align-items-start">
-                                                <p class="text-bold">Brown Sugar</p>
-                                                <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
-                                            </div>
-                                        </div>
-                                        <div class="p-2 d-flex align-items-center">
-                                            <span class="text-medium golden-text mr-2" style="color:#D4D4D6">•</span>
-                                            <div class="d-flex flex-column align-items-start">
-                                                <p class="text-bold">Other</p>
-                                                <p class="text-x-smaller gray-text mt-1">1.200(25%)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box__section--medium mt-4 px-4 py-5">
-                            <p class="text-bold mb-3">Total sales</p>
-                            <div class="ct-chart ct-perfect-fourth" id="chart3"></div>
-                            <div class="chart-week-data flex-column p-2" style="display: none;">
-                                <span class="text-bold" id="chart-week-value">3500</span>
-                                <span class="text-bold mt-2" id="chart-week-text">Gross Sales</span>
-                                <div class="arrow">&nbsp;</div>
-                                <div class="dot">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section__content--right">
-                    <p class="text-bold">Insight Overview</p>
-                    <div class="article d-flex p-2">
-                        <div class="icon d-flex bg-light-primary align-items-center justify-content-center">
-                            <ion-icon name="card-outline"></ion-icon>
-                        </div>
-                        <span>
-                            <p class="text-bold">Coffee of the week</p>
-                            <p class="text-bold">2 times</p>
-                        </span>
-                    </div>
-                    <div class="article d-flex p-2">
-                        <div class="icon bg-light-gray d-flex align-items-center justify-content-center">
-                            <ion-icon name="card-outline"></ion-icon>
-                        </div>
-                        <span>
-                            <p class="text-bold">Total Products</p>
-                            <p class="text-bold">426/<i class="gray-text">500 dishes ordered</i></p>
-                        </span>
-                    </div>
-                    <div class="article d-flex p-2">
-                        <div class="icon d-flex bg-light-primary align-items-center justify-content-center">
-                            <ion-icon name="card-outline"></ion-icon>
-                        </div>
-                        <span>
-                            <p class="text-bold">Average Spend</p>
-                            <p class="text-bold">$15</p>
-                        </span>
-                    </div>
-                    <div class="article d-flex p-2">
-                        <div class="icon bg-light-gray d-flex align-items-center justify-content-center">
-                            <ion-icon name="card-outline"></ion-icon>
-                        </div>
-                        <span>
-                            <p class="text-bold">Most common payment</p>
-                            <p class="text-bold">Credit card</p>
-                        </span>
-                    </div>
-                    <div class="article d-flex p-2">
-                        <div class="icon d-flex bg-light-primary align-items-center justify-content-center">
-                            <ion-icon name="card-outline"></ion-icon>
-                        </div>
-                        <span>
-                            <p class="text-bold">Mostly 5 stars reviews</p>
-                            <p class="text-bold">43 person(5 star)</p>
-                        </span>
-                    </div>
-                    <p>Top 5 products this month</p>
-                    <div class="article d-flex p-2">
-                        <img src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img">
-                        <span>
-                            <p>Coffee of the week</p>
-                            <p>200 disshes ordered</p>
-                        </span>
-                    </div>
-                    <div class="article d-flex p-2">
-                        <img src="https://5.imimg.com/data5/IA/LU/MY-1134310/1-500x500.jpg" alt="" class="rounded-img">
-                        <span>
-                            <p>Coffee of the week</p>
-                            <p>200 dishes ordered</p>
-                        </span>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </div> -->
     </main>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>

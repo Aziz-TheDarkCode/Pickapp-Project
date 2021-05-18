@@ -133,10 +133,12 @@ input:checked + .slider:before {
   left: 4px;
 }
 .order-button {
-  position: absolute;
-  width: 100%;
-  bottom: 5rem;
-  left: 0;
+  position: fixed;
+  margin-top: 1.5rem;
+  width: 23%;
+  bottom: 0rem;
+  right: 0;
+  left: auto;
   height: 0rem;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;

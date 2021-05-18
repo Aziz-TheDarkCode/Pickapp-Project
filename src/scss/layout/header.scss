@@ -1,8 +1,8 @@
 @import '../abstract/variables';
 @import '../base/typography';
 header {
+  height: 100%;
   grid-column: span 6;
-  height: 5rem;
   border: 0.01rem solid rgba(128, 128, 128, 0.294);
   display: flex;
   justify-content: space-between;

@@ -239,13 +239,11 @@
         padding: 1.5rem;
         display: flex; }
 
-.order-details {
-  overflow: scroll; }
-  .order-details-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 05rem; }
+.order-details-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 05rem; }
 
 .customer-box {
   position: relative;
@@ -253,6 +251,6 @@
 
 .box-head {
   position: absolute;
-  top: -.7rem;
+  top: -0.7rem;
   border: 1px #BFA660 solid;
-  border-radius: .5rem; }
+  border-radius: 0.5rem; }
