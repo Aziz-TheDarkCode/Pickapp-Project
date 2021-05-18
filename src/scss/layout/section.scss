@@ -207,8 +207,7 @@
           font-size: 1.3rem;
         }
       }
-      
- 
+
       &.active {
         background-color: $secondary-color;
         opacity: 1;
@@ -289,26 +288,21 @@
     }
   }
 }
-.order-details
-{
-  overflow: scroll;
-  &-footer
-  {
+.order-details {
+  &-footer {
     position: absolute;
-    bottom: 0; 
-    left: 0; 
+    bottom: 0;
+    left: 0;
     height: 05rem;
   }
 }
-.customer-box
-{
+.customer-box {
   position: relative;
   height: 4rem;
 }
-.box-head
-{
+.box-head {
   position: absolute;
-  top: -.7rem;
+  top: -0.7rem;
   border: 1px $primary-color solid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }

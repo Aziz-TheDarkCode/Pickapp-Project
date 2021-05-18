@@ -60,7 +60,7 @@
   position: relative; }
   .chart .chart-data {
     top: 40%;
-    left: 45%; }
+    left: 50%; }
 
 #chart5 {
   left: -12px; }
@@ -70,8 +70,8 @@
 
 .chart-data {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 48%;
+  left: 46%;
   transform: translate(-50%, -50%); }
 
 #chart2 {

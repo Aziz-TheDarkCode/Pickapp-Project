@@ -27,11 +27,14 @@
     position: relative;
     transition: top 0.23s ease-out;
     z-index: 1; }
-    .modal__content ion-icon {
+    .modal__content ion-icon.close {
       position: absolute;
       right: 2rem;
       top: 1rem;
       font-size: 2rem; }
+    .modal__content ion-icon.trash {
+      color: red;
+      font-size: 14px; }
     .modal__content.larger {
       width: 100%;
       height: 100%; }

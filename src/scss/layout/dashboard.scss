@@ -1,0 +1,49 @@
+.content {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.header {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 5rem;
+  left: 20%;
+  z-index: 2;
+}
+.sidebar {
+  width: 20%;
+}
+.page-content {
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fafafb;
+  &.order-list {
+    background-color: #fff;
+  }
+  section {
+    height: 100%;
+    display: flex;
+    .section__content {
+      padding: 6rem 1.5rem 0 1.5rem;
+    }
+    .section__content--left {
+      height: 100%;
+      padding: 6rem 1.5rem 0 1.5rem;
+      width: 75%;
+    }
+    .section__content--right {
+      height: 100%;
+      padding: 6rem 1.5rem 0 1.5rem;
+      width: 25%;
+      background-color: #fafafb;
+      &.order-details {
+        width: 30%;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}

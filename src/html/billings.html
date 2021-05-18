@@ -109,31 +109,61 @@
    
                    <div class="grided__section">
                     <div class="grided__section--left">
-                        <a href="invoice.html" class="links">
-                            <p class="d-flex align-items-center"><ion-icon name="newspaper-outline"></ion-icon>Invoices</p>
-                            <p class="ml-4">Transactions,Statements,etc</p>
-                        </a>
-                        <a href="bank.html" class="links active">
-                            <p class="d-flex align-items-center"><ion-icon name="card-outline"></ion-icon>Bank Account</p>
-                            <p class="ml-4">Billing information,card information</p>
-                        </a>
-                        <a href="notification.html" class="links">
-                            <p class="d-flex align-items-center"><ion-icon name="notifications-outline"></ion-icon>Notifications</p>
-                            <p class="ml-4">Transactions,Statements,etc</p>
-                        </a>
-                        <a href="account.html" class="links">
-                            <p class="d-flex align-items-center"><ion-icon name="lock-closed-outline"></ion-icon>Account</p>
-                            <p class="ml-4">Company informations,Password</p>
-                        </a>
-                        <a href="privacy.html" class="links">
-                            <p class="d-flex align-items-center"><ion-icon name="document-outline"></ion-icon>Privacy Policy</p>
-                            <p class="ml-4">Our privacy policy</p>
-                        </a>
-                        <a href="legal.html" class="links">
-                            <p class="d-flex align-items-center">
-                                <ion-icon name="shield-checkmark-outline"></ion-icon>Legal</p>
-                            <p class="ml-4">Our terms and conditions</p>
-                        </a>
+                      <a href="settings-invoice.html" class="links active">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/wallet.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Invoice</p>
+                            <small>Transactions, Statements, etc</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="settings-bank.html" class="links">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/wallet.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Bank Account</p>
+                            <small>Billing Information, Card Information</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="settings-account.html" class="links">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/lock.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Account</p>
+                            <small>Company information, Password</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="settings-notification.html" class="links ">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/notification.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Notification</p>
+                            <small>Customize your notifications</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="settings-privacy.html" class="links ">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/Paper-upload.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Privacy policy</p>
+                            <small>Our privacy policy</small>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="settings-legal.html" class="links ">
+                        <div class="d-flex align-items-center">
+                          <img src="../images/Shield-done.png" alt="icon" class="mr-3 mb-4">
+                          <div class="d-flex flex-column">
+                            <p class="text-bold">Legal</p>
+                            <small>Our terms and conditions</small>
+                          </div>
+                        </div>
+                      </a>
+                    
                     </div>
                        <div class="grided__section--right p-4 d-flex">
                             <p class="text-bold text-medium">Bank Account</p>
@@ -171,60 +201,28 @@
                                         <span class="text-red ml-2">*</span>
                                     </div>
                                     <input type="text" class="text-input text-input-larger" value="06-17-32" name="fname">
-                                </div>
-                                <div class="input-component block">
-                                  <div class="d-flex align-items-center">
-                                      <label class="label d-block">Card Number</label>
-                                      <span class="text-red ml-2">*</span>
                                   </div>
-                                  <input type="text" class="text-input text-input-larger" value="XXXX-XXXXX-XXXX-5642" name="fname">
-                              </div>
-                              <div class="input-component block">
-                                <div class="d-flex align-items-center">
-                                    <label class="label d-block">Valid From</label>
-                                    <span class="text-red ml-2">*</span>
-                                </div>
-                                <input type="text" class="text-input text-input-larger" value="09/20" name="fname">
-                            </div>
-                            <div class="input-component block">
-                              <div class="d-flex align-items-center">
-                                  <label class="label d-block">CVV</label>
-                                  <span class="text-red ml-2">*</span>
-                              </div>
-                              <input type="password" class="text-input text-input-larger" value="1234" name="fname">
-                          </div>
                                 </div>
                                 <div class="col-6">
                                   <div class="input-component block">
                                     <div class="d-flex align-items-center">
-                                        <label class="label d-block">Account Number</label>
-                                        <span class="text-red ml-2">*</span>
+                                      <label class="label d-block">Account Number</label>
+                                      <span class="text-red ml-2">*</span>
                                     </div>
-                                    <input type="text" class="text-input text-input-larger" value="476468978" name="fname">
-                                </div>
+                                    <input type="text" class="text-input text-input-larger" value="123456789" name="fname">
+                                  </div>
+                                </div> 
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                              <div class="col-6">
                                 <div class="input-component block">
                                   <div class="d-flex align-items-center">
-                                      <label class="label d-block">Company Name</label>
-                                      <span class="text-red ml-2">*</span>
-                                  </div>
-                                  <input type="text" class="text-input text-input-larger" value="Kopi Kenangan" name="fname">
-                              </div>
-                              <div class="input-component block">
-                                <div class="d-flex align-items-center">
-                                    <label class="label d-block">Expired End</label>
+                                    <label class="label d-block">Company Name</label>
                                     <span class="text-red ml-2">*</span>
+                                  </div>
+                                  <input type="text" class="text-input text-input-larger" value="Some company" name="fname">
                                 </div>
-                                <input type="text" class="text-input text-input-larger" value="09/23" name="fname">
-                            </div>
-                            <div class="input-component block">
-                              <div class="d-flex align-items-center">
-                                  <label class="label d-block">CVV</label>
-                                  <span class="text-red ml-2">*</span>
                               </div>
-                              <input type="password" class="text-input text-input-larger" value="1234" name="fname">
-                          </div>
-                                </div>
-                        
                             </div>
                        </div>
                    </div>

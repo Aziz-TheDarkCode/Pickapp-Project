@@ -5,40 +5,34 @@
     color: $main-color;
     padding: 1rem;
     font-weight: bold;
-    &.primary
-  {
-    background-color: transparent;
-    color: $secondary-color;
-    border-bottom:rgb(235, 235, 235) 2px solid;
-
-  }
+    &.primary {
+      background-color: transparent;
+      color: $secondary-color;
+      border-bottom: rgb(235, 235, 235) 2px solid;
+    }
   }
   &__content {
     &--row:nth-child(even) {
       background-color: #f1f2f3;
     }
-    &.primary
-    {
-      >div
-      {
-        background-color:$main-color;
-        transition: .5s ease;
-        &:hover
-        {
+    &.primary {
+      > div {
+        background-color: $main-color;
+        transition: 0.5s ease;
+        &:hover {
           background-color: $tertiary-color;
         }
       }
     }
   }
-  
 }
 .total-section {
   width: 45%;
 }
 
 .details {
-  width: 41%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-start;
 }
 .invoice {
   position: relative;
