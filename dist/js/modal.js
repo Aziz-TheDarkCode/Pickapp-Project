@@ -8,3 +8,7 @@ function closeModal() {
   // remove .active class
   modal.classList.remove('active-modal');
 }
+function testFunction() 
+{
+    alert("Modal Opened !")
+}

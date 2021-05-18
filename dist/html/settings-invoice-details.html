@@ -93,7 +93,7 @@
   </div>
   <div class="user-info justify-content-end">
     <div class="notification mr-3">
-      <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px">
+      <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px" onclick="openModal()">
       <div class="notif">2</div>
     </div>
     <div class="d-flex align-items-center">
@@ -105,6 +105,12 @@
     </div>
   </div>
 </header>
+<div class="modal">
+  <div class="col-9 modal__backdrop larger" onclick="closeModal()"></div>
+  <div class="my-auto col-3 d-flex modal__content larger">
+      <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+  </div>
+</div>
                    <div class="grided__section">
                     <div class="grided__section--left">
                         <a href="settings-invoice.html" class="links active">
