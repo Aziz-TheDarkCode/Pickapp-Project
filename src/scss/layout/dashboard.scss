@@ -39,10 +39,11 @@
       height: 100%;
       padding: 6rem 1.5rem 0 1.5rem;
       width: 25%;
-      background-color: #fafafb;
+      // background-color: #fafafb;
       &.order-details {
         width: 30%;
         padding-bottom: 5rem;
+        background-color: #fafafb;
       }
     }
   }

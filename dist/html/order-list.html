@@ -13,6 +13,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/tables.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/charts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/modal.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/grid.css'>
@@ -99,7 +100,7 @@
     </div>
   </div>
   <div class="user-info justify-content-end">
-    <div class="notification mr-3">
+    <div class="notification mr-3" style="cursor: pointer;" onclick="openModal()" role="button" aria-label="notification-button" tabindex="1">
       <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px">
       <div class="notif">2</div>
     </div>
@@ -112,6 +113,174 @@
     </div>
   </div>
 </header>
+<div class="modal">
+  <div class="modal__backdrop" onclick="closeModal()"></div>
+  <div class="modal__content notification-modal">
+    <div class="notification-modal-header bg-white p-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="text-medium">Notifications</h6>
+        <ion-icon aria-label="close" tabindex="1" name="close-outline" class="mr-1 p-0" style="font-size: 20px;" onclick="closeModal()"></ion-icon>
+      </div>
+    </div>
+    <div class="d-flex flex-column mt-4">
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <img src="https://www.fillmurray.com/200/200" class="align-self-start mr-3 circle-radius" width="40px" height="40px"/>
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h1 class="text-bold">New order from Samba Ndiaye</h1>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between mt-2">
+            <h1 class="gray-text">$8 - 2 items - #1232143621</h1>
+            <h6 class="text-red">●</h6>
+          </div>
+          <div class="w-100 d-flex flex-column mt-3 pl-2" style="border-left: 2px solid #000;">
+            <div class="w-100 d-flex justify-content-between mb-1">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+            <div class="w-100 d-flex justify-content-between">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+          </div>
+          <div class="d-flex mt-3">
+            <button class="mr-3 d-flex align-items-center bg-primary py-2 px-4 rounded-border text-white" style="border:none;">
+              <ion-icon name="checkmark-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Accept</span>
+            </button>
+            <button class="d-flex align-items-center py-2 px-4 rounded-border text-red bg-transparent" style="border:1px solid red;">
+            <ion-icon name="close-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Ignore</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <img src="https://www.fillmurray.com/200/200" class="align-self-start mr-3 circle-radius" width="40px"
+          height="40px" />
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h1 class="text-bold">New order from Samba Ndiaye</h1>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between mt-2">
+            <h1 class="gray-text">$8 - 2 items - #1232143621</h1>
+            <h6 class="text-red">●</h6>
+          </div>
+          <div class="w-100 d-flex flex-column mt-3 pl-2" style="border-left: 2px solid #000;">
+            <div class="w-100 d-flex justify-content-between mb-1">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+            <div class="w-100 d-flex justify-content-between">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+          </div>
+          <div class="d-flex mt-3">
+            <button class="mr-3 d-flex align-items-center bg-primary py-2 px-4 rounded-border text-white"
+              style="border:none;">
+              <ion-icon name="checkmark-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Accept</span>
+            </button>
+            <button class="d-flex align-items-center py-2 px-4 rounded-border text-red bg-transparent" style="border:1px solid red;">
+              <ion-icon name="close-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Ignore</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <img src="https://www.fillmurray.com/200/200" class="align-self-start mr-3 circle-radius" width="40px"
+          height="40px" />
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h1 class="text-bold">New order from Samba Ndiaye</h1>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between mt-2">
+            <h1 class="gray-text">$8 - 2 items - #1232143621</h1>
+            <h6 class="text-red">●</h6>
+          </div>
+          <div class="w-100 d-flex flex-column mt-3 pl-2" style="border-left: 2px solid #000;">
+            <div class="w-100 d-flex justify-content-between mb-1">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+            <div class="w-100 d-flex justify-content-between">
+              <h6 class="gray-text">Frappe Latte (L)</h6>
+              <h6 class="gray-text">1x</h6>
+            </div>
+          </div>
+          <div class="d-flex mt-3">
+            <button class="mr-3 d-flex align-items-center bg-primary py-2 px-4 rounded-border text-white"
+              style="border:none;">
+              <ion-icon name="checkmark-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Accept</span>
+            </button>
+            <button class="d-flex align-items-center py-2 px-4 rounded-border text-red bg-transparent" style="border:1px solid red;">
+              <ion-icon name="close-outline" class="mr-1 p-0" style="font-size: 16px;"></ion-icon>
+              <span>Ignore</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <div class="mr-3 bg-light-green circle-radius d-flex align-items-center justify-content-center">
+          <ion-icon name="checkmark-circle-outline" class="text-green"></ion-icon>
+        </div>
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="text-bold mb-3">New stock added</h6>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="gray-text">Hazelnut Latte - 100 items</h6>
+            <h6 class="text-red">●</h6>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <div class="mr-3 bg-gray-color circle-radius d-flex align-items-center justify-content-center">
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        </div>
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="text-bold mb-3">Complaint</h6>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="gray-text">#1243626 - 2 items - 8$</h6>
+            <h6 class="text-red">●</h6>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3 d-flex align-items-center p-3 bg-white-smoke rounded-border">
+        <div class="mr-3 bg-light-red p-0 circle-radius d-flex align-items-center justify-content-center">
+          <ion-icon name="warning-outline" class="text-red"></ion-icon>
+        </div>
+        <div class="d-flex flex-column" style="flex: 1;">
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="text-bold mb-3">Empty Stock</h6>
+            <h6 class="gray-text">8:15</h6>
+          </div>
+          <div class="w-100 d-flex justify-content-between">
+            <h6 class="gray-text">Hazelnut Latte - 100 items</h6>
+            <h6 class="text-red">●</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notification-modal-footer bg-white">
+      <div class="d-flex justify-content-center align-items-center">
+        <h6 class="text-primary">Load More</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='../js/modal.js'></script>
             </div>
             <div class="page-content order-list">
                 <section>

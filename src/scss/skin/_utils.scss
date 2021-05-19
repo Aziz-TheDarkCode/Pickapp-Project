@@ -29,6 +29,12 @@
 .bg-light-gray {
   background-color: lightgray;
 }
+.bg-white-smoke {
+  background-color: #f5f6fc;
+}
+.bg-transparent {
+  background-color: transparent;
+}
 
 .text-primary {
   color: $primary-color !important;
@@ -47,6 +53,9 @@
 }
 .text-dark {
   color: #000 !important;
+}
+.text-white {
+  color: #fff;
 }
 
 .rounded-text {

@@ -114,13 +114,12 @@ new Chartist.Line(
 new Chartist.Line(
   '#chart3',
   {
-    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-    series: [[2500, 1000, 2800, 2000]]
+    labels: ['', 'Week 1', 'Week 2', 'Week 3', 'Week 4', ''],
+    series: [[2500, 2500, 1000, 2800, 2000, 2000]]
   },
   {
     fullWidth: true,
-    labelOffset: 550,
-    height: '60%',
+    height: '70%',
     axisY: {
       onlyInteger: true,
       type: Chartist.FixedScaleAxis,
