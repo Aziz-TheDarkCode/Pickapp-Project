@@ -10,6 +10,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
@@ -19,161 +20,172 @@
 <body>
     <main>
       
-        @@include('./includes/aside.html')
-        <div class="container">
-            @@include('./includes/header.html')
-                   <div class="grided__section">
-                    <div class="grided__section--left">
-                        <a href="settings-invoice.html" class="links">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Invoice</p>
-                                    <small>Transactions, Statements, etc</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-bank.html" class="links">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Bank Account</p>
-                                    <small>Billing Information, Card Information</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-account.html" class="links active">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Lock.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Account</p>
-                                    <small>Company information, Password</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-notification.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Notification.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Notification</p>
-                                    <small>Customize your notifications</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-privacy.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Paper-upload.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Privacy policy</p>
-                                    <small>Our privacy policy</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-legal.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Shield-done.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Legal</p>
-                                    <small>Our terms and conditions</small>
-                                </div> 
-                            </div>
-                        </a>
-
-                    </div>
-                       <div class="grided__section--right p-4">
-                            <div class="profile-update">
-                                <span class="d-flex flex-column p-4 align-items-center">
-                                    <img src="https://berserkon.com/images/1-vector-flat.png" alt="" width="150px">
-                                    <button class="text-bold text-semi btn btn-transparent-bg btn-black-border text-dark">Choose an image</button>
-                                    <p class="gray-text mt-4">You can upload image up to 10mb</p>
-                                </span>
-                                <div>
-                                    <div class="large--section">
-                                            <div class="component d-flex flex-column">
-                                                <p class="text-bold mb-2">Account</p>
-                                                <div>
-                                                    <span  class="gray-text mr-4">Company Name</span>
-                                                    <span class="gray-text ">Abdou Aziz Ndiaye</span>
-                                                    <span class=" text-bold text-primary ml-3">Edit</span>
-                                                </div>
-                                            </div>
-                                            <div class="component d-flex flex-column">
-                                                <p class="text-bold mb-2">Contact Info</p>
-                                                <div>
+        <div class="content">
+            <div class="sidebar">
+                @@include('./includes/aside.html')
+            </div>
+            <div class="header">
+                @@include('./includes/header.html')
+            </div>
+            <div class="page-content">
+                <section class="product-list-content">
+                    <div class="grided__section">
+                        <div class="grided__section--left">
+                            <a href="settings-invoice.html" class="links">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Invoice</p>
+                                        <small>Transactions, Statements, etc</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-bank.html" class="links">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Bank Account</p>
+                                        <small>Billing Information, Card Information</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-account.html" class="links active">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Lock.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Account</p>
+                                        <small>Company information, Password</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-notification.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Notification.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Notification</p>
+                                        <small>Customize your notifications</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-privacy.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Paper-upload.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Privacy policy</p>
+                                        <small>Our privacy policy</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-legal.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Shield-done.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Legal</p>
+                                        <small>Our terms and conditions</small>
+                                    </div> 
+                                </div>
+                            </a>
+    
+                        </div>
+                           <div class="grided__section--right p-4">
+                                <div class="profile-update">
+                                    <span class="d-flex flex-column p-4 align-items-center">
+                                        <img src="https://berserkon.com/images/1-vector-flat.png" alt="" width="150px">
+                                        <button class="text-bold text-semi btn btn-transparent-bg btn-black-border text-dark">Choose an image</button>
+                                        <p class="gray-text mt-4">You can upload image up to 10mb</p>
+                                    </span>
+                                    <div>
+                                        <div class="large--section">
+                                                <div class="component d-flex flex-column">
+                                                    <p class="text-bold mb-2">Account</p>
                                                     <div>
-                                                        <span  class="gray-text mr-4">Email</span>
-                                                        <span class="gray-text ">abdouaziznjay@gmail.com</span>
-                                                        <span class="mt-2 text-bold text-green bg-light-green p-1" style="border-radius:5px;">Verified</span>
-                                                        <span class="text-primary text-bold ml-3">Edit</span>
-                                                    </div>
-                                                    <div class="mt-4">
-                                                        <span  class="gray-text mr-2">Phone Number</span>
-                                                        <span class="gray-text ">+221 78 630 06 14</span>
-                                                        <span class="mt-2 text-bold text-green bg-light-green p-1" style="border-radius:5px;">Verified</span>
-                                                        <span class=" text-primary text-bold ml-3">Edit</span>
+                                                        <span  class="gray-text mr-4">Company Name</span>
+                                                        <span class="gray-text ">Abdou Aziz Ndiaye</span>
+                                                        <span class=" text-bold text-primary ml-3">Edit</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="component d-flex flex-column">
-                                                <p class="text-primary mb-2 text-semi">Other</p>
-                                                <div>
-                                                    <span  class="gray-text mr-4">Join Date</span>
-                                                    <span class="gray-text text-bold">26 Feb 2020</span>
+                                                <div class="component d-flex flex-column">
+                                                    <p class="text-bold mb-2">Contact Info</p>
+                                                    <div>
+                                                        <div>
+                                                            <span  class="gray-text mr-4">Email</span>
+                                                            <span class="gray-text ">abdouaziznjay@gmail.com</span>
+                                                            <span class="mt-2 text-bold text-green bg-light-green p-1" style="border-radius:5px;">Verified</span>
+                                                            <span class="text-primary text-bold ml-3">Edit</span>
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <span  class="gray-text mr-2">Phone Number</span>
+                                                            <span class="gray-text ">+221 78 630 06 14</span>
+                                                            <span class="mt-2 text-bold text-green bg-light-green p-1" style="border-radius:5px;">Verified</span>
+                                                            <span class=" text-primary text-bold ml-3">Edit</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <div class="component d-flex flex-column">
+                                                    <p class="text-primary mb-2 text-semi">Other</p>
+                                                    <div>
+                                                        <span  class="gray-text mr-4">Join Date</span>
+                                                        <span class="gray-text text-bold">26 Feb 2020</span>
+                                                    </div>
+                                                </div>
+                                                <div class="component d-flex flex-column">
+                                                    <p class="text-bold mb-2 text-semi">Change Password</p>
+                                                    <div>
+                                                        <span  class="gray-text mr-4">Password</span>
+                                                        <span class="gray-text ">••••••••</span>
+                                                    <span class="text-primary text-bold ml-3">Edit</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                        <!-- <div class="small-section">
                                             <div class="component d-flex flex-column">
-                                                <p class="text-bold mb-2 text-semi">Change Password</p>
-                                                <div>
-                                                    <span  class="gray-text mr-4">Password</span>
-                                                    <span class="gray-text ">••••••••</span>
-                                                <span class="text-primary text-bold ml-3">Edit</span>
+                                                <p class="text-bold mb-2 text-semi d-flex align-items-center">
+                                                    <ion-icon class="green-text mr-1" name="shield-checkmark-outline"></ion-icon>
+                                                    Hygiene Rating
+                                                </p>
+                                                <div class="d-flex align-items-center">
+                                                    <div  class="gray-text mr-4">
+                                                        <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                                        <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                                        <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                                        <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                                        <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                                    </div>
+                                                    <span class="gray-text ">5 out of 5</span>
+                                                    <span class="mt-2 text-bold text-green bg-light-green p-1 ml-3 p-2" style="border-radius:5px;">Verified</span>
                                                 </div>
                                                 
                                             </div>
-                                    </div>
-                                    <!-- <div class="small-section">
-                                        <div class="component d-flex flex-column">
-                                            <p class="text-bold mb-2 text-semi d-flex align-items-center">
-                                                <ion-icon class="green-text mr-1" name="shield-checkmark-outline"></ion-icon>
-                                                Hygiene Rating
-                                            </p>
-                                            <div class="d-flex align-items-center">
-                                                <div  class="gray-text mr-4">
-                                                    <ion-icon class="golden-text text-semi"name="star"></ion-icon>
-                                                    <ion-icon class="golden-text text-semi"name="star"></ion-icon>
-                                                    <ion-icon class="golden-text text-semi"name="star"></ion-icon>
-                                                    <ion-icon class="golden-text text-semi"name="star"></ion-icon>
-                                                    <ion-icon class="golden-text text-semi"name="star"></ion-icon>
+                                        </div> -->
+                                        <div class="small-section">
+                                            <div class="component d-flex flex-column">
+                                                <p class="text-bold mb-2 text-semi d-flex align-items-center">
+                                                    <ion-icon class="green-text mr-1" name="time-outline"></ion-icon>
+                                                    Opening Hours
+                                                </p>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="gray-text mr-4">
+                                                        <span class="">Monday-Sunday</span>
+                                                    </div>
+                                                    <div class="gray-text mr-4">
+                                                        <span class="">08:00 AM - 9:00PM</span>
+                                                    </div>
+                                                    <span class="text-primary text-bold ml-3">Edit</span>
                                                 </div>
-                                                <span class="gray-text ">5 out of 5</span>
-                                                <span class="mt-2 text-bold text-green bg-light-green p-1 ml-3 p-2" style="border-radius:5px;">Verified</span>
+                                        
                                             </div>
-                                            
-                                        </div>
-                                    </div> -->
-                                    <div class="small-section">
-                                        <div class="component d-flex flex-column">
-                                            <p class="text-bold mb-2 text-semi d-flex align-items-center">
-                                                <ion-icon class="green-text mr-1" name="time-outline"></ion-icon>
-                                                Opening Hours
-                                            </p>
-                                            <div class="d-flex align-items-center">
-                                                <div class="gray-text mr-4">
-                                                    <span class="">Monday-Sunday</span>
-                                                </div>
-                                                <div class="gray-text mr-4">
-                                                    <span class="">08:00 AM - 9:00PM</span>
-                                                </div>
-                                                <span class="text-primary text-bold ml-3">Edit</span>
-                                            </div>
-                                    
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                           </div>
                        </div>
-                   </div>
+                </section>
+            </div>
+           
+    
         </div>
+
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src='/javascript/app.js'></script>

@@ -24,22 +24,28 @@
   &.order-list {
     background-color: #fff;
   }
+  .product-list-content
+  {
+
+    padding: 5rem 0 0 0;
+  }
   section {
     height: 100%;
     display: flex;
-    .section__content {
+    .section__content{
       padding: 6rem 1.5rem 0 1.5rem;
-    }
+    }  
     .section__content--left {
       height: 100%;
       padding: 6rem 1.5rem 0 1.5rem;
       width: 75%;
     }
+    .section__content--header {
+    }
     .section__content--right {
       height: 100%;
       padding: 6rem 1.5rem 0 1.5rem;
       width: 25%;
-      background-color: #fafafb;
       &.order-details {
         width: 30%;
         padding-bottom: 5rem;

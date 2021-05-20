@@ -9,8 +9,10 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/checkboxes.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../dist/css/layout/modal.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
@@ -22,9 +24,15 @@
 </head>
 <body>
     <main>
-       @@include('../../dist/html/includes/aside.html')
-        <div class="container">
-            @@include('../../dist/html/includes/header.html')
+    
+        <div class="content">
+            <div class="sidebar">
+                @@include('../../dist/html/includes/aside.html')
+            </div>
+            <div class="header">
+                @@include('../../dist/html/includes/header.html')
+            </div>
+          
             <div class="modal">
                 <div class="modal__backdrop" onclick="closeModal()"></div>
                 <div class="modal__content semi-larger p-4">
@@ -57,72 +65,75 @@
                     <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
                 </div>
             </div>
-            <section>
-                <div class="no-aside">
-                    <div class="section__content--header mb-5 p-4">
-                        <h1 class="text-medium text-bold">Product Categories</h1>
-                       <button class="btn btn-medium btn-golden" onclick="openModal()">+ Add Category</button>
-                    </div>
-                    <div class="card-section">
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">
-                            <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Coffee</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Frappe.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Frappe</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category"style="background-image: url(../images/Snack.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Snack et Light Meals</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Cool Drinks</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Snack.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Cool Drinks</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Cool Drinks</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Cool Drinks</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                        <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
-                           <img src="../images/dots.png" alt="" class="dots">
-                                <div class="card__category--details">
-                                    <p>Cool Drinks</p>
-                                    <span>10 Coffees</span>
-                                </div>
-                        </a>
-                    </div>
-                </div> 
-            </section>
+            <div class="page-content">
+                <section>
+                    <div class="w-100 section__content">
+                        <div class="d-flex justify-content-between align-items-center section__content--header mb-5">
+                            <h1 class="text-medium text-bold">Product Categories</h1>
+                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()">+ Add Category</button>
+                        </div>
+                        <div class="card-section">
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">
+                                <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Coffee</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Frappe.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Frappe</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category"style="background-image: url(../images/Snack.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Snack et Light Meals</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Cool Drinks</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Snack.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Cool Drinks</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Cool Drinks</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Cool Drinks</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/Drinks.png);">
+                               <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Cool Drinks</p>
+                                        <span>10 Coffees</span>
+                                    </div>
+                            </a>
+                        </div>
+                    </div> 
+                </section>
+            </div>
+           
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
