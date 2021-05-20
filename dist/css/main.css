@@ -282,6 +282,11 @@ d-block {
   color: #1e1e1e;
   border-left: #ebebeb 0.5px solid; }
 
+.bordered-left-thick {
+  background-color: transparent;
+  color: #1e1e1e;
+  border-left: black 3px solid; }
+
 .fully-bordered {
   background-color: transparent;
   color: #1e1e1e;

@@ -23,6 +23,8 @@
   background-color: #fafafb; }
   .page-content.order-list {
     background-color: #fff; }
+  .page-content .product-list-content {
+    padding: 5rem 0 0 0; }
   .page-content section {
     height: 100%;
     display: flex; }
