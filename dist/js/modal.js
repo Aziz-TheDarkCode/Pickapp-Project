@@ -18,3 +18,7 @@ function closeModal() {
   console.log(modal);
   modal.classList.remove('active-modal');
 }
+function testFunction() 
+{
+    alert("Modal Opened !")
+}
