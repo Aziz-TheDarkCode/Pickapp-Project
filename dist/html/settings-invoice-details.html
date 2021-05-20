@@ -22,7 +22,10 @@
 <body>
     <main>
        
-        <aside>
+      
+        <div class="content">
+            <div class="sidebar">
+                <aside>
   <div class="logo d-flex flex-column align-items-start justify-content-center">
     <img src="../images/dashboard/PICKAPP.png" width="100px" heigh="100px" alt="">
     <span class="gray-text d-block mt-2">Takeaway coffee, Redefined</span>
@@ -84,8 +87,9 @@
     </ul>
   </div>
 </aside>
-        <div class="container">
-            <header class="d-flex justify-content-between align-items-center">
+            </div>
+            <div class="header">
+                <header class="d-flex justify-content-between align-items-center">
   <div>
     <div class="d-flex align-items-center">
       <img src="../images/dashboard/icons/Search.svg" class="mr-2">
@@ -162,118 +166,125 @@
            </div>
   </div>
 </div> -->
-                   <div class="grided__section">
-                    <div class="grided__section--left">
-                        <a href="settings-invoice.html" class="links active">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Invoice</p>
-                                    <small>Transactions, Statements, etc</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-bank.html" class="links">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Bank Account</p>
-                                    <small>Billing Information, Card Information</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-account.html" class="links">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Lock.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Account</p>
-                                    <small>Company information, Password</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-notification.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Notification.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Notification</p>
-                                    <small>Customize your notifications</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-privacy.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Paper-upload.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Privacy policy</p>
-                                    <small>Our privacy policy</small>
-                                </div> 
-                            </div>
-                        </a>
-                        <a href="settings-legal.html" class="links ">
-                            <div class="d-flex align-items-center">
-                                <img src="../images/Shield-done.png" alt="icon" class="mr-3 mb-4">
-                                <div class="d-flex flex-column">
-                                    <p class="text-bold">Legal</p>
-                                    <small>Our terms and conditions</small>
-                                </div> 
-                            </div>
-                        </a>
-
-                    </div>
-                       <div class="grided__section--right p-4">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span>
-                                <h1 class="text-bold">
-                                    <span class="text-primary">Invoices /</span>
-                                    <span class="text-primary">March /</span>
-                                    Week 1
-                                </h1><br>
-                                <p class="gray-text">46 invoices</p>
-                            </span>
-                            <div>
-                            <button class="bg-primary btn text-input-unborded" style="color:#fff;border-radius: 8px;">Summary Report</button>
-                            <select class="btn btn-gray mr-3" style="border-radius: 8px;">
-                                <option value="">Completed</option>
-                                <option value="dog">Dog</option>
-                                <option value="cat">Cat</option>
-                                <option value="hamster">Hamster</option>
-                            </select>   
-                            </div>
-                            </div>
-                            
-                            <div class="mt-4">
-                                <a href="/dist/html/invoices/customers-invoice.html" class="text-dark">
-                                <div class="d-flex justify-content-between align-items-center rounded-box p-4 col-12 p-3 mb-3" style="background-color:white;">
-                                    <img src="../images/Group.png" alt="">
-                                    <div class="d-flex flex-column text-bold">
-                                        <p class="gray-text mb-2">Order ID</p>
-                                        <p>41114953</p>
-                                    </div>
-                                    <div class="d-flex flex-column text-bold">
-                                        <p class="gray-text mb-2">Date</p>
-                                        <p>25 March 2021</p>
-                                    </div>
-                                    <div class="d-flex flex-column text-bold">
-                                        <p class="gray-text mb-2">Total Price</p>
-                                        <p>41114953</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <img class="mt-1 mr-2" src="../images/PP.png" alt="">
-                                        <div class="d-flex flex-column text-bold">
-                                            <p class="gray-text mb-2">Order by</p>
-                                            <p>John Doe</p>    
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column text-bold">
-                                        <span class="mt-2 text-bold text-green bg-light-green p-1 ml-3 p-2" style="border-radius:5px;">Completed</span>
-                                    </div>
-                                    <img src="../images/more-square.svg" alt="">                                       
+            </div> 
+            <div class="page-content">
+                <section class="product-list-content">
+                    <div class="grided__section">
+                        <div class="grided__section--left">
+                            <a href="settings-invoice.html" class="links active">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Invoice</p>
+                                        <small>Transactions, Statements, etc</small>
+                                    </div> 
                                 </div>
-                                </a>
-                            </div>
-                            </div>
-                       </div>
-                   </div>
+                            </a>
+                            <a href="settings-bank.html" class="links">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Wallet.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Bank Account</p>
+                                        <small>Billing Information, Card Information</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-account.html" class="links">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Lock.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Account</p>
+                                        <small>Company information, Password</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-notification.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Notification.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Notification</p>
+                                        <small>Customize your notifications</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-privacy.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Paper-upload.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Privacy policy</p>
+                                        <small>Our privacy policy</small>
+                                    </div> 
+                                </div>
+                            </a>
+                            <a href="settings-legal.html" class="links ">
+                                <div class="d-flex align-items-center">
+                                    <img src="../images/Shield-done.png" alt="icon" class="mr-3 mb-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="text-bold">Legal</p>
+                                        <small>Our terms and conditions</small>
+                                    </div> 
+                                </div>
+                            </a>
+    
+                        </div>
+                           <div class="grided__section--right p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                    <h1 class="text-bold">
+                                        <span class="text-primary">Invoices /</span>
+                                        <span class="text-primary">March /</span>
+                                        Week 1
+                                    </h1><br>
+                                    <p class="gray-text">46 invoices</p>
+                                </span>
+                                <div>
+                                <button class="bg-primary p-2 btn text-input-unborded" style="color:#fff;border-radius: 8px;">Summary Report</button>
+                                <select class="btn btn-gray mr-3 p-2" style="border-radius: 8px;">
+                                    <option value="">Completed</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="hamster">Hamster</option>
+                                </select>   
+                                </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <a href="/dist/html/invoices/customers-invoice.html" class="text-dark">
+                                    <div class="d-flex justify-content-between align-items-center rounded-box p-4 col-12 p-3 mb-3" style="background-color:white;">
+                                        <img src="../images/Group.png" alt="">
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Order ID</p>
+                                            <p>41114953</p>
+                                        </div>
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Date</p>
+                                            <p>25 March 2021</p>
+                                        </div>
+                                        <div class="d-flex flex-column text-bold">
+                                            <p class="gray-text mb-2">Total Price</p>
+                                            <p>41114953</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img class="mt-1 mr-2" src="../images/PP.png" alt="">
+                                            <div class="d-flex flex-column text-bold">
+                                                <p class="gray-text mb-2">Order by</p>
+                                                <p>John Doe</p>    
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column text-bold">
+                                            <span class="mt-2 text-bold text-green bg-light-green p-1 ml-3 p-2" style="border-radius:5px;">Completed</span>
+                                        </div>
+                                        <img src="../images/more-square.svg" alt="">                                       
+                                    </div>
+                                    </a>
+                                </div>
+                                </div>
+                           </div>
+                </section>
+            </div>
+        
+                   
+        </div>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
