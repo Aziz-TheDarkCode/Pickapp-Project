@@ -179,6 +179,7 @@
 .grided__section {
   height: 100vh;
   display: grid;
+  width: 100%;
   grid-template-columns: 1.5fr 4fr;
   background-color: $main-color;
   &--left {

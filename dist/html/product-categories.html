@@ -99,7 +99,7 @@
     </div>
   </div>
   <div class="user-info justify-content-end">
-    <div class="notification mr-3" style="cursor: pointer;" onclick="openModal()" role="button" aria-label="notification-button" tabindex="1">
+    <div class="notification mr-3" style="cursor: pointer;" onclick="openModal()" data-modal="not-modal" role="button" aria-label="notification-button" tabindex="1">
       <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px">
       <div class="notif">2</div>
     </div>
@@ -112,13 +112,13 @@
     </div>
   </div>
 </header>
-<div class="modal">
-  <div class="modal__backdrop" onclick="closeModal()"></div>
+<div class="modal" id="not-modal">
+  <div class="modal__backdrop" onclick="closeModal()" data-modal="not-modal"></div>
   <div class="modal__content notification-modal">
     <div class="notification-modal-header bg-white p-4">
       <div class="d-flex justify-content-between align-items-center">
         <h1 class="text-medium">Notifications</h6>
-        <ion-icon aria-label="close" tabindex="1" name="close-outline" class="mr-1 p-0" style="font-size: 20px;" onclick="closeModal()"></ion-icon>
+        <ion-icon aria-label="close" tabindex="1" data-modal="not-modal" name="close-outline" class="mr-1 p-0" style="font-size: 20px;" onclick="closeModal()"></ion-icon>
       </div>
     </div>
     <div class="d-flex flex-column mt-4">
@@ -283,8 +283,8 @@
 
             </div>
           
-            <div class="modal">
-                <div class="modal__backdrop" onclick="closeModal()"></div>
+            <div class="modal" id="category-modal">
+                <div class="modal__backdrop" onclick="closeModal()" data-modal="category-modal"></div>
                 <div class="modal__content semi-larger p-4">
                     <div class="col-12">
                         <p class="text-bold text-medium col-">Add New Category</p>
@@ -312,15 +312,15 @@
                                 name="fname">
                         </div>
                     <button style="width: 95%;" class="ml-3 mt-4 mb-4 btn text-input-larger btn-golden">Add To Category</button>
-                    <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="category-modal"></ion-icon> 
                 </div>
             </div>
             <div class="page-content">
                 <section>
                     <div class="w-100 section__content">
-                        <div class="d-flex justify-content-between align-items-center section__content--header mb-5">
+                        <div class="d-flex justify-content-between align-items-center section__content--header mb-4">
                             <h1 class="text-medium text-bold">Product Categories</h1>
-                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()">+ Add Category</button>
+                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()" data-modal="category-modal">+ Add Category</button>
                         </div>
                         <div class="card-section">
                             <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">

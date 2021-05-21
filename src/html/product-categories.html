@@ -33,8 +33,8 @@
                 @@include('../../dist/html/includes/header.html')
             </div>
           
-            <div class="modal">
-                <div class="modal__backdrop" onclick="closeModal()"></div>
+            <div class="modal" id="category-modal">
+                <div class="modal__backdrop" onclick="closeModal()" data-modal="category-modal"></div>
                 <div class="modal__content semi-larger p-4">
                     <div class="col-12">
                         <p class="text-bold text-medium col-">Add New Category</p>
@@ -62,15 +62,15 @@
                                 name="fname">
                         </div>
                     <button style="width: 95%;" class="ml-3 mt-4 mb-4 btn text-input-larger btn-golden">Add To Category</button>
-                    <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="category-modal"></ion-icon> 
                 </div>
             </div>
             <div class="page-content">
                 <section>
                     <div class="w-100 section__content">
-                        <div class="d-flex justify-content-between align-items-center section__content--header mb-5">
+                        <div class="d-flex justify-content-between align-items-center section__content--header mb-4">
                             <h1 class="text-medium text-bold">Product Categories</h1>
-                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()">+ Add Category</button>
+                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()" data-modal="category-modal">+ Add Category</button>
                         </div>
                         <div class="card-section">
                             <a href="products-list.html" class="card card__category" style="background-image: url(../images/Coffee.png);">

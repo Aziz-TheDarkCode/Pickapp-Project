@@ -95,7 +95,7 @@
     </div>
   </div>
   <div class="user-info justify-content-end">
-    <div class="notification mr-3" style="cursor: pointer;" onclick="openModal()" role="button" aria-label="notification-button" tabindex="1">
+    <div class="notification mr-3" style="cursor: pointer;" onclick="openModal()" data-modal="not-modal" role="button" aria-label="notification-button" tabindex="1">
       <img src="../images/dashboard/icons/Notif.svg" class="mr-2" width="28px">
       <div class="notif">2</div>
     </div>
@@ -108,13 +108,13 @@
     </div>
   </div>
 </header>
-<div class="modal">
-  <div class="modal__backdrop" onclick="closeModal()"></div>
+<div class="modal" id="not-modal">
+  <div class="modal__backdrop" onclick="closeModal()" data-modal="not-modal"></div>
   <div class="modal__content notification-modal">
     <div class="notification-modal-header bg-white p-4">
       <div class="d-flex justify-content-between align-items-center">
         <h1 class="text-medium">Notifications</h6>
-        <ion-icon aria-label="close" tabindex="1" name="close-outline" class="mr-1 p-0" style="font-size: 20px;" onclick="closeModal()"></ion-icon>
+        <ion-icon aria-label="close" tabindex="1" data-modal="not-modal" name="close-outline" class="mr-1 p-0" style="font-size: 20px;" onclick="closeModal()"></ion-icon>
       </div>
     </div>
     <div class="d-flex flex-column mt-4">
@@ -343,7 +343,7 @@
                                    <img src="../images/bank-illustration.png" alt="" width="">
                                    <p class="text-semi text-bold my-3">Bank account not linked</p>
                                    <p class="gray-text mb-3">Please add a bank account to receive <br>payments</p>
-                                    <button onclick="openModal()" class="p-2 btn btn-medium btn-golden">+ Enter bank details</button>
+                                    <button onclick="openModal()" data-modal="bank-modal" class="p-2 btn btn-medium btn-golden">+ Enter bank details</button>
                                 </div>
                            </div>
                        </div>
@@ -354,8 +354,8 @@
         </div>  
       
             <!-- MODAL --> 
-    <div class="modal">
-        <div class="modal__backdrop" onclick="closeModal()"></div>
+    <div class="modal" id="bank-modal">
+        <div class="modal__backdrop" onclick="closeModal()" data-modal="bank-modal"></div>
         <div class="modal__content p-4">
             <div class="col-12 mb-3">
                 <p class="text-bold text-larger">Add New Bank Account</p>
@@ -396,7 +396,7 @@
                 </button>
             </a> 
    
-            <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+            <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="bank-modal"></ion-icon> 
         </div>
     </div>
                   

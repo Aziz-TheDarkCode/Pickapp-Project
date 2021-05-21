@@ -93,7 +93,7 @@
                                    <img src="../images/bank-illustration.png" alt="" width="">
                                    <p class="text-semi text-bold my-3">Bank account not linked</p>
                                    <p class="gray-text mb-3">Please add a bank account to receive <br>payments</p>
-                                    <button onclick="openModal()" class="p-2 btn btn-medium btn-golden">+ Enter bank details</button>
+                                    <button onclick="openModal()" data-modal="bank-modal" class="p-2 btn btn-medium btn-golden">+ Enter bank details</button>
                                 </div>
                            </div>
                        </div>
@@ -104,8 +104,8 @@
         </div>  
       
             <!-- MODAL --> 
-    <div class="modal">
-        <div class="modal__backdrop" onclick="closeModal()"></div>
+    <div class="modal" id="bank-modal">
+        <div class="modal__backdrop" onclick="closeModal()" data-modal="bank-modal"></div>
         <div class="modal__content p-4">
             <div class="col-12 mb-3">
                 <p class="text-bold text-larger">Add New Bank Account</p>
@@ -146,7 +146,7 @@
                 </button>
             </a> 
    
-            <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+            <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="bank-modal"></ion-icon> 
         </div>
     </div>
                   

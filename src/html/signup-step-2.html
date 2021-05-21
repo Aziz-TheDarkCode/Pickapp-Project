@@ -19,8 +19,8 @@
 </head>
 <body>
     <section class="login__section">
-        <div class="modal">
-            <div class="modal__backdrop" onclick="closeModal()"></div>
+        <div class="modal" id="signup-modal">
+            <div class="modal__backdrop" onclick="closeModal()" data-modal="signup-modal"></div>
             <div class="modal__content semi-larger p-4 d-flex flex-column justify-content-center align-items-center" style="height: 406px;">
                     <div class="d-flex flex-column justify-content-between align-items-center text-center">
                         <img src="../images/hands.png" width="200px" class="align-self-center mb-2">
@@ -29,8 +29,8 @@
                             <p class="gray-text text-semi text-bold mt-3">gordoncoffee@gmail.com</p>
                         </div>
                     </div>
-                    <button style="width: 95%;" class="ml-3 btn text-input-larger btn-golden" onclick="closeModal()">Got it</button>
-                    <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+                    <button style="width: 95%;" class="ml-3 btn text-input-larger btn-golden" onclick="closeModal()" data-modal="signup-modal">Got it</button>
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="signup-modal"></ion-icon> 
             </div>
         </div>
         <div class="form--login__section">
@@ -77,7 +77,8 @@
                                 name="number">
                         </div>
                     </div>
-                    <input type="submit" class="mt-5 btn btn-golden text-input-larger col-12" value="Register Your Cafe">
+                    <button class="mt-5 btn btn-golden text-input-larger col-12" value="Register Your Cafe" data-modal="signup-modal"
+                        onclick="openModal()">Register Your Cafe</button>
                 </form>
             </div>
             <div class="mt-5">
@@ -88,13 +89,5 @@
     </section>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src='../js/modal.js'></script>
-    <script>
-        const form=document.querySelector("form")
-        form.addEventListener("submit",function(e)
-        {
-            e.preventDefault(); 
-            openModal();
-        })
-    </script>
 </body>
 </html>

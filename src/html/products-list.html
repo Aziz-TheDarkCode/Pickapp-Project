@@ -30,10 +30,10 @@
                 @@include('../../dist/html/includes/header.html')
             </div>
         <div  class="page-content ">
-            <div class="modal">
-                <div class="col-4 modal__backdrop larger" onclick="closeModal()"></div>
+            <div class="modal" id="product-modal">
+                <div class="col-4 modal__backdrop larger" onclick="closeModal()" data-modal="product-modal"></div>
                 <div class="col-8 d-flex modal__content larger">
-                    <ion-icon role="button" tabindex="0" aria-label="modal-close" name="close-outline" class="close" onclick="closeModal()"></ion-icon> 
+                    <ion-icon role="button" tabindex="0" aria-label="modal-close" name="close-outline" class="close" onclick="closeModal()" data-modal="product-modal"></ion-icon> 
                     <div style="overflow: scroll;" class="col-6 mt-2">
                             <p class="mt-4 text-medium text-bold mb-5">Create New Product</p>
                              <div class="input-component block">
@@ -129,7 +129,7 @@
                                     </div>
                                    
                                 </div>
-                                <a class="text-primary" href="" onclick="openModal()" id="add-topping-modal">+ Add topping</a>
+                                <a class="text-primary" href="" onclick="openModal()" id="add-topping-modal" data-modal="topping-modal">+ Add topping</a>
                             </div>                               
                             <div class="d-flex justify-content-between align-items-center pl-4">
                                 <label class="label d-block font-weight-normal">Jelly</label>
@@ -197,7 +197,7 @@
                 </div>
             </div>
             <div class="modal" id="topping-modal">
-                <div class="modal__backdrop" onclick="closeModal()"></div>
+                <div class="modal__backdrop" onclick="closeModal()" data-modal="topping-modal"></div>
                 <div class="d-flex modal__content semi-larger p-4">
                     <div class="d-flex flex-column w-100 mt-5">
                         <h1 class="text-bold text-larger mb-2">Add Extra Options</h1>
@@ -223,7 +223,7 @@
                             <button style="width: 100%;" class="mt-4 mb-4 btn text-input-larger btn-golden">Add Extra Options</button>
                         </form>
                     </div>
-                    <ion-icon name="close-outline" class="close" onclick="closeModal()"></ion-icon>
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="topping-modal"></ion-icon>
                 </div>
             </div>
             <section class="product-list-content">
@@ -235,7 +235,7 @@
                         </p>
                         <p class="gray-text">10 products avaliable</p>
                        </div>
-                       <button class="p-3 btn btn-medium btn-golden" onclick="openModal()">+ Add a Product</button>
+                       <button class="p-3 btn btn-medium btn-golden" onclick="openModal()" data-modal="product-modal">+ Add a Product</button>
                     </div>
                     <div class="card-section p-4">
                         <div class="card card__product">
