@@ -25,10 +25,10 @@ new Chartist.Bar(
   }
 );
 new Chartist.Bar(
-  '#chart4',
+  '#chart11',
   {
-    labels: ['$2-$5', '$6-$10', '$11-$15', '$16-20$', '$25-$40'],
-    series: [20, 45, 15, 35, 40]
+    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+    series: [20, 45, 15, 35]
   },
   {
     distributeSeries: true,
@@ -39,10 +39,10 @@ new Chartist.Bar(
   }
 );
 new Chartist.Bar(
-  '#chart11',
+  '#chart13',
   {
-    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
-    series: [20, 45, 15, 35]
+    labels: ['6AM','7AM','8AM','9PM','10PM','11PM','12PM','1PM','2PM','3PM','4PM','5PM','6PM','7PM','8PM','8PM','8PM'],
+    series: [20,25,30,20,35,15,40,45,30,50,15,30,45,30,15,20,50]
   },
   {
     distributeSeries: true,
@@ -351,41 +351,6 @@ function createD3Donut(
       },
       {
         fullWidth: true,
-        axisX: {
-          // On the x-axis start means top and end means bottom
-          position: 'end'
-        },
-        axisY: {
-          // On the y-axis start means left and end means right
-          position: 'end'
-        }
-      }
-    );
-    new Chartist.Bar(
-      '#chart13',
-      {
-        labels: [
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM',
-          '6AM'
-        ],
-        series: [
-          [5, 4, 3, 7, 3, 4, 7, 2, 6, 3, 4, 6, 2, 7],
-          [3, 2, 7, 5, 6, 5, 6, 4, 2, 1, 3, 5, 6, 3]
-        ]
-      },
-      {
         axisX: {
           // On the x-axis start means top and end means bottom
           position: 'end'

@@ -12,8 +12,9 @@
     }
   }
   &__content {
-    &--row:nth-child(even) {
-      background-color: #f1f2f3;
+    div:nth-child(even)
+    {
+      background-color: #F1F2F3;
     }
     &.primary {
       > div {
