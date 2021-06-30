@@ -204,6 +204,9 @@ d-block {
 .bg-light-green {
   background-color: #52bf8533; }
 
+.bg-x-light-green {
+  background-color: #52bf8512; }
+
 .bg-light-red {
   border-radius: 0.3rem;
   font-size: smaller;
@@ -300,3 +303,6 @@ small {
 
 .font-weight-normal {
   font-weight: 500 !important; }
+
+.w-25 {
+  width: 25%; }
