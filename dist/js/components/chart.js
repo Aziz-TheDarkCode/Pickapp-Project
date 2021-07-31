@@ -41,8 +41,26 @@ new Chartist.Bar(
 new Chartist.Bar(
   '#chart13',
   {
-    labels: ['6AM','7AM','8AM','9PM','10PM','11PM','12PM','1PM','2PM','3PM','4PM','5PM','6PM','7PM','8PM','8PM','8PM'],
-    series: [20,25,30,20,35,15,40,45,30,50,15,30,45,30,15,20,50]
+    labels: [
+      '6AM',
+      '7AM',
+      '8AM',
+      '9PM',
+      '10PM',
+      '11PM',
+      '12PM',
+      '1PM',
+      '2PM',
+      '3PM',
+      '4PM',
+      '5PM',
+      '6PM',
+      '7PM',
+      '8PM',
+      '8PM',
+      '8PM'
+    ],
+    series: [20, 25, 30, 20, 35, 15, 40, 45, 30, 50, 15, 30, 45, 30, 15, 20, 50]
   },
   {
     distributeSeries: true,
