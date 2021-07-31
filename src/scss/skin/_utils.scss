@@ -40,7 +40,7 @@
 }
 
 .text-primary {
-  color: $primary-color !important;
+  color: #bfa660;
 }
 .text-green {
   color: #19aa5c;
@@ -93,6 +93,10 @@
   color: $secondary-color;
   border-left: black 3px solid;
 }
+.bordered-left-primary
+{
+  border-left:#bfa660 10px solid;
+}
 .fully-bordered {
   background-color: transparent;
   color: $secondary-color;
@@ -110,4 +114,24 @@ small {
 .w-25
 {
   width: 25%;
+}
+.panel
+{
+  display:none;
+}
+.save-btn
+{
+  display: none;
+}
+.edit-item
+{
+  display: flex;
+}
+.mr
+{
+  margin-right:02px;
+}
+.overlined-text
+{
+  text-decoration: line-through;
 }

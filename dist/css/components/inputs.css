@@ -7,6 +7,9 @@
 .text-x-smaller {
   font-size: 10.2px; }
 
+.text-regular {
+  font-size: 14px; }
+
 .text-x-larger {
   font-size: 40px; }
 
@@ -69,3 +72,11 @@ textarea:focus {
   height: 10rem;
   font-size: .8rem;
   border-radius: 2rem; }
+
+.img-browser-larger {
+  width: 25rem;
+  height: 20rem; }
+
+.img-browser-medium {
+  width: 18rem;
+  height: 14rem; }
