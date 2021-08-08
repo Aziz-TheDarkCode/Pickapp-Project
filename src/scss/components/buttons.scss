@@ -40,6 +40,12 @@
 .btn-transparent-red-border {
   border: 2px solid rgb(255, 3, 3);
   background-color: transparent;
+  color: red;
+}
+.btn-transparent-golden-border {
+  border: 2px solid $primary-color;
+  background-color: transparent;
+  color:$primary-color;
 }
 .btn-black-border {
   border: 0.2px solid $secondary-color;
@@ -48,8 +54,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 24px;
 }
 
 .switch input {
@@ -73,8 +79,8 @@
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   left: 4px;
   bottom: 4px;
   background-color: $main-color;
@@ -122,8 +128,8 @@ input:checked + .slider:before {
   position: absolute;
   content: '';
   border-radius: 34px;
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   right: 4px;
   bottom: 4px;
   background-color: white;

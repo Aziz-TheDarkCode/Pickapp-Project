@@ -9,6 +9,9 @@ $font-size: (
 .text-x-smaller {
   font-size: 10.2px;
 }
+.text-regular {
+  font-size: map-get($font-size ,regular);
+}
 .text-x-larger {
   font-size: map-get($font-size, x-larger);
 }

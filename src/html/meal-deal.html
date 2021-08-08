@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meal Deal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/checkboxes.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/modal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+    
+        <div class="content">
+            <div class="sidebar">
+                @@include('../../dist/html/includes/aside.html')
+            </div>
+            <div class="header">
+                @@include('../../dist/html/includes/header.html')
+            </div>
+          
+            <div class="modal" id="category-modal">
+                <div class="modal__backdrop" onclick="closeModal()" data-modal="category-modal"></div>
+                <div class="modal__content semi-larger p-4">
+                    <div class="col-12">
+                        <p class="text-bold text-medium col-">Add New Category</p>
+                    <p class="gray-text mt-2">Create new menu categories</p>
+                    </div>
+                    <div class="p-2  ml-2 input-component block">
+                        <div class="d-flex align-items-center">
+                            <label class="ml-1 label d-block">Category Image Preview</label>
+                            <span class="red-text ml-2">*</span>
+                        </div>
+                       <div class="d-flex justify-content-center align-items-center
+                       img-browser text-sm-center">
+                       <p>
+                        Add an image<br><span class="gray-text">up to 10mb</span>
+                       </p>
+                    </div>
+                    <small class="ml-1 gray-text">this image won't appear to the customer app</small>
+                    </div>
+                        <div class=" col-12 input-component block">
+                            <div class="d-flex align-items-center">
+                                <label class="ml-1 label d-block text-bold">Category Name</label>
+                                <span class="text-red ml-2">*</span>
+                            </div>
+                            <input type="text" class="text-input text-input-larger" value="Coffee"
+                                name="fname">
+                        </div>
+                    <button style="width: 95%;" class="ml-3 mt-4 mb-4 btn text-input-larger btn-golden">Add To Category</button>
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="category-modal"></ion-icon> 
+                </div>
+            </div>
+            <div class="page-content">
+                <section>
+                    <div class="w-100 section__content">
+                        <div class="d-flex justify-content-between align-items-center section__content--header mb-4">
+                            <h1 class="text-medium text-bold">Meal Deal</h1>
+                           <button class="p-3 btn btn-medium btn-golden" onclick="openModal()" data-modal="category-modal">+ Add Meal</button>
+                        </div>
+                        <div class="card-section">
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/meal-box.png);">
+                                <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Meal Box </p>
+                                        <span>10 Products</span>
+                                    </div>
+                            </a>
+                            <a href="products-list.html" class="card card__category" style="background-image: url(../images/family-box.png);">
+                                <img src="../images/dots.png" alt="" class="dots">
+                                    <div class="card__category--details">
+                                        <p>Family Meal</p>
+                                        <span>5 Products</span>
+                                    </div>
+                            </a>
+                           
+                        </div>
+                    </div> 
+                </section>
+            </div>
+           
+        </div>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src='../js/modal.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/components/header.js"></script>
+</body>
+</html>

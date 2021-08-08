@@ -12,6 +12,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/modal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'>
@@ -21,7 +23,9 @@
 <body>
     <main>
        
-        <aside>
+        <div class="content">
+            <div class="sidebar">
+                <aside>
   <div class="logo d-flex flex-column align-items-start justify-content-center">
     <img src="../images/dashboard/PICKAPP.png" width="100px" heigh="100px" alt="">
     <span class="gray-text d-block mt-2">Takeaway coffee, Redefined</span>
@@ -58,6 +62,22 @@
         </div>
       </li>
       <li>
+        <a href="#" class="justify-content-between droppable">
+          <div class="d-flex align-items-center">
+            <img src="../images/dashboard/icons/promo.png" class="mr-2" />
+            <span>Promotions</span>
+          </div>
+          <ion-icon name="chevron-forward-outline" class="text-dark"></ion-icon>
+        </a>
+        <div class="d-none flex-column px-4 my-3">
+          <ul>
+            <li class="mb-2"><a href="analytics-revenue.html">Promotion Listening</a></li>
+            <li class="mb-2"><a href="analytics-customer.html" class="active bordered">Meal Deals</a></li>
+            <li class="mb-2"><a href="analytics-product.html">Draft</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
         <a href="product-categories.html">
           <img src="../images/dashboard/icons/Product List.svg" class="mr-2" />
           <span>Product List</span>
@@ -83,8 +103,9 @@
     </ul>
   </div>
 </aside>
-        <div class="container">
-            <header class="d-flex justify-content-between align-items-center">
+            </div>
+            <div class="header">
+                <header class="d-flex justify-content-between align-items-center">
   <div>
     <div class="d-flex align-items-center">
       <img src="../images/dashboard/icons/Search.svg" class="mr-2">
@@ -274,36 +295,41 @@
 
 <script src='../js/modal.js'></script>
 
-          
-                   <div class="grided__section">
-                       <div class="grided__section--left bordered-right">
-                           <div class="grided__section--left--header mb-4 p-4">
-                               <p class="text-bold">Chat with PICKAPP</p>
-                           </div>
-                           <div href="invoice.html" class="d-flex links active mb-4 justify-content-between align-items-center">
-                               <div class="d-flex align-items-center">
-                                    <span class="text-bold text-center py-2 mr-2">P</span>   
-                                    <p class="text-bold text-larger">PICKAPP</p>
-                               </div>
-                               <p class="">Yesterday,12:48 PM</p>
-                           </div>
-                       </div>
-                       <div class="grided__section--right bordered-left">
-                        <div class="bordered-bottom p-4">
-                            <p class="text-bold">Report Problem</p>
-                       </div>
-                       <div class="p-4">
-                            <p class="text-bold mb-4 px-4">How would you describe your issue?</p>
-                            <div class="d-flex flex-column col-8">
-                                <button class="btn btn-larger fully-bordered text-left  mb-3">Rude Customers</button>
-                                <button class="btn btn-larger fully-bordered text-left  mb-3">Unresponsive System</button>
-                                <button class="btn btn-larger fully-bordered text-left  mb-3">Deactive account</button>
-                                <button class="btn btn-larger fully-bordered text-left  mb-3">Problem with withdrawals</button>
-                                <button class="btn btn-larger fully-bordered text-left  mb-3">Other issue</button>
-                            </div> 
-                       </div>
-                   </div>
+            </div>
+            <div class="page-content">
+                <div class="grided__section">
+                    <div class="grided__section--left bordered-right">
+                        <div class="grided__section--left--header mb-4 p-4">
+                            <p class="text-bold">Chat with PICKAPP</p>
+                        </div>
+                        <div href="invoice.html" class="d-flex links active mb-4 justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                 <span class="text-bold text-center py-2 mr-2">P</span>   
+                                 <p class="text-bold">PICKAPP</p>
+                            </div>
+                            <p class="">Yesterday,12:48 PM</p>
+                        </div>
+                    </div>
+                    <div class="grided__section--right bordered-left">
+                     <div class="bordered-bottom p-4">
+                         <p class="text-bold">Report Problem</p>
+                    </div>
+                    <div class="p-4">
+                         <p class="text-bold my-5 px-4">How would you describe your issue?</p>
+                         <div class="d-flex flex-column col-8">
+                             <button class="btn btn-larger fully-bordered text-left  mb-3 p-3">Rude Customers</button>
+                             <button class="btn btn-larger fully-bordered text-left  mb-3 p-3">Unresponsive System</button>
+                             <button class="btn btn-larger fully-bordered text-left  mb-3 p-3">Deactive account</button>
+                             <button class="btn btn-larger fully-bordered text-left  mb-3 p-3">Problem with withdrawals</button>
+                             <button class="btn btn-larger fully-bordered text-left  mb-3 p-3">Other issue</button>
+                         </div> 
+                    </div>
+                </div>
+     </div>
+            </div>
         </div>
+          
+                   
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src='/javascript/app.js'></script>

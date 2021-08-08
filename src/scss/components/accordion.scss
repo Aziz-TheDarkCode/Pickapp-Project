@@ -1,0 +1,12 @@
+@import '../abstract/variables';
+
+.accordion {
+  cursor: pointer;
+}
+.accordion-item {
+  &.active {
+    border-left: 3px solid $primary-color;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}

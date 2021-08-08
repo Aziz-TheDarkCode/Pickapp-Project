@@ -1,6 +1,9 @@
 .text-x-smaller {
   font-size: 10.2px; }
 
+.text-regular {
+  font-size: 14px; }
+
 .text-x-larger {
   font-size: 40px; }
 
@@ -174,6 +177,9 @@ input:active {
 .text-x-smaller {
   font-size: 10.2px; }
 
+.text-regular {
+  font-size: 14px; }
+
 .text-x-larger {
   font-size: 40px; }
 
@@ -198,11 +204,23 @@ d-block {
 .w-100 {
   width: 100%; }
 
+.h-100 {
+  height: 100%; }
+
+.pos-relative {
+  position: relative; }
+
+.pos-absolute {
+  position: absolute; }
+
 .bg-light-primary {
   background-color: #f2eddf; }
 
 .bg-light-green {
   background-color: #52bf8533; }
+
+.bg-x-light-green {
+  background-color: #52bf8512; }
 
 .bg-light-red {
   border-radius: 0.3rem;
@@ -236,7 +254,7 @@ d-block {
   background-color: transparent; }
 
 .text-primary {
-  color: #BFA660 !important; }
+  color: #bfa660; }
 
 .text-green {
   color: #19aa5c; }
@@ -287,6 +305,9 @@ d-block {
   color: #1e1e1e;
   border-left: black 3px solid; }
 
+.bordered-left-primary {
+  border-left: #bfa660 10px solid; }
+
 .fully-bordered {
   background-color: transparent;
   color: #1e1e1e;
@@ -300,3 +321,24 @@ small {
 
 .font-weight-normal {
   font-weight: 500 !important; }
+
+.w-25 {
+  width: 25%; }
+
+.panel {
+  display: none; }
+
+.save-btn {
+  display: none; }
+
+.edit-item {
+  display: flex; }
+
+.mr {
+  margin-right: 02px; }
+
+.overlined-text {
+  text-decoration: line-through; }
+
+.border-dashed {
+  border: 2px dashed #ddd; }

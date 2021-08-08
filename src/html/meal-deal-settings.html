@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Meal Deal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/inputs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/checkboxes.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/components/accordion.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/aside.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/dashboard.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/form.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/modal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/layout/section.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/plugin/bootstrap-4-utilities.min.css'> 
+</head>
+<body>
+    <main>
+       
+        <div class="content">
+            <div class="sidebar">
+                @@include('../../dist/html/includes/aside.html')
+            </div>
+            <div class="header">
+                @@include('../../dist/html/includes/header.html')
+            </div>
+        <div  class="page-content ">
+            <div class="modal" id="product-modal">
+                <div class="col-4 modal__backdrop larger" onclick="closeModal()" data-modal="product-modal"></div>
+                <div class="col-8 d-flex modal__content larger">
+                    <ion-icon role="button" tabindex="0" aria-label="modal-close" name="close-outline" class="close" onclick="closeModal()" data-modal="product-modal"></ion-icon> 
+                    <div style="overflow: scroll;" class="col-6 mt-2">
+                            <p class="mt-4 text-medium text-bold mb-5">Create New Product</p>
+                             <div class="input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Product Images</label>
+                                    <span class="red-text ml-2">*</span>
+                                </div>
+                               <div class="d-flex justify-content-center align-items-center
+                               img-browser text-sm-center">
+                               <p>
+                                Add an image<br><span class="gray-text">up to 10mb</span>
+                               </p>
+                            </div>
+                            </div>
+                            <div class="input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Product name</label>
+                                    <span class="red-text ml-2">*</span>
+                                </div>
+                                <input type="text" class="text-input text-input-larger" value="Vanilla Latte"
+                                    name="lname">
+                            </div>
+                            <div class="d-flex">
+                                <div class="input-component block col-6">
+                                    <div class="d-flex align-items-center">
+                                        <label class="label d-block">Price</label>
+                                        <span class="red-text ml-2">*</span> 
+                                    </div>
+                                    <input type="text" class="text-input text-input-larger" value="$5"
+                                        name="lname">
+                                </div>
+                                <div class="input-component block col-6">
+                                    <div class="d-flex align-items-center">
+                                        <label class="label d-block">Discount</label> 
+                                        <span class="red-text ml-2">*</span>
+                                    </div>
+                                    <input type="text" class="text-input text-input-larger" value="0%" 
+                                        name="lname">
+                                </div>
+                            </div>
+                            <div class="input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Stock</label>
+                                    <span class="red-text ml-2">*</span>
+                                </div>
+                                <input type="text" class="text-input text-input-larger" value="100"
+                                    name="lname">
+                            </div> 
+                            <div class="input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Description</label>
+                                    <span class="red-text ml-2">*</span>
+                                </div>
+                                <textarea style="height: 180px;" type="text" class="text-input text-input-larger" value="lorem ipsum dolor sit amet"
+                                    name="lname">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dicta recusandae error sunt blanditiis obcaecati, nulla sint, pariatur, nostrum at cupiditate. Sequi praesentium rerum ullam ad voluptates voluptatem quo ipsa.</textarea>
+                            </div>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label class="label d-block">Size</label>
+                                    <a class="text-primary" href="">+ Add size</a>
+                                </div>                               
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label class="label d-block">Small</label>
+                                    <a style="color: black;" class="text-bold" href="">$0</a>
+                                </div>                               
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label class="label d-block">Grande</label>
+                                    <a style="color: black;" class="text-bold" href="">$0.05</a>
+                                </div>                               
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label class="label d-block">Large</label>
+                                    <a  style="color: black;"class="text-bold" href="">$0.07</a>
+                                </div>                               
+                            </div>
+                                                    
+                    </div>
+                    <div class="col-6 mt-2">
+                        <div class="d-flex justify-content-between align-items-center mt-4 mb-5">
+                            <p class="text-medium text-bold">Extra Options</p>    
+                            <a href="#" class="text-primary">+ Add menu</a>  
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mt-5">
+                                <div class="d-flex align-items-center ml-2">
+                                    <ion-icon name="trash-outline" class="trash"></ion-icon>
+                                    <label class="label d-block">Topping</label>
+                                    <div class="mb-1 d-flex align-items-center  ml-2">
+                                        <label class="container">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <p class="mt-1">required</p>
+                                    </div>
+                                   
+                                </div>
+                                <a class="text-primary" href="" onclick="openModal()" id="add-topping-modal" data-modal="topping-modal">+ Add topping</a>
+                            </div>                               
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Jelly</label>
+                                <a style="color: black;" href="">free</a>
+                            </div>                               
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Pudding</label>
+                                <a style="color: black;" class="text-bold" href="">free</a>
+                            </div>                               
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Soy Bean</label>
+                                <a  style="color: black;"class="text-bold" href="">$0.07</a>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2 pl-4">
+                                <input type="text" class="text-input text-input-larger" placeholder="Enter topping name">   
+                                <input type="text" class="text-input text-input-larger col-3" placeholder="Price"> 
+                            </div>
+                                                        
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mt-5">
+                                <div class="d-flex align-items-center">
+                                    <ion-icon name="trash-outline" class="trash"></ion-icon>
+                                    <label class="label d-block">Espresso shot</label>
+                                    <div class="mb-1 d-flex align-items-center  ml-2">
+                                        <label class="container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <p class="mt-1">Optional</p>
+                                    </div>
+                                </div>
+                                <a class="text-primary" href="">+ Add a shot</a>
+                            </div>                               
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Espresso shot</label>
+                                <a style="color: black;" class="text-bold" href="">$0.02</a>
+                            </div>                               
+                                                          
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Double espresso shot</label>
+                                <a  style="color: black;"class="text-bold" href="">$0.07</a>
+                            </div>
+                                                        
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mt-5">
+                                <div class="d-flex align-items-center">
+                                    <ion-icon name="trash-outline" class="trash"></ion-icon>
+                                    <label class="label d-block">Syrup</label>
+                                </div>
+                                <a class="text-primary" href="">+ Add syrup</a>
+                            </div>                               
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Caramel syrup</label>
+                                <a style="color: black;" class="text-bold" href="">$0.01</a>
+                            </div>                                                           
+                            <div class="d-flex justify-content-between align-items-center pl-4">
+                                <label class="label d-block font-weight-normal">Hazelmut</label>
+                                <a  style="color: black;"class="text-bold" href="">$0.01</a>
+                            </div>                             
+                        </div>
+                        <button style="margin-top: 03rem;" class="p-2 btn btn-golden btn-larger col-12">Publish Product</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="topping-modal">
+                <div class="modal__backdrop" onclick="closeModal()" data-modal="topping-modal"></div>
+                <div class="d-flex modal__content semi-larger p-4">
+                    <div class="d-flex flex-column w-100 mt-5">
+                        <h1 class="text-bold text-larger mb-2">Add Extra Options</h1>
+                        <span class="gray-text">Create extra options for products</span>
+                        <form class="mt-3">
+                            <div class="input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="ml-1 label d-block text-bold">Name of extra option</label>
+                                    <span class="text-red ml-2">*</span>
+                                </div>
+                                <input type="text" class="text-input text-input-larger" value="Topping" name="topping">
+                            </div>
+                            <div class="input-component block mt-3">
+                                <div class="d-flex align-items-center">
+                                    <label class="ml-1 label d-block text-bold">Set as required</label>
+                                    <span class="text-red ml-2">*</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked="" name="required">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <button style="width: 100%;" class="mt-4 mb-4 btn text-input-larger btn-golden">Add Extra Options</button>
+                        </form>
+                    </div>
+                    <ion-icon name="close-outline" class="close" onclick="closeModal()" data-modal="topping-modal"></ion-icon>
+                </div>
+            </div>
+            <section class="product-list-content">
+                <div class="w-100 ">
+                    <div class="d-flex justify-content-between section__content--header  bg-white p-4">
+                        <div>
+                           <p class="mb-2">
+                            <span class="text-bold">Meal Deal Settings</span>
+                         </p>
+                         <p class="gray-text">10 products in the list</p>
+                        </div>
+                        <div class="col-4">
+                            <button class="p-3 btn mr-5 btn-transparent-golden-border col-5" onclick="" data-modal="product-modal">Save</button>
+                            <button class="p-3 btn  btn-golden col-5" onclick="" data-modal="product-modal">Publish</button>
+                        </div>
+                     </div>
+                    <div class="d-flex p-2 bg-white">
+                        <div class="col-6">
+                            <div class="input-component block mb-2 col-12">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Meal Deals Name</label>
+                                    <span class="text-red ml-2">*</span>
+                                </div>
+                                <input type="text" class="text-input text-input-larger" placeholder="Family Meal" name="fname">
+                            </div>
+                            <div class="d-flex">
+                                <div class="input-component block mb-2 col-8">
+                                    <div class="d-flex align-items-center">
+                                        <label class="label d-block">Enter Price for the Meals</label>
+                                        <span class="text-red ml-2">*</span>
+                                    </div>
+                                    <input type="text" class="text-input text-input-larger" placeholder="$10" name="fname">
+                                </div>
+                                <div class="input-component block mb-2 col-8">
+                                    <div class="d-flex align-items-center">
+                                        <label class="label d-block">Meal Deals Status</label>
+                                        <span class="text-red ml-2">*</span>
+                                    </div>
+                                    <div class="card__product--footer">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="toggler availiable"></span>
+                                          </label>                                  
+                                        <p  class="ml-2 text-bold text-green">Active</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-2  ml-2 input-component block">
+                                <div class="d-flex align-items-center">
+                                    <label class="label d-block">Promotion  Image</label>
+                                    <span class="text-red ml-2">*</span>
+                                </div>
+                               <div class="d-flex justify-content-center align-items-center
+                               img-browser img-browser-larger text-sm-center">
+                               <p>
+                                Add an image<br><span class="gray-text">up to 10mb</span>
+                               </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-semi text-bold">Deal Listing</p>
+                            <button class="p-3 btn btn-golden col-2" onclick="" data-modal="product-modal"> + Add a Deal</button>
+                        </div>
+                        <div class="mt-4">
+                            
+                            <div class="w-100 accordion accordion-wrapper bg-white py-1 rounded-box">
+                                <div class="d-flex accordion-item px-3 justify-content-between align-items-center">
+                                    <p class="text-bold">Combo for 2</p>
+                                    <div class=" edit-item align-items-center">
+                                        <div class="card__product--footer">
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="toggler availiable"></span>
+                                            </label>                                  
+                                            <p  class="ml-2 text-bold text-green">Active</p>
+                                        </div>
+                                        <p class="text-primary mx-4">Edit</p>
+                                        <p class="text-primary mx-4">Remove</p>
+                                    </div>
+                                    <button class="mx-3 save-btn p-2 btn btn-golden col-1" onclick="" data-modal="product-modal">save</button>
+                                </div>
+                                <div class="panel bg-light-primary">
+                                <div class="meal__card--section px-3 py-2 w-100">
+                                    <div class=" meal-detail bg-white rounded-box">
+                                        <div class="input-component block mb-2 col-12">
+                                            <div class="d-flex align-items-center">
+                                                <label class="label d-block">Deal Name</label>
+                                                <span class="text-red ml-2">*</span>
+                                            </div>
+                                            <input type="text" class="text-input text-input-larger" placeholder="Combo Name Sample" name="fname">
+                                        </div>
+                                        <div class="p-2  ml-2 input-component block">
+                                            <div class="d-flex align-items-center">
+                                                <label class="label d-block">Deal Image Image</label>
+                                                <span class="text-red ml-2">*</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center
+                                                                       img-browser img-browser-medium text-sm-center">
+                                                <p>
+                                                    Add an image<br><span class="gray-text">up to 10mb</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" meal bg-white p-4 rounded-box">
+                                        <p class="text-bold my-3 ">Select product for first selection</p>
+                                        <p class="gray-text">Please select products for the “Drink” List</p>
+                                        <div class="input-component block my-4">
+                                            <input type="text" class="text-input text-input-larger" placeholder="Enter Product Name to search"
+                                                name="fname">
+                                        </div>
+                                        <p class="gray-text">ALL CATEGORIES</p>
+                                        <div class=" accordion mb-1 d-flex align-items-center  ml-2">
+                                            <label class="container-primary">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark-primary"></span>
+                                            </label>
+                                            <p class="mt-1 ml-3">Coffee</p>
+                                            <small>
+                                                <ion-icon name="chevron-forward-outline" class="mt-2 text-regular "></ion-icon>
+                                            </small>
+                                
+                                        </div>
+                                        <div class="panel flex-column ml-3">
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Espresso</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Ristretto</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Americano</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Piccolo Latte</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+                                
+                                        <div class=" accordion mb-1 d-flex align-items-center  ml-2">
+                                            <label class="container-primary">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark-primary"></span>
+                                            </label>
+                                            <p class="mt-1 ml-3">Cold Drinks</p>
+                                            <small>
+                                                <ion-icon name="chevron-forward-outline" class="mt-2 text-regular "></ion-icon>
+                                            </small>
+                                
+                                        </div>
+                                        <div class="panel flex-column ml-3">
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Orange</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                    <div class=" meal bg-white p-4 rounded-box">
+                                        <p class="text-bold my-3 ">Select product for first selection</p>
+                                        <p class="gray-text">Please select products for the “Drink” List</p>
+                                        <div class="input-component block my-4">
+                                            <input type="text" class="text-input text-input-larger" placeholder="Enter Product Name to search"
+                                                name="fname">
+                                        </div>
+                                        <p class="gray-text">ALL CATEGORIES</p>
+                                        <div class=" accordion mb-1 d-flex align-items-center  ml-2">
+                                            <label class="container-primary">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark-primary"></span>
+                                            </label>
+                                            <p class="mt-1 ml-3">Coffee</p>
+                                            <small>
+                                                <ion-icon name="chevron-forward-outline" class="mt-2 text-regular "></ion-icon>
+                                            </small>
+                                
+                                        </div>
+                                        <div class="panel flex-column ml-3">
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Espresso</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Ristretto</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Americano</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Piccolo Latte</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+                                
+                                        <div class=" accordion mb-1 d-flex align-items-center  ml-2">
+                                            <label class="container-primary">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark-primary"></span>
+                                            </label>
+                                            <p class="mt-1 ml-3">Cold Drinks</p>
+                                            <small>
+                                                <ion-icon name="chevron-forward-outline" class="mt-2 text-regular "></ion-icon>
+                                            </small>
+                                
+                                        </div>
+                                        <div class="panel flex-column ml-3">
+                                            <div class="mb-1 d-flex align-items-center ml-2 mb-3">
+                                                <label class="container-primary">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark-primary"></span>
+                                                </label>
+                                                <div class='d-flex col-12 justify-content-between align-items-center'>
+                                                    <p class="mt-1">Orange</p>
+                                                    <p class="mt-1">$3.5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                    <div class=" bg-white p-4 mr-2 rounded-box add-product-card border-dashed">
+                                        <div class="plus h-100 rounded-box pos-relative">
+                                            <ion-icon name="add-outline" style="top: calc(50% - 24px);left: calc(50% - 24px);"
+                                                class="text-larger gray-text pos-absolute"></ion-icon>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/components/header.js"></script>
+    <script src='../js/modal.js'></script>
+    <script src='../js/dropdown.js'></script>
+    <script src='../js/addMeal.js'></script>
+</body>
+</html>
