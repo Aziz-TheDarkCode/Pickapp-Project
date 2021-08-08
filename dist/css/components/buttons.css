@@ -45,6 +45,11 @@
   color: #1e1e1e;
   border: 1px #f2f2f4 solid; }
 
+.btn-dark-gray {
+  background-color: gray;
+  color: white;
+  border: none; }
+
 .btn-larger {
   font-size: 0.98rem; }
 

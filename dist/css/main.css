@@ -207,6 +207,9 @@ d-block {
 .bg-light-primary {
   background-color: #f2eddf; }
 
+.bg-light-primary-2 {
+  background-color: #f2eddf36; }
+
 .bg-light-green {
   background-color: #52bf8533; }
 
@@ -269,7 +272,7 @@ d-block {
   border-radius: 7px; }
 
 .rounded-box {
-  border-radius: 1rem; }
+  border-radius: .7rem; }
 
 .bg-secondary-color {
   background-color: #1e1e1e;
@@ -297,7 +300,7 @@ d-block {
   border-left: black 3px solid; }
 
 .bordered-left-primary {
-  border-left: #bfa660 10px solid; }
+  border-left: #bfa660 6px solid; }
 
 .fully-bordered {
   background-color: transparent;
@@ -316,6 +319,9 @@ small {
 .w-25 {
   width: 25%; }
 
+.accordion {
+  border-radius: 6px; }
+
 .panel {
   display: none; }
 
@@ -330,3 +336,12 @@ small {
 
 .overlined-text {
   text-decoration: line-through; }
+
+.pointer {
+  cursor: pointer; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }

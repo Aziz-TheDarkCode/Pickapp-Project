@@ -26,8 +26,8 @@
 //                          this.className + ' active';
 // }
 var acc = document.getElementsByClassName("accordion");
-// let saveBtn = document.querySelector(".save-btn")
-// let edit = document.querySelector(".edit-item")
+let saveBtn = document.querySelector(".save-btn")
+let edit = document.querySelector(".edit-item")
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -39,8 +39,12 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "none";
       edit.style.display="flex"
       saveBtn.style.display="none"
-      // this.classList.remove("bordered-left-primary")
+     
+      this.classList.remove("bordered-left-primary")
     } else {
+      if (this.classList.contains("combo")) {
+        this.classList.toggle("bordered-left-primary")
+      }
       panel.style.display = "flex";
       edit.style.display="none"
       saveBtn.style.display="block"

@@ -74,8 +74,9 @@ textarea:focus {
   border-radius: 2rem; }
 
 .img-browser-larger {
-  width: 25rem;
-  height: 20rem; }
+  width: 375px;
+  height: 249px;
+  border-radius: 16px; }
 
 .img-browser-medium {
   width: 18rem;

@@ -24,6 +24,12 @@
   color: $secondary-color;
   border: 1px darken($tertiary-color, 03%) solid;
 }
+.btn-dark-gray
+{
+  background-color: gray;
+  color: white;
+  border:none
+}
 
 //Button Size
 .btn-larger {
