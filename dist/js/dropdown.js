@@ -52,8 +52,5 @@
     document.querySelector(".search").addEventListener("focus",(e)=>{
         var searchBox = document.querySelector(".search-box")
         searchBox.style.display="block"
-        // e.target.addEventListener("focusout",()=>{
-        //   searchBox.style.display="none"
-        // })
     })
 })()

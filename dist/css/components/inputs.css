@@ -56,6 +56,19 @@ textarea:focus {
   font-weight: bold;
   position: relative; }
 
+.icon-placeholder {
+  top: 1rem;
+  left: 1.4rem; }
+
+.icon-placeholder-2 {
+  top: 3rem;
+  left: 1.4rem; }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none; }
+
 .input-component {
   line-height: 1.5rem;
   margin: 0 0rem; }
