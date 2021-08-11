@@ -24,7 +24,6 @@
 (function () {
   document.querySelectorAll('.accordion').forEach(function (accordion) {
     accordion.addEventListener('click', function (e) {
-      console.log(e.target)
       if (e.target.classList.contains('accordion-item')) {
         this.children[0].classList.toggle('active');
         if (e.target.classList.contains('accordion-item')) {
@@ -49,11 +48,11 @@
 })();
 
 (function () {
-    document.querySelector(".search").addEventListener("focus",(e)=>{
-        var searchBox = document.querySelector(".search-box")
-        searchBox.style.display="block"
-        // e.target.addEventListener("focusout",()=>{
-        //   searchBox.style.display="none"
-        // })
-    })
-})()
+  document.querySelector('.search').addEventListener('focus', (e) => {
+    var searchBox = document.querySelector('.search-box');
+    searchBox.style.display = 'block';
+    // e.target.addEventListener("focusout",()=>{
+    //   searchBox.style.display="none"
+    // })
+  });
+})();
