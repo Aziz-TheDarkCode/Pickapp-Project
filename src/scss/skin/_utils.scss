@@ -90,15 +90,13 @@
   color: $secondary-color;
   border-left: rgb(235, 235, 235) 0.5px solid;
 }
-.bordered-left-thick
-{
+.bordered-left-thick {
   background-color: transparent;
   color: $secondary-color;
   border-left: black 3px solid;
 }
-.bordered-left-primary
-{
-  border-left:#bfa660 6px solid;
+.bordered-left-primary {
+  border-left: #bfa660 10px solid;
 }
 .fully-bordered {
   background-color: transparent;
@@ -114,43 +112,24 @@ small {
 .font-weight-normal {
   font-weight: 500 !important;
 }
-.w-25
-{
+.w-25 {
   width: 25%;
 }
-.accordion
-{
-  border-radius: 6px;
-}
-.panel
-{
-  display:none;
-}
-.save-btn
-{
+.panel {
   display: none;
 }
-.edit-item
-{
+.save-btn {
+  display: none;
+}
+.edit-item {
   display: flex;
 }
-.mr
-{
-  margin-right:02px;
+.mr {
+  margin-right: 02px;
 }
-.overlined-text
-{
+.overlined-text {
   text-decoration: line-through;
 }
-.pointer
-{
-  cursor: pointer;
-}
-.relative
-{
-  position: relative;
-}
-.absolute
-{
-  position: absolute;
+.border-dashed {
+  border: 2px dashed #ddd;
 }

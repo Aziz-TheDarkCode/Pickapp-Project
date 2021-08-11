@@ -7,3 +7,35 @@ d-block {
 .w-100 {
   width: 100%;
 }
+.w-76 {
+  width: 76.5%;
+}
+.h-100 {
+  height: 100%;
+}
+.pos-relative {
+  position: relative;
+}
+
+.search-box
+{
+  height: 320px;
+  display: none;
+}
+.search:focus ~ .search-box
+{
+  display: none;
+}
+.pos-absolute {
+  position: absolute;
+  // background-color: green;
+}
+.fixed-bottom
+{
+  bottom:-250px;
+  left: 40px;
+}
+.z-index
+{
+  z-index: 1;
+}

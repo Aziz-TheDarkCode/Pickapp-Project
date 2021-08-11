@@ -204,6 +204,32 @@ d-block {
 .w-100 {
   width: 100%; }
 
+.w-76 {
+  width: 76.5%; }
+
+.h-100 {
+  height: 100%; }
+
+.pos-relative {
+  position: relative; }
+
+.search-box {
+  height: 320px;
+  display: none; }
+
+.search:focus ~ .search-box {
+  display: none; }
+
+.pos-absolute {
+  position: absolute; }
+
+.fixed-bottom {
+  bottom: -250px;
+  left: 40px; }
+
+.z-index {
+  z-index: 1; }
+
 .bg-light-primary {
   background-color: #f2eddf; }
 
@@ -300,7 +326,7 @@ d-block {
   border-left: black 3px solid; }
 
 .bordered-left-primary {
-  border-left: #bfa660 6px solid; }
+  border-left: #bfa660 10px solid; }
 
 .fully-bordered {
   background-color: transparent;
@@ -319,9 +345,6 @@ small {
 .w-25 {
   width: 25%; }
 
-.accordion {
-  border-radius: 6px; }
-
 .panel {
   display: none; }
 
@@ -337,11 +360,5 @@ small {
 .overlined-text {
   text-decoration: line-through; }
 
-.pointer {
-  cursor: pointer; }
-
-.relative {
-  position: relative; }
-
-.absolute {
-  position: absolute; }
+.border-dashed {
+  border: 2px dashed #ddd; }
