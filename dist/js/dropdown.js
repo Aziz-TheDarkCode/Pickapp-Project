@@ -48,11 +48,17 @@
 })();
 
 (function () {
-  document.querySelector('.search').addEventListener('focus', (e) => {
+  document.querySelector('.search')?.addEventListener('focus', (e) => {
     var searchBox = document.querySelector('.search-box');
     searchBox.style.display = 'block';
-    // e.target.addEventListener("focusout",()=>{
-    //   searchBox.style.display="none"
-    // })
+  });
+  window.addEventListener('click', (e) => {
+    if (
+      !document.querySelector('.search-box').contains(e.target) &&
+      !e.target.classList.contains('search')
+    ) {
+      var searchBox = document.querySelector('.search-box');
+      searchBox.style.display = 'none';
+    }
   });
 })();

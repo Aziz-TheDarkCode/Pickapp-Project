@@ -3,3 +3,14 @@
 @import 'base/typography';
 @import 'layout/utils';
 @import 'skin/utils';
+
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

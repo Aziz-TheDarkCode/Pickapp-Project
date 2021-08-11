@@ -224,7 +224,7 @@ d-block {
   position: absolute; }
 
 .fixed-bottom {
-  bottom: -250px;
+  bottom: -293px;
   left: 40px; }
 
 .z-index {
@@ -362,3 +362,13 @@ small {
 
 .border-dashed {
   border: 2px dashed #ddd; }
+
+html {
+  scroll-behavior: smooth; }
+
+html::-webkit-scrollbar {
+  display: none; }
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }

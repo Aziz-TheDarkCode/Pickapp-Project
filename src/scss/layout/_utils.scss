@@ -17,25 +17,21 @@ d-block {
   position: relative;
 }
 
-.search-box
-{
+.search-box {
   height: 320px;
   display: none;
 }
-.search:focus ~ .search-box
-{
+.search:focus ~ .search-box {
   display: none;
 }
 .pos-absolute {
   position: absolute;
   // background-color: green;
 }
-.fixed-bottom
-{
-  bottom:-250px;
+.fixed-bottom {
+  bottom: -293px;
   left: 40px;
 }
-.z-index
-{
+.z-index {
   z-index: 1;
 }
