@@ -85,7 +85,7 @@
     transition: 0.5s ease-in; }
   .card__product .layer:hover {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); }
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)); }
   .card__product--img {
     width: 100%; }
   .card__product--description {
