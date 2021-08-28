@@ -229,13 +229,13 @@
             </div>
             <section class="product-list-content">
                 <div class="w-100 ">
-                    <div class="d-flex justify-content-between section__content--header  bg-white p-4">
+                    <div class="d-flex justify-content-between section__content--header  bg-white p-4 align-items-center">
                         <div>
                           <p class="text-larger text-bold">Create New promotion</p>
                         </div>
-                        <div class="col-4">
-                            <button class="p-3 btn mr-5 btn-transparent-golden-border col-5" onclick="" data-modal="product-modal">Save</button>
-                            <button class="p-3 btn  btn-golden col-5" onclick="" data-modal="product-modal">Publish</button>
+                        <div class="d-flex justify-content-between align-items-center" style="width: 30%;">
+                            <button class="flex-1 p-3 btn mr-3 btn-transparent-golden-border" onclick="" data-modal="product-modal">Save</button>
+                            <button class="flex-1 p-3 btn  btn-golden" onclick="" data-modal="product-modal">Publish</button>
                         </div>
                      </div>
                      <div class="text-medium p-3 bg-white">
@@ -270,19 +270,21 @@
                                 <input type="text" class="text-input text-input-larger" placeholder="Family Meal" name="fname">
                             </div>
                             <div class="d-flex">
-                                <div class="input-component block mb-2 col-6">
+                                <div class="input-component block mb-2 col-6 input-date">
                                     <div class="d-flex align-items-center">
                                         <label class="label d-block">Select Start Date</label>
                                         <span class="text-red ml-2">*</span>
                                     </div>
-                                    <input type="text" class="text-input text-input-larger" placeholder="$10" name="fname">
+                                    <ion-icon name="calendar-outline" class="pos-absolute input-date-icon"></ion-icon>
+                                    <input type="text" placeholder="Select start date" onfocus="(this.type='date')" class="text-input text-input-larger" name="fname">
                                 </div>
-                                <div class="input-component block mb-2 col-6">
+                                <div class="input-component block mb-2 col-6 input-date">
                                     <div class="d-flex align-items-center">
                                         <label class="label d-block">Select End Date</label>
                                         <span class="text-red ml-2">*</span>
                                     </div>
-                                    <input type="text" class="text-input text-input-larger" placeholder="$10" name="fname">
+                                    <ion-icon name="calendar-outline" class="pos-absolute input-date-icon"></ion-icon>
+                                    <input type="text" placeholder="Select end date" onfocus="(this.type='date')" class="text-input text-input-larger" name="fname">
                                 </div>
                                
                             </div>
@@ -304,8 +306,17 @@
                     </div>
                     <div class="p-4">
                         <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
                             <p class="text-semi text-bold">Added Products</p>
-                            <button class="p-3 btn btn-golden col-2" onclick="" data-modal="product-modal"> + Add a Deal</button>
+                            <div class="pos-relative">
+                                <small class="tooltip-icon">
+                                    <ion-icon name="information-circle" class=" mt-2 text-medium" style="cursor: pointer;color:#cfcfcf"></ion-icon>
+                                </small>
+                                <div style="left:-139px" class="tooltip pos-absolute bg-white p-3 rounded-box">
+                                    Products with the intention of celebrating specific events
+                                </div>
+                            </div>
+                            </div>
                         </div>
                         <div class="mt-4">
                             

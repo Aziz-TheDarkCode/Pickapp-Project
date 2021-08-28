@@ -54,11 +54,11 @@
   });
   window.addEventListener('click', (e) => {
     if (
-      !document.querySelector('.search-box').contains(e.target) &&
+      !document.querySelector('.search-box')?.contains(e.target) &&
       !e.target.classList.contains('search')
     ) {
       var searchBox = document.querySelector('.search-box');
-      searchBox.style.display = 'none';
+      if (searchBox) searchBox.style.display = 'none';
     }
   });
 })();

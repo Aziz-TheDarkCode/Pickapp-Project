@@ -35,3 +35,17 @@ d-block {
 .z-index {
   z-index: 1;
 }
+.flex-1 {
+  flex: 1;
+}
+.input-date {
+  .input-date-icon {
+    bottom: 0.5rem;
+    color: darkgray;
+    font-size: 20px;
+    left: 1.3rem;
+  }
+  input {
+    padding-left: 2.5rem;
+  }
+}
